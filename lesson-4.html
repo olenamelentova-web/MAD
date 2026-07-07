@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 4 — Shopping & Supermarket Survival English</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-3.html">← Lesson 3</a>
+      <a class="primary" href="lesson-5.html">Lesson 5 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 04 · 60 min</span>
+    <h1>Shopping & Supermarket Survival English</h1>
+    <p>The practical, high-frequency phrases she needs for supermarket trips — small phrase set, drilled until automatic.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="lesson-section" id="tabs">
+    <div class="subtabs">
+      <button class="subtab-btn" data-sub="plan" aria-selected="true">📋 Plan</button>
+      <button class="subtab-btn" data-sub="materials" aria-selected="false">🎒 Materials</button>
+    </div>
+
+    <div class="subpanel active" data-sub-panel="plan">
+      <div class="block">
+        <span class="block-label c-warmup">Warm-up</span>
+        <p class="block-content">"Where do you usually buy…?"</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-vocab">Vocabulary</span>
+        <p class="block-content">Shop sections (dairy, bakery, frozen), common items, checkout words (self-checkout, card/cash, receipt, bag).</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-grammar">Grammar</span>
+        <p class="block-content"><em>Where is / are…?</em>, <em>Do you have…?</em>, <em>How much is…?</em></p>
+      </div>
+      <div class="block">
+        <span class="block-label c-speaking">Speaking practice</span>
+        <div class="block-content"><ul>
+          <li>Core phrase drill: "Excuse me, where can I find…?" / "Do you have any…?" / "How much is this?" / "Is this on sale?"</li>
+          <li>Miro supermarket map — she "walks" through it, asking you (playing staff) where things are</li>
+        </ul></div>
+      </div>
+      <div class="block">
+        <span class="block-label c-roleplay">Roleplay</span>
+        <p class="block-content">Full supermarket trip — find 3 items, ask a question, pay.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-homework">Homework</span>
+        <p class="block-content">Practice the 4 core phrases out loud, 10 times each.</p>
+      </div>
+      <div class="block backup">
+        <span class="block-label">✦ Backup activities — if time remains</span>
+        <div class="block-content"><ul>
+          <li>Prices and totals drill — add up a small shopping list</li>
+          <li>"Is it fresh?" — asking about expiry dates and substitutions</li>
+          <li>Comparing products: "this one is cheaper / bigger"</li>
+          <li>Self-checkout troubleshooting: "It's not scanning", "I need help, please"</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="subpanel" data-sub-panel="materials">
+      <div class="mat-section">
+        <span class="mat-title">🗂️ Vocabulary cards</span>
+        <p class="mat-sub">Click a card to flip it and see the example sentence. Click "Listen" to hear it.</p>
+        <div class="vocab-grid" id="vocabGrid"></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">🗣️ Speaking prompt cards</span>
+        <p class="mat-sub">She answers out loud first — flip to check a sample answer.</p>
+        <div class="prompt-grid" id="promptGrid"></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">✏️ Fill in the blanks</span>
+        <div class="gapfill-box" id="gapfill"></div>
+        <div class="gapfill-controls"><button class="btn" id="revealBtn">Reveal answers</button></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">🎭 Roleplay script — Finding things in the supermarket</span>
+        <p class="mat-sub">Read it together first, then act it out from memory.</p>
+        <div class="dialogue" id="dialogue"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">Lesson 4 of 9 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+initSubtabs(document.getElementById('tabs'));
+
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {e:"🛒", w:"trolley / cart", x:"I need a trolley."},
+  {e:"🥛", w:"dairy", x:"The dairy section is over there."},
+  {e:"🍞", w:"bakery", x:"The bakery is next to the tills."},
+  {e:"🧊", w:"frozen", x:"Where's the frozen food?"},
+  {e:"💳", w:"card", x:"Can I pay by card?"},
+  {e:"🧾", w:"receipt", x:"Can I have a receipt, please?"},
+  {e:"🏷️", w:"on sale", x:"Is this on sale?"},
+  {e:"🔍", w:"find", x:"Where can I find the milk?"}
+]);
+
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"Ask where the milk is.", a:"Excuse me, where can I find the milk?"},
+  {q:"Ask if they have bananas.", a:"Do you have any bananas?"},
+  {q:"Ask the price of something.", a:"How much is this?"},
+  {q:"Say you want to pay by card.", a:"Can I pay by card, please?"},
+  {q:"Ask if something is on sale.", a:"Is this on sale?"}
+]);
+
+renderGapfill(document.getElementById('gapfill'), document.getElementById('revealBtn'), {
+  text:"Excuse me, where can I {{}} the bread? Do you {{}} any brown bread? How {{}} is this milk? Can I pay by {{}}?",
+  answers:["find","have","much","card"]
+});
+
+renderDialogue(document.getElementById('dialogue'), [
+  {s:"b", t:"Excuse me, where can I find the bread?"},
+  {s:"a", t:"It's next to the dairy section."},
+  {s:"b", t:"Thank you. Do you have any brown bread?"},
+  {s:"a", t:"Yes, on the top shelf."},
+  {s:"b", t:"How much is this milk?"},
+  {s:"a", t:"That's one twenty."}
+], "Staff");
+</script>
+</body>
+</html>

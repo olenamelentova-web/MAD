@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 3 — Food & Eating Out</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-2.html">← Lesson 2</a>
+      <a class="primary" href="lesson-4.html">Lesson 4 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 03 · 60 min</span>
+    <h1>Food & Eating Out</h1>
+    <p>Talk about food preferences and manage a restaurant / café situation.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="lesson-section" id="tabs">
+    <div class="subtabs">
+      <button class="subtab-btn" data-sub="plan" aria-selected="true">📋 Plan</button>
+      <button class="subtab-btn" data-sub="materials" aria-selected="false">🎒 Materials</button>
+    </div>
+
+    <div class="subpanel active" data-sub-panel="plan">
+      <div class="block">
+        <span class="block-label c-warmup">Warm-up</span>
+        <p class="block-content">"What did you eat today?" — a light preview of past tense, no pressure yet.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-vocab">Vocabulary</span>
+        <p class="block-content">Food items, meals, taste words (delicious, too spicy, I don't like…), ordering phrases.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-grammar">Grammar</span>
+        <p class="block-content"><em>like / don't like</em> + noun/gerund, <em>would like</em> for polite requests.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-speaking">Speaking practice</span>
+        <div class="block-content"><ul>
+          <li>Menu on Miro — she orders from you (waiter roleplay), swap roles</li>
+          <li>"This or that" rapid-fire: coffee or tea? sweet or savory?</li>
+        </ul></div>
+      </div>
+      <div class="block">
+        <span class="block-label c-roleplay">Roleplay</span>
+        <p class="block-content">Café with the boyfriend — ordering, saying what she likes/dislikes, asking "what's this?"</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-homework">Homework</span>
+        <p class="block-content">Note 5 foods she likes/dislikes in English.</p>
+      </div>
+      <div class="block backup">
+        <span class="block-label">✦ Backup activities — if time remains</span>
+        <div class="block-content"><ul>
+          <li>Describe a simple recipe step by step</li>
+          <li>"Would you like…?" offering / accepting / declining drill</li>
+          <li>Quick food survey — she asks you 5 questions</li>
+          <li>Roleplay: complaining politely in a restaurant</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="subpanel" data-sub-panel="materials">
+      <div class="mat-section">
+        <span class="mat-title">🗂️ Vocabulary cards</span>
+        <p class="mat-sub">Click a card to flip it and see the example sentence. Click "Listen" to hear it.</p>
+        <div class="vocab-grid" id="vocabGrid"></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">🗣️ Speaking prompt cards</span>
+        <p class="mat-sub">She answers out loud first — flip to check a sample answer.</p>
+        <div class="prompt-grid" id="promptGrid"></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">✏️ Fill in the blanks</span>
+        <div class="gapfill-box" id="gapfill"></div>
+        <div class="gapfill-controls"><button class="btn" id="revealBtn">Reveal answers</button></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">🎭 Roleplay script — Ordering in a café</span>
+        <p class="mat-sub">Read it together first, then act it out from memory.</p>
+        <div class="dialogue" id="dialogue"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">Lesson 3 of 9 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+initSubtabs(document.getElementById('tabs'));
+
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {e:"🍽️", w:"menu", x:"Can I see the menu, please?"},
+  {e:"☕", w:"coffee / tea", x:"I'd like a coffee, please."},
+  {e:"🍞", w:"bread", x:"I love fresh bread."},
+  {e:"🍲", w:"soup", x:"This soup is delicious."},
+  {e:"🌶️", w:"spicy", x:"It's a bit too spicy for me."},
+  {e:"😋", w:"delicious", x:"Everything was delicious."},
+  {e:"🧾", w:"the bill", x:"Can I have the bill, please?"},
+  {e:"🙋", w:"order", x:"Are you ready to order?"}
+]);
+
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"What's your favourite food?", a:"My favourite food is…"},
+  {q:"What did you have for breakfast?", a:"I had…"},
+  {q:"Do you like spicy food?", a:"Yes / No, I…"},
+  {q:"What would you like to drink?", a:"I'd like…"},
+  {q:"Can I have the bill, please?", a:"Of course, here you are."}
+]);
+
+renderGapfill(document.getElementById('gapfill'), document.getElementById('revealBtn'), {
+  text:"I would like a {{}} of tea, please. This soup is very {{}}. Can I have the {{}}, please? It was {{}}, thank you.",
+  answers:["cup","tasty","bill","delicious"]
+});
+
+renderDialogue(document.getElementById('dialogue'), [
+  {s:"a", t:"Good morning! What would you like?"},
+  {s:"b", t:"I'd like a coffee, please."},
+  {s:"a", t:"Anything to eat?"},
+  {s:"b", t:"Yes, a sandwich, please."},
+  {s:"a", t:"Here you are."},
+  {s:"b", t:"Thank you. How much is it?"}
+], "Waiter");
+</script>
+</body>
+</html>

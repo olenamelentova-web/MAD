@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 2 — Family & Relationships</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-1.html">← Lesson 1</a>
+      <a class="primary" href="lesson-3.html">Lesson 3 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 02 · 90 min · updated</span>
+    <h1>Family & Relationships</h1>
+    <p>Vocabulary and structures to talk about her daughter, the boyfriend, and family life — her single most-used real-life topic. Grammar focus: possessives + have/has, used throughout every task below.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🧠 Family logic quiz</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Sentence builder</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: possessives + have/has</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">This is the grammar every other task in this lesson uses — so we drill it first, fast, before it shows up everywhere else.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: who goes with what?</span>
+      <p class="mat-sub">Click a pronoun on the left, then its matching possessive on the right (e.g. "she" → "her").</p>
+      <div id="grammarMatch"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: have or has?</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Five words from this lesson that are commonly mispronounced. Bold = stressed syllable. Click the purple button to hear it, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"My daughter's kind, funny boyfriend lives with his family."</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Describe-a-photo</span>
+      <p class="block-content">Bring family photos (hers, or stock photos) into Miro. She describes who's who: "This is my daughter. This is her boyfriend." Push for one extra detail each time ("What's he like?").</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Guess who</span>
+      <p class="block-content">You describe a person using this lesson's vocabulary ("He is tall and funny. He works as an engineer.") — she guesses who. Then reverse roles: she describes, you guess.</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. INTERACTIVE TASK 1: FAMILY LOGIC QUIZ ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🧠 Interactive task 1: Family logic quiz</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Read each mini-scenario aloud together, then she answers out loud before clicking. This checks she can actually reason about relationships in English, not just recite words.</p>
+    <div id="quiz"></div>
+  </section>
+
+  <!-- ============ 6. INTERACTIVE TASK 2: SENTENCE BUILDER ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🔤 Interactive task 2: Sentence builder</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Click the word chips in the correct order to build each sentence, then hit Check. Say the finished sentence out loud before moving to the next one.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — Olena and Sean</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — more about Sean</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — the boyfriend asks about family back home</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — describing the boyfriend to her sister</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">A phone call home — reinforces almost every word from today's vocabulary list.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Write 5 sentences describing the boyfriend using today's vocabulary, then record herself saying them out loud.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>Draw a simple family tree on Miro and narrate it</li>
+        <li>"Describe a stranger" — point to a random photo, guess the relationship</li>
+        <li>Compare families: "My family is big. Is yours?"</li>
+        <li>Quick "whose is this?" possessives drill with objects in the room</li>
+      </ul></div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">Lesson 2 of 9 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+/* ---------- Custom picture icons for vocabulary ---------- */
+const FAMILY_ICONS = {
+  family: '<circle cx="7" cy="9" r="2.1"/><path d="M3.2 19.5c0-2.7 1.7-4.6 3.8-4.6s3.8 1.9 3.8 4.6"/><circle cx="17" cy="9" r="2.1"/><path d="M13.2 19.5c0-2.7 1.7-4.6 3.8-4.6s3.8 1.9 3.8 4.6"/><circle cx="12" cy="6.2" r="2.4"/><path d="M7.8 20c0-2.9 1.9-5 4.2-5s4.2 2.1 4.2 5"/>',
+  person: '<circle cx="12" cy="8" r="3.2"/><path d="M5.5 21c0-3.9 2.9-6.7 6.5-6.7s6.5 2.8 6.5 6.7"/>',
+  couple: '<circle cx="8" cy="10" r="2.3"/><path d="M4 20.5c0-3 1.8-5.2 4-5.2s4 2.2 4 5.2"/><circle cx="16" cy="10" r="2.3"/><path d="M12 20.5c0-3 1.8-5.2 4-5.2s4 2.2 4 5.2"/><path d="M12 5.2c-1-1.3-2.9-1.3-3.3.1-.4 1.3.9 2.5 3.3 4.1 2.4-1.6 3.7-2.8 3.3-4.1-.4-1.4-2.3-1.4-3.3-.1Z"/>',
+  rings: '<circle cx="9" cy="14" r="4.2"/><circle cx="15" cy="14" r="4.2"/><path d="m10 6.5 2-3 2 3"/>',
+  house: '<path d="M4 11 12 4l8 7"/><path d="M6 10.2V20h12v-9.8"/><path d="M10 20v-5.5h4V20"/>',
+  kind: '<path d="M12 20.5s-6.8-4.2-8.9-8.4C1.9 8.7 3 5.3 6.1 4.7c2.1-.4 3.9.8 5.9 3.2 2-2.4 3.8-3.6 5.9-3.2 3.1.6 4.2 4 2.9 7.4-2.1 4.2-8.8 8.4-8.8 8.4Z"/>',
+  funny: '<circle cx="12" cy="12" r="9"/><path d="M8.3 9.8c.3-.9.9-.9 1.2 0M14.5 9.8c.3-.9.9-.9 1.2 0"/><path d="M7.6 13.8c1.1 2.6 3.2 3.7 4.4 3.7s3.3-1.1 4.4-3.7"/>',
+  tall: '<circle cx="12" cy="8.6" r="2.3"/><path d="M7.3 21c0-3.7 1.9-6.3 4.7-6.3s4.7 2.6 4.7 6.3"/><path d="M12 2v3.4M9.6 4.6 12 2l2.4 2.6"/>',
+  briefcase: '<rect x="3.5" y="8" width="17" height="11" rx="2"/><path d="M8.2 8V6.2a2 2 0 0 1 2-2h3.6a2 2 0 0 1 2 2V8"/><path d="M3.5 13.2h17"/>',
+  hug: '<circle cx="9" cy="8.6" r="2.2"/><circle cx="15" cy="8.6" r="2.2"/><path d="M4.7 20.5c0-3.5 1.6-6.1 4.1-7.1 1 1.4 2.1 1.4 3.1 0 2.5 1 4.1 3.6 4.1 7.1"/>'
+};
+function famIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${FAMILY_ICONS[name]}</svg>`;
+}
+
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"I", right:"my"},
+  {left:"You", right:"your"},
+  {left:"He", right:"his"},
+  {left:"She", right:"her"},
+  {left:"We", right:"our"},
+  {left:"They", right:"their"}
+]);
+
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"I {{}} a daughter. She {{}} a boyfriend. They {{}} a house in Dublin. He {{}} blue eyes.",
+  answers:["have","has","have","has"]
+});
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:famIcon('family'), w:"family", x:"I have a big family."},
+  {svg:famIcon('person'), w:"daughter", x:"My daughter's name is Olena."},
+  {svg:famIcon('couple'), w:"boyfriend", x:"My daughter's boyfriend is Irish."},
+  {svg:famIcon('rings'), w:"married", x:"They aren't married yet."},
+  {svg:famIcon('house'), w:"live together", x:"They live together in Dublin."},
+  {svg:famIcon('kind'), w:"kind", x:"He is very kind."},
+  {svg:famIcon('funny'), w:"funny", x:"He is kind and funny."},
+  {svg:famIcon('tall'), w:"tall", x:"He is quite tall."},
+  {svg:famIcon('briefcase'), w:"works as…", x:"He works as an engineer."},
+  {svg:famIcon('hug'), w:"close (family)", x:"We are a close family."}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"<b>DAUGH</b>-ter", word:"daughter", note:"silent \u2018gh\u2019 — sounds like \u2018DAW-ter\u2019"},
+  {stress:"<b>MARR</b>-ied", word:"married", note:"two syllables, not three"},
+  {stress:"<b>BOY</b>-friend", word:"boyfriend", note:"stress on the first part"},
+  {stress:"re-LA-tion-ship", word:"relationship", note:"stress on the second syllable"},
+  {stress:"<b>FAM</b>-i-ly", word:"family", note:"stress on the first syllable, three syllables total"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"Tell me about your daughter.", a:"My daughter is…"},
+  {q:"What's her boyfriend like?", a:"He is kind and…"},
+  {q:"Do you have brothers or sisters?", a:"Yes, I have…"},
+  {q:"Are you close to your family?", a:"Yes, we talk every…"},
+  {q:"Who do you talk to most?", a:"I talk to … most."}
+]);
+
+/* ---------- 5. Family logic quiz ---------- */
+renderQuiz(document.getElementById('quiz'), [
+  {q:"Olena is Yaroslava's daughter. So Yaroslava is Olena's…?", options:["mother","sister","daughter"], correctIndex:0},
+  {q:"Sean is Olena's boyfriend. So Olena is Sean's…?", options:["girlfriend","mother","sister"], correctIndex:0},
+  {q:"If Sean and Olena get married, Yaroslava will become Sean's…?", options:["mother-in-law","aunt","sister"], correctIndex:0},
+  {q:"Yaroslava has one daughter and no sons. How many children does she have?", options:["one","two","none"], correctIndex:0},
+  {q:"\u201CHe's very funny\u201D means he…", options:["makes people laugh","is often angry","doesn't talk much"], correctIndex:0}
+]);
+
+/* ---------- 6. Sentence builder ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"Describe the boyfriend:", words:["My","daughter's","boyfriend","is","kind","and","funny"]},
+  {hint:"Say where they live:", words:["They","live","together","in","Dublin"]},
+  {hint:"Talk about Yaroslava:", words:["She","has","one","daughter"]},
+  {hint:"Describe the family:", words:["My","family","is","very","close"]}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
+  text:"My daughter's name is {{}}. Her boyfriend is {{}}. He is very {{}} and {{}}. They {{}} together in Dublin.",
+  answers:["Olena","Sean","kind","funny","live"]
+});
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"Sean {{}} blue eyes and he is quite {{}}. He {{}} as an engineer. Yaroslava's family is very {{}}.",
+  answers:["has","tall","works","close"]
+});
+
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
+  {s:"a", t:"Tell me about your family back home."},
+  {s:"b", t:"I have a sister and two brothers."},
+  {s:"a", t:"Are you close?"},
+  {s:"b", t:"Yes, we talk every week."},
+  {s:"a", t:"What does your sister do?"},
+  {s:"b", t:"She is a teacher."}
+], "Boyfriend");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"a", t:"So, tell me about him!"},
+  {s:"b", t:"He's kind and very funny."},
+  {s:"a", t:"Is he tall?"},
+  {s:"b", t:"Yes, quite tall."},
+  {s:"a", t:"What does he do?"},
+  {s:"b", t:"He works as an engineer."},
+  {s:"a", t:"Do they live together?"},
+  {s:"b", t:"Yes, they live together in Dublin."}
+], "Sister");
+</script>
+</body>
+</html>

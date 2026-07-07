@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 8 — Small Talk & Weather</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-7.html">← Lesson 7</a>
+      <a class="primary" href="lesson-9.html">Lesson 9 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 08 · 60 min</span>
+    <h1>Small Talk & Weather</h1>
+    <p>The "glue" language — casual chit-chat so she can talk with the boyfriend beyond just answering direct questions.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="lesson-section" id="tabs">
+    <div class="subtabs">
+      <button class="subtab-btn" data-sub="plan" aria-selected="true">📋 Plan</button>
+      <button class="subtab-btn" data-sub="materials" aria-selected="false">🎒 Materials</button>
+    </div>
+
+    <div class="subpanel active" data-sub-panel="plan">
+      <div class="block">
+        <span class="block-label c-warmup">Warm-up</span>
+        <p class="block-content">"How's the weather today?"</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-vocab">Vocabulary</span>
+        <p class="block-content">Weather words, small-talk starters (How's it going? / Nice, isn't it? / Busy day?).</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-grammar">Grammar</span>
+        <p class="block-content">Simple present for general statements, <em>It's + adjective</em>.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-speaking">Speaking practice</span>
+        <div class="block-content"><ul>
+          <li>Small-talk cards on Miro — random prompts, she responds and asks something back</li>
+          <li>"Keep it going" — practice adding a follow-up question every time</li>
+        </ul></div>
+      </div>
+      <div class="block">
+        <span class="block-label c-roleplay">Roleplay</span>
+        <p class="block-content">Casual chat with the boyfriend while waiting for the daughter — weather, flight, general chit-chat.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-homework">Homework</span>
+        <p class="block-content">Have a 2-minute "chat" with a language app or family member, small talk only.</p>
+      </div>
+      <div class="block backup">
+        <span class="block-label">✦ Backup activities — if time remains</span>
+        <div class="block-content"><ul>
+          <li>Compliments and responses: "I like your…" / "Thank you!"</li>
+          <li>Comparing weather back home vs. in Ireland</li>
+          <li>Reacting naturally to news: "Really?" / "That's great!"</li>
+          <li>Practicing polite conversation exits: "See you later"</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="subpanel" data-sub-panel="materials">
+      <div class="mat-section">
+        <span class="mat-title">🗂️ Vocabulary cards</span>
+        <p class="mat-sub">Click a card to flip it and see the example sentence. Click "Listen" to hear it.</p>
+        <div class="vocab-grid" id="vocabGrid"></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">🗣️ Speaking prompt cards</span>
+        <p class="mat-sub">She answers out loud first — flip to check a sample answer.</p>
+        <div class="prompt-grid" id="promptGrid"></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">✏️ Fill in the blanks</span>
+        <div class="gapfill-box" id="gapfill"></div>
+        <div class="gapfill-controls"><button class="btn" id="revealBtn">Reveal answers</button></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">🎭 Roleplay script — Small talk while waiting</span>
+        <p class="mat-sub">Read it together first, then act it out from memory.</p>
+        <div class="dialogue" id="dialogue"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">Lesson 8 of 9 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+initSubtabs(document.getElementById('tabs'));
+
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {e:"☀️", w:"sunny", x:"It's very sunny today!"},
+  {e:"🌧️", w:"rainy", x:"It was rainy this morning."},
+  {e:"❄️", w:"cold", x:"It's much colder in Ukraine."},
+  {e:"🌤️", w:"warm", x:"It's nice and warm today."},
+  {e:"😴", w:"tired", x:"I'm a bit tired today."},
+  {e:"😌", w:"relaxed", x:"I feel relaxed on holiday."},
+  {e:"🚗", w:"traffic", x:"There was a lot of traffic."},
+  {e:"👋", w:"see you later", x:"See you later! Nice talking to you."}
+]);
+
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"What's the weather like today?", a:"It's…"},
+  {q:"How was your weekend?", a:"It was…"},
+  {q:"How are you feeling today?", a:"I'm feeling…"},
+  {q:"Nice weather, isn't it?", a:"Yes, very…"},
+  {q:"See you later!", a:"See you later! Nice talking to you."}
+]);
+
+renderGapfill(document.getElementById('gapfill'), document.getElementById('revealBtn'), {
+  text:"It's very {{}} today! How was your {{}}? I'm a bit {{}} today, but it's nice and {{}}.",
+  answers:["sunny","weekend","tired","warm"]
+});
+
+renderDialogue(document.getElementById('dialogue'), [
+  {s:"a", t:"Nice weather today, isn't it?"},
+  {s:"b", t:"Yes, very sunny! Much warmer than in Ukraine."},
+  {s:"a", t:"How was your flight?"},
+  {s:"b", t:"It was fine, thank you. A bit tiring."}
+], "Boyfriend");
+</script>
+</body>
+</html>

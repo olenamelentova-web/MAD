@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 7 — Travel & Getting Around</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-6.html">← Lesson 6</a>
+      <a class="primary" href="lesson-8.html">Lesson 8 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 07 · 60 min</span>
+    <h1>Travel & Getting Around</h1>
+    <p>Airport and transport English — lower frequency but high-stakes once a year.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="lesson-section" id="tabs">
+    <div class="subtabs">
+      <button class="subtab-btn" data-sub="plan" aria-selected="true">📋 Plan</button>
+      <button class="subtab-btn" data-sub="materials" aria-selected="false">🎒 Materials</button>
+    </div>
+
+    <div class="subpanel active" data-sub-panel="plan">
+      <div class="block">
+        <span class="block-label c-warmup">Warm-up</span>
+        <p class="block-content">"What was the last airport you were in like?"</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-vocab">Vocabulary</span>
+        <p class="block-content">Airport words (boarding pass, gate, luggage, security), transport (bus, taxi, ticket).</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-grammar">Grammar</span>
+        <p class="block-content"><em>Can you tell me…?</em> / <em>How do I get to…?</em> — polite requests and directions.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-speaking">Speaking practice</span>
+        <div class="block-content"><ul>
+          <li>Airport Miro map — navigate from check-in to gate, asking for help along the way</li>
+          <li>Directions drill: left, right, straight on, near, next to — on a Miro street map</li>
+        </ul></div>
+      </div>
+      <div class="block">
+        <span class="block-label c-roleplay">Roleplay</span>
+        <p class="block-content">Lost at the airport / asking a stranger for directions to the daughter's house.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-homework">Homework</span>
+        <p class="block-content">Practice asking "How do I get to…?" with 3 different destinations.</p>
+      </div>
+      <div class="block backup">
+        <span class="block-label">✦ Backup activities — if time remains</span>
+        <div class="block-content"><ul>
+          <li>Reading flight times and gate numbers aloud</li>
+          <li>Roleplay: giving an address to a taxi driver</li>
+          <li>"What's wrong?" — lost luggage, missed bus, wrong platform</li>
+          <li>Reverse roles: she gives directions to you on the Miro map</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="subpanel" data-sub-panel="materials">
+      <div class="mat-section">
+        <span class="mat-title">🗂️ Vocabulary cards</span>
+        <p class="mat-sub">Click a card to flip it and see the example sentence. Click "Listen" to hear it.</p>
+        <div class="vocab-grid" id="vocabGrid"></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">🗣️ Speaking prompt cards</span>
+        <p class="mat-sub">She answers out loud first — flip to check a sample answer.</p>
+        <div class="prompt-grid" id="promptGrid"></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">✏️ Fill in the blanks</span>
+        <div class="gapfill-box" id="gapfill"></div>
+        <div class="gapfill-controls"><button class="btn" id="revealBtn">Reveal answers</button></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">🎭 Roleplay script — Finding the gate</span>
+        <p class="mat-sub">Read it together first, then act it out from memory.</p>
+        <div class="dialogue" id="dialogue"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">Lesson 7 of 9 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+initSubtabs(document.getElementById('tabs'));
+
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {e:"🎫", w:"boarding pass", x:"Can I see your boarding pass?"},
+  {e:"🚪", w:"gate", x:"The gate is number twelve."},
+  {e:"🧳", w:"luggage", x:"Where do I collect my luggage?"},
+  {e:"🛂", w:"security", x:"Security is on the left."},
+  {e:"🚕", w:"taxi", x:"How much is a taxi to the city?"},
+  {e:"➡️", w:"straight on", x:"Go straight on, then turn left."},
+  {e:"⬅️", w:"turn left / right", x:"Turn right at the corner."},
+  {e:"📍", w:"far", x:"Is it far from here?"}
+]);
+
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"Where is gate 12?", a:"Excuse me, where is…?"},
+  {q:"How do I get to the toilet?", a:"How do I get to…?"},
+  {q:"How much is a taxi to the city?", a:"How much is…?"},
+  {q:"What's your address?", a:"My address is…"},
+  {q:"Is it far?", a:"Is it far from here?"}
+]);
+
+renderGapfill(document.getElementById('gapfill'), document.getElementById('revealBtn'), {
+  text:"Excuse me, {{}} do I get to gate twelve? Go {{}} on, then turn {{}}. Is it {{}} from here?",
+  answers:["how","straight","left","far"]
+});
+
+renderDialogue(document.getElementById('dialogue'), [
+  {s:"b", t:"Excuse me, where is gate 12?"},
+  {s:"a", t:"Go straight on, then turn left."},
+  {s:"b", t:"Thank you. Is it far?"},
+  {s:"a", t:"No, it's about five minutes."}
+], "Staff");
+</script>
+</body>
+</html>

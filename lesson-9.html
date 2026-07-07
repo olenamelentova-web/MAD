@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 9 — Review & Free Conversation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-8.html">← Lesson 8</a>
+      <a class="primary" href="index.html">Course home ✓</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 09 · 60 min</span>
+    <h1>Review & Free Conversation</h1>
+    <p>Pull everything together; assess how naturally she can now handle real situations. A roleplay marathon.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="lesson-section" id="tabs">
+    <div class="subtabs">
+      <button class="subtab-btn" data-sub="plan" aria-selected="true">📋 Plan</button>
+      <button class="subtab-btn" data-sub="materials" aria-selected="false">🎒 Materials</button>
+    </div>
+
+    <div class="subpanel active" data-sub-panel="plan">
+      <div class="block">
+        <span class="block-label c-warmup">Warm-up</span>
+        <p class="block-content">Free chat — no structure, just talk.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-vocab">Vocabulary</span>
+        <p class="block-content">Quick Miro board with key phrases from all 8 lessons — a memory jog, not a re-teach.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-grammar">Grammar</span>
+        <p class="block-content">—</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-speaking">Speaking practice</span>
+        <div class="block-content"><ul>
+          <li>Roleplay marathon, back to back: meeting the boyfriend & small talk, supermarket trip, yesterday/tomorrow, café order, asking for directions</li>
+        </ul></div>
+      </div>
+      <div class="block">
+        <span class="block-label c-roleplay">Reflection</span>
+        <p class="block-content">She reflects in English on what got easier and what's still hard.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-homework">Homework</span>
+        <p class="block-content">Optional: record before/after voice notes vs. Lesson 1 to show her own progress.</p>
+      </div>
+      <div class="block backup">
+        <span class="block-label">✦ Backup activities — if time remains</span>
+        <div class="block-content"><ul>
+          <li>"Random topic spinner" — 1-minute talks on earlier topics</li>
+          <li>Mixed "interview" pulling questions from across the course</li>
+          <li>She "teaches" you a phrase in Ukrainian</li>
+          <li>Her choice: repeat any scenario, this time with no notes</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="subpanel" data-sub-panel="materials">
+      <div class="mat-section">
+        <span class="mat-title">🗂️ Vocabulary cards — mixed review</span>
+        <p class="mat-sub">Click a card to flip it and see the example sentence. Click "Listen" to hear it.</p>
+        <div class="vocab-grid" id="vocabGrid"></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">🗣️ Speaking prompt cards — mixed review</span>
+        <p class="mat-sub">She answers out loud first — flip to check a sample answer.</p>
+        <div class="prompt-grid" id="promptGrid"></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">✏️ Fill in the blanks</span>
+        <div class="gapfill-box" id="gapfill"></div>
+        <div class="gapfill-controls"><button class="btn" id="revealBtn">Reveal answers</button></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">🎭 Roleplay script — Full marathon (mix of everything)</span>
+        <p class="mat-sub">Read it together first, then act it out from memory.</p>
+        <div class="dialogue" id="dialogue"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">Lesson 9 of 9 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+initSubtabs(document.getElementById('tabs'));
+
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {e:"👋", w:"Hello / Nice to meet you", x:"From Lesson 1"},
+  {e:"👨‍👩‍👧", w:"family / boyfriend", x:"From Lesson 2"},
+  {e:"🍽️", w:"menu / delicious", x:"From Lesson 3"},
+  {e:"🛒", w:"Where can I find…?", x:"From Lesson 4"},
+  {e:"⏰", w:"went / had / watched", x:"From Lesson 5"},
+  {e:"✈️", w:"I'm going to…", x:"From Lesson 6"},
+  {e:"🚪", w:"gate / straight on", x:"From Lesson 7"},
+  {e:"☀️", w:"It's sunny / How was your…?", x:"From Lesson 8"}
+]);
+
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"What's your name and where are you from?", a:"My name is… I'm from…"},
+  {q:"What did you do yesterday?", a:"Yesterday I…"},
+  {q:"What are your plans for tomorrow?", a:"Tomorrow I'm going to…"},
+  {q:"Where can I find the bread?", a:"Excuse me, where can I find…?"},
+  {q:"What's the weather like today?", a:"It's…"}
+]);
+
+renderGapfill(document.getElementById('gapfill'), document.getElementById('revealBtn'), {
+  text:"Hello, my {{}} is Yaroslava. Yesterday I {{}} to the shops. Tomorrow I am {{}} to visit my daughter. Excuse me, where can I {{}} the milk?",
+  answers:["name","went","going","find"]
+});
+
+renderDialogue(document.getElementById('dialogue'), [
+  {s:"a", t:"Hi Yaroslava! How was your flight?"},
+  {s:"b", t:"It was good, thank you. A bit tiring."},
+  {s:"a", t:"What are your plans while you're here?"},
+  {s:"b", t:"I'm going to visit the city and do some shopping."},
+  {s:"a", t:"Sounds great — see you later!"},
+  {s:"b", t:"See you later! Nice talking to you."}
+], "Boyfriend / Staff");
+</script>
+</body>
+</html>

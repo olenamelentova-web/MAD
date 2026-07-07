@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 5 — Past Simple: What Did You Do Yesterday?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-4.html">← Lesson 4</a>
+      <a class="primary" href="lesson-6.html">Lesson 6 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 05 · 60 min</span>
+    <h1>Past Simple — What Did You Do Yesterday?</h1>
+    <p>Comfortably talk about recent past events — key for catching up with the boyfriend or daughter about her trip or daily life.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="lesson-section" id="tabs">
+    <div class="subtabs">
+      <button class="subtab-btn" data-sub="plan" aria-selected="true">📋 Plan</button>
+      <button class="subtab-btn" data-sub="materials" aria-selected="false">🎒 Materials</button>
+    </div>
+
+    <div class="subpanel active" data-sub-panel="plan">
+      <div class="block">
+        <span class="block-label c-warmup">Warm-up</span>
+        <p class="block-content">"What did you have for breakfast?"</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-vocab">Vocabulary</span>
+        <p class="block-content">Common daily-routine verbs: woke up, went, ate, met, watched, worked.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-grammar">Grammar</span>
+        <p class="block-content">Past simple, regular/irregular — 10–12 high-frequency irregulars only.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-speaking">Speaking practice</span>
+        <div class="block-content"><ul>
+          <li>Yesterday timeline on Miro — she places sticky notes in order, narrates her day</li>
+          <li>Chain story: you say one sentence about yesterday, she continues, back and forth</li>
+        </ul></div>
+      </div>
+      <div class="block">
+        <span class="block-label c-roleplay">Roleplay</span>
+        <p class="block-content">Boyfriend calls and asks "How was your day?" — she gives a full spoken account.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-homework">Homework</span>
+        <p class="block-content">Voice note: "What I did yesterday" (5+ sentences).</p>
+      </div>
+      <div class="block backup">
+        <span class="block-label">✦ Backup activities — if time remains</span>
+        <div class="block-content"><ul>
+          <li>Compare yesterday vs. last week</li>
+          <li>Describe a memorable past day (e.g. her last Ireland trip)</li>
+          <li>Guess-the-action: mime or describe a past action</li>
+          <li>Light intro to "Have you ever…?" — just for exposure</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="subpanel" data-sub-panel="materials">
+      <div class="mat-section">
+        <span class="mat-title">🗂️ Vocabulary cards</span>
+        <p class="mat-sub">Click a card to flip it and see the example sentence. Click "Listen" to hear it.</p>
+        <div class="vocab-grid" id="vocabGrid"></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">🗣️ Speaking prompt cards</span>
+        <p class="mat-sub">She answers out loud first — flip to check a sample answer.</p>
+        <div class="prompt-grid" id="promptGrid"></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">✏️ Fill in the blanks</span>
+        <div class="gapfill-box" id="gapfill"></div>
+        <div class="gapfill-controls"><button class="btn" id="revealBtn">Reveal answers</button></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">🎭 Roleplay script — Catching up about yesterday</span>
+        <p class="mat-sub">Read it together first, then act it out from memory.</p>
+        <div class="dialogue" id="dialogue"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">Lesson 5 of 9 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+initSubtabs(document.getElementById('tabs'));
+
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {e:"⏰", w:"woke up", x:"I woke up at seven."},
+  {e:"🚶", w:"went", x:"I went to the shops."},
+  {e:"🍳", w:"ate / had", x:"I had breakfast at eight."},
+  {e:"🤝", w:"met", x:"I met my friend for coffee."},
+  {e:"📺", w:"watched", x:"I watched TV in the evening."},
+  {e:"🛍️", w:"bought", x:"I bought some vegetables."},
+  {e:"📞", w:"called", x:"I called my daughter."},
+  {e:"👀", w:"saw", x:"I saw an old friend yesterday."}
+]);
+
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"What did you do yesterday morning?", a:"Yesterday morning I…"},
+  {q:"Who did you meet last week?", a:"Last week I met…"},
+  {q:"What did you eat for dinner?", a:"I ate…"},
+  {q:"Did you go anywhere yesterday?", a:"Yes, I went to…"},
+  {q:"What did you watch on TV?", a:"I watched…"}
+]);
+
+renderGapfill(document.getElementById('gapfill'), document.getElementById('revealBtn'), {
+  text:"Yesterday I {{}} (wake up) at seven. I {{}} (have) breakfast. Then I {{}} (go) to the shops. In the evening I {{}} (watch) TV.",
+  answers:["woke up","had","went","watched"]
+});
+
+renderDialogue(document.getElementById('dialogue'), [
+  {s:"a", t:"How was your day?"},
+  {s:"b", t:"It was good. I went to the market and bought some vegetables."},
+  {s:"a", t:"What did you do in the evening?"},
+  {s:"b", t:"I watched a film and called my daughter."}
+], "Boyfriend");
+</script>
+</body>
+</html>

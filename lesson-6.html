@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 6 — Future Plans: What Are You Doing Tomorrow?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-5.html">← Lesson 5</a>
+      <a class="primary" href="lesson-7.html">Lesson 7 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 06 · 60 min</span>
+    <h1>Future Plans — What Are You Doing Tomorrow?</h1>
+    <p>Talk about upcoming plans — including her actual next trip to Ireland, which makes this immediately useful.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="lesson-section" id="tabs">
+    <div class="subtabs">
+      <button class="subtab-btn" data-sub="plan" aria-selected="true">📋 Plan</button>
+      <button class="subtab-btn" data-sub="materials" aria-selected="false">🎒 Materials</button>
+    </div>
+
+    <div class="subpanel active" data-sub-panel="plan">
+      <div class="block">
+        <span class="block-label c-warmup">Warm-up</span>
+        <p class="block-content">"What are you doing this weekend?"</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-vocab">Vocabulary</span>
+        <p class="block-content">Time expressions (tomorrow, next week, next year), travel-planning words.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-grammar">Grammar</span>
+        <p class="block-content"><em>going to</em> + verb, present continuous for fixed plans ("I'm flying on…").</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-speaking">Speaking practice</span>
+        <div class="block-content"><ul>
+          <li>Calendar on Miro — she fills in a week of plans and talks through it</li>
+          <li>"Plan an Ireland trip" — she describes what she'll do when she visits her daughter</li>
+        </ul></div>
+      </div>
+      <div class="block">
+        <span class="block-label c-roleplay">Roleplay</span>
+        <p class="block-content">Telling the boyfriend about her upcoming visit — dates, what she wants to do there.</p>
+      </div>
+      <div class="block">
+        <span class="block-label c-homework">Homework</span>
+        <p class="block-content">Describe her real plans for her next Ireland trip, spoken.</p>
+      </div>
+      <div class="block backup">
+        <span class="block-label">✦ Backup activities — if time remains</span>
+        <div class="block-content"><ul>
+          <li>Quick round robin: "What are your plans for the weekend?"</li>
+          <li>Packing list — name items she'll bring for the trip</li>
+          <li>Comparing planned vs. wished-for activities: "I'm going to… / I'd like to…"</li>
+          <li>Very light "What will you do if it rains?" — just for exposure</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="subpanel" data-sub-panel="materials">
+      <div class="mat-section">
+        <span class="mat-title">🗂️ Vocabulary cards</span>
+        <p class="mat-sub">Click a card to flip it and see the example sentence. Click "Listen" to hear it.</p>
+        <div class="vocab-grid" id="vocabGrid"></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">🗣️ Speaking prompt cards</span>
+        <p class="mat-sub">She answers out loud first — flip to check a sample answer.</p>
+        <div class="prompt-grid" id="promptGrid"></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">✏️ Fill in the blanks</span>
+        <div class="gapfill-box" id="gapfill"></div>
+        <div class="gapfill-controls"><button class="btn" id="revealBtn">Reveal answers</button></div>
+      </div>
+      <div class="mat-section">
+        <span class="mat-title">🎭 Roleplay script — Telling the boyfriend about the next visit</span>
+        <p class="mat-sub">Read it together first, then act it out from memory.</p>
+        <div class="dialogue" id="dialogue"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">Lesson 6 of 9 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+initSubtabs(document.getElementById('tabs'));
+
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {e:"📅", w:"next month", x:"Next month I'm visiting Ireland."},
+  {e:"✈️", w:"flight", x:"My flight is on the third."},
+  {e:"🧳", w:"pack", x:"I need to pack my suitcase."},
+  {e:"🛬", w:"arrive", x:"I arrive at 3 pm."},
+  {e:"🏘️", w:"stay", x:"I'm going to stay for two weeks."},
+  {e:"📝", w:"plan", x:"What's your plan for tomorrow?"},
+  {e:"🧭", w:"visit", x:"I want to visit the city centre."},
+  {e:"🙋‍♀️", w:"going to", x:"I'm going to see my daughter."}
+]);
+
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"What are you doing this weekend?", a:"This weekend I'm going to…"},
+  {q:"When is your next flight?", a:"My next flight is…"},
+  {q:"What are you going to do in Ireland?", a:"I'm going to…"},
+  {q:"What do you want to see?", a:"I want to see…"},
+  {q:"Are you excited?", a:"Yes, I'm very excited because…"}
+]);
+
+renderGapfill(document.getElementById('gapfill'), document.getElementById('revealBtn'), {
+  text:"Next month I am {{}} to visit my daughter. I am {{}} on the third of August. I {{}} to stay for two weeks.",
+  answers:["going","flying","plan"]
+});
+
+renderDialogue(document.getElementById('dialogue'), [
+  {s:"b", t:"I'm going to visit you in August."},
+  {s:"a", t:"That's great! What are you going to do here?"},
+  {s:"b", t:"I want to see the city and visit some shops."},
+  {s:"a", t:"I'll pick you up from the airport."}
+], "Boyfriend");
+</script>
+</body>
+</html>
