@@ -100,6 +100,20 @@ button.act.green{background:var(--mint);color:var(--ink);}
 .ooo{border:2.5px solid var(--ink);background:#fff;border-radius:12px;padding:9px 16px;font-family:'Baloo 2';font-weight:700;font-size:17px;cursor:pointer;box-shadow:3px 3px 0 rgba(33,48,63,.9);}
 .ooo.right{background:var(--mint);} .ooo.wrong{background:var(--coral);animation:shake .3s ease 2;}
 
+/* ---- mind map ---- */
+.mm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}
+.mm-note{border-radius:4px 4px 16px 4px;padding:12px 14px;box-shadow:0 5px 10px rgba(33,48,63,.16);}
+.mm-note b{font-family:'Baloo 2';font-size:16px;display:block;margin-bottom:5px;}
+.mm-edit{min-height:52px;background:rgba(255,255,255,.75);border:2px dashed #9fb2c6;border-radius:10px;padding:8px 10px;font-weight:700;font-size:16px;outline:none;}
+.mm-edit:focus{border-color:var(--ink);border-style:solid;background:#fff;}
+.mm-edit:empty::before{content:attr(data-ph);color:#a5b4c4;}
+
+/* ---- story order ---- */
+.st-slot{display:flex;align-items:center;gap:10px;}
+.st-slot .num{font-family:'Baloo 2';font-weight:700;font-size:19px;width:28px;text-align:center;flex-shrink:0;}
+.st-slot .slot{flex:1;min-height:54px;justify-content:flex-start;padding:4px 8px;}
+.chip.sent{font-size:15px;padding:8px 12px;white-space:normal;text-align:left;line-height:1.25;}
+
 .confetti{position:fixed;top:-20px;font-size:22px;z-index:1000;pointer-events:none;animation:fall linear forwards;}
 @keyframes fall{to{transform:translateY(110vh) rotate(720deg);}}
 footer{text-align:center;font-weight:800;color:#7b8ea1;font-size:12px;letter-spacing:.6px;padding:20px;}
@@ -139,6 +153,36 @@ footer{text-align:center;font-weight:800;color:#7b8ea1;font-size:12px;letter-spa
     <div class="pool" id="ma-pool"></div>
     <div class="match-grid" id="ma-grid"></div>
     <div class="feedback" id="ma-fb"></div>
+  </div>
+
+  <div class="activity" id="spell">
+    <span class="tag g">Activity 3</span>
+    <h2>Spell it! 🔤</h2>
+    <p class="instr">Drag the letters to spell the word — and <b>say each letter out loud in English</b> as you drag it! (Real airport skill: spelling your name at the desk.)</p>
+    <div style="font-size:44px;text-align:center;margin-bottom:8px;" id="sp-emoji">☕</div>
+    <div class="pool" id="sp-pool" style="justify-content:center;"></div>
+    <div class="slots" id="sp-slots" style="justify-content:center;"></div>
+    <div style="text-align:center;">
+      <button class="act" id="sp-check">Check ✓</button>
+      <button class="act ghost" id="sp-reset">Start again</button>
+      <button class="act green" id="sp-next" style="display:none;">Next word →</button>
+    </div>
+    <div class="feedback" id="sp-fb" style="text-align:center;"></div>
+  </div>
+
+  <div class="activity" id="memap">
+    <span class="tag l">Activity 4</span>
+    <h2>My "Me" mind map 🗺️</h2>
+    <p class="instr">Click a sticky note and type <b>words only</b> (not sentences!). Then point at each note and say the full sentence <b>out loud</b>: <i>"My name is… I'm from… I like…"</i></p>
+    <div class="mm-grid">
+      <div class="mm-note" style="background:var(--sun-soft);"><b>👋 Name & age</b><div class="mm-edit" contenteditable="true" data-ph="Yaroslava, 54…"></div></div>
+      <div class="mm-note" style="background:var(--sky-soft);"><b>🏠 Where I live</b><div class="mm-edit" contenteditable="true" data-ph="Ukraine, my city…"></div></div>
+      <div class="mm-note" style="background:var(--coral-soft);"><b>👨‍👩‍👧 Family</b><div class="mm-edit" contenteditable="true" data-ph="daughter, Ireland…"></div></div>
+      <div class="mm-note" style="background:var(--mint-soft);"><b>💼 Work</b><div class="mm-edit" contenteditable="true" data-ph="my job…"></div></div>
+      <div class="mm-note" style="background:var(--lav-soft);"><b>🎨 Free time</b><div class="mm-edit" contenteditable="true" data-ph="cooking, garden…"></div></div>
+      <div class="mm-note" style="background:var(--sun-soft);"><b>📚 Why English?</b><div class="mm-edit" contenteditable="true" data-ph="my family…"></div></div>
+    </div>
+    <p class="instr" style="margin-top:10px;margin-bottom:0;">⭐ Level up: hide this box (scroll away) and say your whole introduction from memory — 1 minute!</p>
   </div>
 
 </div>
@@ -184,6 +228,31 @@ footer{text-align:center;font-weight:800;color:#7b8ea1;font-size:12px;letter-spa
     <button class="act ghost" id="tl-reset" style="margin-top:10px;">Put all cards back</button>
   </div>
 
+  <div class="activity" id="reaction">
+    <span class="tag c">Activity 3</span>
+    <h2>React! Keep the chat alive 🔥</h2>
+    <p class="instr">Someone says something — tap the best reaction, <b>out loud and with feeling!</b> Even 2 words keep a conversation going.</p>
+    <div class="pp-card" id="re-card" style="margin:0 auto 14px;background:var(--coral-soft);">
+      <div class="phrase" id="re-phrase">Press Start!</div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:8px;" id="re-btns"></div>
+    <div style="text-align:center;">
+      <button class="act" id="re-next">Start ▶</button>
+    </div>
+    <div class="feedback" id="re-fb" style="text-align:center;"></div>
+  </div>
+
+  <div class="activity" id="story">
+    <span class="tag y">Activity 4</span>
+    <h2>Put the story in order 📖</h2>
+    <p class="instr">Drag the sentences into the right order, 1 → 5. The <b>glue words</b> (first, then, after that…) tell you the order! Then read the whole story out loud.</p>
+    <div class="pool" id="st-pool"></div>
+    <div id="st-slots" style="display:flex;flex-direction:column;gap:8px;margin-bottom:12px;"></div>
+    <button class="act" id="st-check">Check ✓</button>
+    <button class="act ghost" id="st-reset">Start again</button>
+    <div class="feedback" id="st-fb"></div>
+  </div>
+
   <div class="activity" id="ooo">
     <span class="tag l">Bonus game</span>
     <h2>Odd one out 🧠</h2>
@@ -211,7 +280,10 @@ function makeDraggable(el, dropSelector, onDrop, onReturn){
     if(el.dataset.locked) return;
     e.preventDefault();
     const r=el.getBoundingClientRect();
-    drag={el, dx:e.clientX-r.left, dy:e.clientY-r.top, parent:el.parentNode, next:el.nextSibling, dropSelector, onDrop, onReturn, w:r.width};
+    const ph=document.createElement('div');
+    ph.style.width=r.width+'px'; ph.style.height=r.height+'px'; ph.style.visibility='hidden'; ph.style.flexShrink='0';
+    el.parentNode.insertBefore(ph, el.nextSibling);
+    drag={el, dx:e.clientX-r.left, dy:e.clientY-r.top, parent:el.parentNode, next:ph, ph, dropSelector, onDrop, onReturn, w:r.width};
     el.classList.add('dragging');
     el.style.position='fixed'; el.style.left=r.left+'px'; el.style.top=r.top+'px'; el.style.zIndex=999; el.style.width=r.width+'px';
     document.body.appendChild(el);
@@ -237,9 +309,10 @@ function makeDraggable(el, dropSelector, onDrop, onReturn){
     if(zone) placed=drag.onDrop(el,zone,e);
     if(!placed){
       if(drag.onReturn){ drag.onReturn(el); }
-      else if(drag.next&&drag.next.parentNode===drag.parent) drag.parent.insertBefore(el,drag.next);
+      else if(drag.ph&&drag.ph.parentNode===drag.parent) drag.parent.insertBefore(el,drag.ph);
       else drag.parent.appendChild(el);
     }
+    if(drag.ph) drag.ph.remove();
     drag=null;
   });
 }
@@ -416,7 +489,138 @@ document.getElementById('tl-reset').addEventListener('click',()=>{
   document.querySelectorAll('#tl-canvas .rcard').forEach(el=>{el.classList.remove('placed');el.style.left='';el.style.top='';tlTray.appendChild(el);});
 });
 
-/* ================= 2C: odd one out ================= */
+/* ================= 1C: spell it ================= */
+const spWords=[
+  {w:'COFFEE',e:'☕'},{w:'FAMILY',e:'👨‍👩‍👧'},{w:'DUBLIN',e:'☘️'},{w:'DAUGHTER',e:'💛'},{w:'IRELAND',e:'🇮🇪'}
+];
+let spIdx=0;
+const spPool=document.getElementById('sp-pool'), spSlots=document.getElementById('sp-slots'), spFb=document.getElementById('sp-fb');
+function loadSpell(){
+  const {w,e}=spWords[spIdx];
+  document.getElementById('sp-emoji').textContent=e;
+  spPool.innerHTML=''; spSlots.innerHTML=''; spFb.textContent=''; spFb.className='feedback';
+  document.getElementById('sp-next').style.display='none';
+  [...w].forEach(()=>{const sl=document.createElement('div');sl.className='slot';sl.style.minWidth='52px';spSlots.appendChild(sl);});
+  let letters=shuffle([...w].map((ch,i)=>({ch,i})));
+  if(letters.map(l=>l.ch).join('')===w) letters=letters.reverse();
+  letters.forEach(({ch,i})=>{
+    const c=document.createElement('div'); c.className='chip b'; c.textContent=ch; c.dataset.word=ch; c.style.fontSize='20px'; c.style.padding='8px 14px';
+    spPool.appendChild(c);
+    makeDraggable(c,'#spell .slot, #sp-pool',(el,zone)=>{
+      if(zone.id==='sp-pool'){zone.appendChild(el);return true;}
+      if(zone.classList.contains('slot')){
+        if(zone.firstChild) spPool.appendChild(zone.firstChild);
+        zone.appendChild(el); return true;
+      }
+      return false;
+    });
+  });
+}
+document.getElementById('sp-check').addEventListener('click',()=>{
+  const {w}=spWords[spIdx];
+  const got=[...spSlots.children].map(sl=>sl.firstChild?sl.firstChild.dataset.word:'').join('');
+  if(got===w){
+    spFb.textContent='✅ '+w+'! Now spell it out loud, letter by letter!';
+    spFb.className='feedback good'; confetti();
+    if(spIdx<spWords.length-1) document.getElementById('sp-next').style.display='inline-block';
+    else spFb.textContent='🏆 All words spelled! You are ready for the airport desk!';
+  }else{
+    spFb.textContent='🤔 Not yet — say each letter in English as you drag it.';
+    spFb.className='feedback bad'; spSlots.classList.add('shake');
+    setTimeout(()=>spSlots.classList.remove('shake'),700);
+  }
+});
+document.getElementById('sp-reset').addEventListener('click',loadSpell);
+document.getElementById('sp-next').addEventListener('click',()=>{spIdx=Math.min(spIdx+1,spWords.length-1);loadSpell();});
+loadSpell();
+
+/* ================= 2C: reaction game ================= */
+const reactions=['That\u2019s nice!','Oh no!','Wow!','Me too!','Really?'];
+const reRounds=[
+  {s:'I lost my keys this morning.', ok:['Oh no!']},
+  {s:'My daughter is coming tomorrow!', ok:['That\u2019s nice!','Wow!']},
+  {s:'I got up at 5 o\u2019clock today.', ok:['Wow!','Oh no!','Really?']},
+  {s:'I love coffee.', ok:['Me too!','Really?']},
+  {s:'It\u2019s raining again…', ok:['Oh no!']},
+  {s:'We\u2019re going to Dublin on Saturday!', ok:['That\u2019s nice!','Wow!']},
+  {s:'My cat can open the door.', ok:['Really?','Wow!']},
+  {s:'This cake is delicious!', ok:['Me too!','Really?','That\u2019s nice!']}
+];
+let reOrder=shuffle([...reRounds]), rePos=-1, reLock=false;
+const rePhrase=document.getElementById('re-phrase'), reBtns=document.getElementById('re-btns'), reFb=document.getElementById('re-fb');
+reactions.forEach(r=>{
+  const b=document.createElement('button'); b.className='ooo'; b.textContent=r; b.style.background='var(--coral-soft)';
+  b.addEventListener('click',()=>{
+    if(rePos<0||reLock) return;
+    const round=reOrder[rePos];
+    if(round.ok.includes(r)){
+      b.style.background='var(--mint)'; reLock=true;
+      reFb.textContent='✅ Perfect reaction! Now say it again — with FEELING! 🎭';
+      reFb.className='feedback good'; confetti();
+    }else{
+      b.classList.add('wrong');
+      reFb.textContent='🤔 Hmm — is this good news or bad news?';
+      reFb.className='feedback bad';
+      setTimeout(()=>b.classList.remove('wrong'),900);
+    }
+  });
+  reBtns.appendChild(b);
+});
+document.getElementById('re-next').addEventListener('click',()=>{
+  rePos++; if(rePos>=reOrder.length){reOrder=shuffle([...reRounds]);rePos=0;}
+  reLock=false; reFb.textContent=''; reFb.className='feedback';
+  [...reBtns.children].forEach(b=>b.style.background='var(--coral-soft)');
+  rePhrase.textContent='\u201C'+reOrder[rePos].s+'\u201D';
+  document.getElementById('re-next').textContent='Next ▶';
+});
+
+/* ================= 2D: story order ================= */
+const storySentences=[
+  'I usually get up at seven.',
+  'First I have coffee.',
+  'Then I have breakfast.',
+  'In the evening I cook dinner and call my daughter.',
+  'After that I watch TV and go to bed.'
+];
+const stPool=document.getElementById('st-pool'), stSlots=document.getElementById('st-slots'), stFb=document.getElementById('st-fb');
+function loadStory(){
+  stPool.innerHTML=''; stSlots.innerHTML=''; stFb.textContent=''; stFb.className='feedback';
+  storySentences.forEach((s,i)=>{
+    const row=document.createElement('div'); row.className='st-slot';
+    row.innerHTML=`<div class="num">${i+1}.</div>`;
+    const sl=document.createElement('div'); sl.className='slot'; row.appendChild(sl);
+    stSlots.appendChild(row);
+  });
+  let order=shuffle(storySentences.map((s,i)=>({s,i})));
+  if(order.map(o=>o.i).join()===storySentences.map((s,i)=>i).join()) order=order.reverse();
+  order.forEach(({s,i})=>{
+    const c=document.createElement('div'); c.className='chip sent '+['y','b','g','c','l'][i%5]; c.textContent=s; c.dataset.word=i;
+    stPool.appendChild(c);
+    makeDraggable(c,'#story .slot, #st-pool',(el,zone)=>{
+      if(zone.id==='st-pool'){zone.appendChild(el);return true;}
+      if(zone.classList.contains('slot')){
+        if(zone.firstChild) stPool.appendChild(zone.firstChild);
+        zone.appendChild(el); return true;
+      }
+      return false;
+    });
+  });
+}
+document.getElementById('st-check').addEventListener('click',()=>{
+  const got=[...stSlots.querySelectorAll('.slot')].map(sl=>sl.firstChild?sl.firstChild.dataset.word:'');
+  if(got.join()==storySentences.map((s,i)=>i).join()){
+    stFb.textContent='✅ Perfect story! Now read it out loud, nice and slow — then tell YOUR real day the same way!';
+    stFb.className='feedback good'; confetti();
+  }else{
+    stFb.textContent='🤔 Not quite — look for the glue words: usually → First → Then → In the evening → After that.';
+    stFb.className='feedback bad'; stSlots.classList.add('shake');
+    setTimeout(()=>stSlots.classList.remove('shake'),700);
+  }
+});
+document.getElementById('st-reset').addEventListener('click',loadStory);
+loadStory();
+
+/* ================= 2E: odd one out ================= */
 const oooData=[
   {words:['breakfast','lunch','Tuesday','dinner'], odd:'Tuesday', why:'Tuesday is a day, not food!'},
   {words:['coffee','tea','bed','juice'], odd:'bed', why:'You don\u2019t drink a bed! 😄'},
