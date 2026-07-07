@@ -340,3 +340,13 @@ a{color:inherit;}
 .lesson-hero .eyebrow{margin-bottom:14px;}
 .lesson-hero h1{color:#fff; font-size:clamp(26px,4vw,38px); margin-bottom:8px;}
 .lesson-hero p{color:#B9CBD6; font-size:14.5px; max-width:600px; margin:0;}
+
+/* ============ ILLUSTRATED PHOTO GALLERY ============ */
+.photo-gallery{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:16px; margin-top:14px;}
+.photo-card{background:#fff; border:1px solid #F0E7D2; border-radius:16px; overflow:hidden; box-shadow:0 10px 22px -16px rgba(15,36,54,0.25);}
+.photo-card svg{display:block; width:100%; height:auto;}
+.photo-card img{display:block; width:100%; height:210px; object-fit:cover; background:var(--paper-dim);}
+.photo-hero{background:#fff; border:1px solid #F0E7D2; border-radius:16px; overflow:hidden; box-shadow:0 10px 22px -16px rgba(15,36,54,0.25); margin:14px 0;}
+.photo-hero img{display:block; width:100%; height:320px; object-fit:cover; background:var(--paper-dim);}
+.photo-caption{padding:12px 14px; font-size:13px; color:var(--ink-soft);}
+.photo-caption strong{color:var(--ink); display:block; font-family:var(--font-display); font-size:13.5px; margin-bottom:2px;}
