@@ -62,6 +62,26 @@
       <div class="gapfill-box" id="grammarGapfill"></div>
       <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
     </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: say the full sentence</span>
+      <p class="mat-sub">Read the cue out loud, then she says the full sentence with correct have/has — no writing, no flipping until she's answered. Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: possessive swap chain</span>
+      <p class="mat-sub">Say the sentence, then say it again with the new person in brackets — out loud, back and forth, no pausing to think between them.</p>
+      <div class="block-content">
+        <ol>
+          <li>"This is my daughter." → (he) → <em>"This is his daughter."</em></li>
+          <li>"This is her boyfriend." → (they) → <em>"This is their boyfriend."</em></li>
+          <li>"This is our house." → (I) → <em>"This is my house."</em></li>
+          <li>"This is his family." → (she) → <em>"This is her family."</em></li>
+          <li>"This is your daughter." → (we) → <em>"This is our daughter."</em></li>
+        </ol>
+      </div>
+    </div>
   </section>
 
   <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
@@ -230,6 +250,15 @@ renderGapfill(document.getElementById('grammarGapfill'), document.getElementById
   text:"I {{}} a daughter. She {{}} a boyfriend. They {{}} a house in Dublin. He {{}} blue eyes.",
   answers:["have","has","have","has"]
 });
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"I / a daughter", a:"I have a daughter."},
+  {q:"She / a boyfriend", a:"She has a boyfriend."},
+  {q:"They / a house in Dublin", a:"They have a house in Dublin."},
+  {q:"He / blue eyes", a:"He has blue eyes."},
+  {q:"We / a big family", a:"We have a big family."},
+  {q:"You / two brothers", a:"You have two brothers."}
+]);
 
 /* ---------- 2. Vocabulary with pictures ---------- */
 renderVocabGrid(document.getElementById('vocabGrid'), [

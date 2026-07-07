@@ -62,6 +62,26 @@
       <div class="gapfill-box" id="grammarGapfill"></div>
       <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
     </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: 'd like or like?</span>
+      <p class="mat-sub">Read the cue out loud, then she says the full sentence — "'d like" for a request right now, "like/likes" for a general preference. Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: pronoun swap chain</span>
+      <p class="mat-sub">Say the sentence, then say it again with the new person in brackets — out loud, back and forth, no pausing to think between them.</p>
+      <div class="block-content">
+        <ol>
+          <li>"I'd like a coffee." → (she) → <em>"She'd like a coffee."</em></li>
+          <li>"We don't like spicy food." → (he) → <em>"He doesn't like spicy food."</em></li>
+          <li>"They'd like to order now." → (I) → <em>"I'd like to order now."</em></li>
+          <li>"She likes sweet food." → (we) → <em>"We like sweet food."</em></li>
+          <li>"He'd like the bill." → (you) → <em>"You'd like the bill."</em></li>
+        </ol>
+      </div>
+    </div>
   </section>
 
   <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
@@ -230,6 +250,15 @@ renderGapfill(document.getElementById('grammarGapfill'), document.getElementById
   text:"I {{}} coffee, but I {{}} tea. She {{}} spicy food. We {{}} to order now.",
   answers:["like","don't like","likes","'d like"]
 });
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"I / a coffee (right now)", a:"I'd like a coffee."},
+  {q:"She / spicy food (in general)", a:"She likes spicy food."},
+  {q:"We / to try the new restaurant", a:"We'd like to try the new restaurant."},
+  {q:"They / sweet food (in general)", a:"They like sweet food."},
+  {q:"He / coffee (dislike, in general)", a:"He doesn't like coffee."},
+  {q:"You / a table for two", a:"You'd like a table for two."}
+]);
 
 /* ---------- 2. Vocabulary with pictures ---------- */
 renderVocabGrid(document.getElementById('vocabGrid'), [
