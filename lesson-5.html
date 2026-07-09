@@ -23,100 +23,270 @@
 
 <header class="lesson-hero">
   <div class="wrap">
-    <span class="eyebrow">Lesson 05 · 60 min</span>
+    <span class="eyebrow">Lesson 05 · 90 min · updated</span>
     <h1>Past Simple — What Did You Do Yesterday?</h1>
-    <p>Comfortably talk about recent past events — key for catching up with the boyfriend or daughter about her trip or daily life.</p>
+    <p>Comfortably talk about recent past events. Grammar focus: past simple (regular and key irregular verbs), used throughout every task below.</p>
   </div>
 </header>
 
 <div class="wrap">
-  <section class="lesson-section" id="tabs">
-    <div class="subtabs">
-      <button class="subtab-btn" data-sub="plan" aria-selected="true">📋 Plan</button>
-      <button class="subtab-btn" data-sub="materials" aria-selected="false">🎒 Materials</button>
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🧠 Irregular verb quiz</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Sentence builder</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: past simple</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">A handful of irregular verbs cover most of what she'll ever need to say about yesterday — we drill those first.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: base verb → past form</span>
+      <p class="mat-sub">Click a base verb on the left, then its past form on the right.</p>
+      <div id="grammarMatch"></div>
     </div>
 
-    <div class="subpanel active" data-sub-panel="plan">
-      <div class="block">
-        <span class="block-label c-warmup">Warm-up</span>
-        <p class="block-content">"What did you have for breakfast?"</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-vocab">Vocabulary</span>
-        <p class="block-content">Common daily-routine verbs: woke up, went, ate, met, watched, worked.</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-grammar">Grammar</span>
-        <p class="block-content">Past simple, regular/irregular — 10–12 high-frequency irregulars only.</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-speaking">Speaking practice</span>
-        <div class="block-content"><ul>
-          <li>Yesterday timeline on Miro — she places sticky notes in order, narrates her day</li>
-          <li>Chain story: you say one sentence about yesterday, she continues, back and forth</li>
-        </ul></div>
-      </div>
-      <div class="block">
-        <span class="block-label c-roleplay">Roleplay</span>
-        <p class="block-content">Boyfriend calls and asks "How was your day?" — she gives a full spoken account.</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-homework">Homework</span>
-        <p class="block-content">Voice note: "What I did yesterday" (5+ sentences).</p>
-      </div>
-      <div class="block backup">
-        <span class="block-label">✦ Backup activities — if time remains</span>
-        <div class="block-content"><ul>
-          <li>Compare yesterday vs. last week</li>
-          <li>Describe a memorable past day (e.g. her last Ireland trip)</li>
-          <li>Guess-the-action: mime or describe a past action</li>
-          <li>Light intro to "Have you ever…?" — just for exposure</li>
-        </ul></div>
-      </div>
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: fill the past form</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
     </div>
 
-    <div class="subpanel" data-sub-panel="materials">
-      <div class="mat-section">
-        <span class="mat-title">🗂️ Vocabulary cards</span>
-        <p class="mat-sub">Click a card to flip it and see the example sentence. Click "Listen" to hear it.</p>
-        <div class="vocab-grid" id="vocabGrid"></div>
-      </div>
-      <div class="mat-section">
-        <span class="mat-title">🗣️ Speaking prompt cards</span>
-        <p class="mat-sub">She answers out loud first — flip to check a sample answer.</p>
-        <div class="prompt-grid" id="promptGrid"></div>
-      </div>
-      <div class="mat-section">
-        <span class="mat-title">✏️ Fill in the blanks</span>
-        <div class="gapfill-box" id="gapfill"></div>
-        <div class="gapfill-controls"><button class="btn" id="revealBtn">Reveal answers</button></div>
-      </div>
-      <div class="mat-section">
-        <span class="mat-title">🎭 Roleplay script — Catching up about yesterday</span>
-        <p class="mat-sub">Read it together first, then act it out from memory.</p>
-        <div class="dialogue" id="dialogue"></div>
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: say the full sentence</span>
+      <p class="mat-sub">Read the cue out loud, then she says the full past-tense sentence. Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: subject swap chain</span>
+      <p class="mat-sub">Say the sentence, then say it again with the new person — out loud, back and forth, no pausing.</p>
+      <div class="block-content">
+        <ol>
+          <li>"I went to the shops." → (she) → <em>"She went to the shops."</em></li>
+          <li>"We watched TV." → (they) → <em>"They watched TV."</em></li>
+          <li>"He bought a present." → (I) → <em>"I bought a present."</em></li>
+          <li>"She had breakfast." → (we) → <em>"We had breakfast."</em></li>
+          <li>"They met their friends." → (he) → <em>"He met his friends."</em></li>
+        </ol>
       </div>
     </div>
   </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">The "-ed" ending changes sound depending on the verb — this is the single biggest past-simple pronunciation trap. Click the purple button to hear each one, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"She watched, walked, and talked to her worried worker."</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Yesterday timeline</span>
+      <p class="block-content">On Miro, she places sticky notes in order along a timeline and narrates her day, start to finish, in the past simple.</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Chain story</span>
+      <p class="block-content">You say one sentence about yesterday, she continues with the next one — back and forth, building a shared story.</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. INTERACTIVE TASK 1: IRREGULAR VERB QUIZ ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🧠 Interactive task 1: Irregular verb quiz</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">She answers out loud first, then clicks. Irregular past forms don't follow a pattern, so this is pure recall practice.</p>
+    <div id="quiz"></div>
+  </section>
+
+  <!-- ============ 6. INTERACTIVE TASK 2: SENTENCE BUILDER ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🔤 Interactive task 2: Sentence builder</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Click the word chips in the correct order to build each sentence, then hit Check. Say the finished sentence out loud before moving to the next one.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — yesterday</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — last weekend</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — catching up about yesterday</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — a call with her sister</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">A longer catch-up call, reinforcing several past-tense verbs together.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Write 5 sentences about last week using the past simple, then record herself saying them out loud.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>Compare yesterday vs. last week</li>
+        <li>Describe a memorable past day (e.g. her last Ireland trip)</li>
+        <li>Guess-the-action: mime or describe a past action</li>
+        <li>Light intro to "Have you ever…?" — just for exposure</li>
+      </ul></div>
+    </div>
+  </section>
+
 </div>
 
 <footer class="site-footer">Lesson 5 of 9 · <a href="index.html">Back to course home</a></footer>
 
 <script src="script.js"></script>
 <script>
-initSubtabs(document.getElementById('tabs'));
+/* ---------- Custom picture icons for vocabulary ---------- */
+const PAST_ICONS = {
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>',
+  go: '<path d="M5 12h13"/><path d="m13 6 6 6-6 6"/>',
+  plate: '<circle cx="12" cy="13" r="7.5"/><path d="M9 8.5v9M15 8v4.5c0 1-1 1.7-2 1.7"/>',
+  handshake: '<path d="M2.5 13h5l2.2-2.2 2.2 2.2h5"/><path d="M8 10.6 5.7 13l2.3 2.4M16 10.6 18.3 13 16 15.4"/>',
+  tv: '<rect x="3" y="5" width="18" height="12" rx="1.6"/><path d="M9 20h6M12 17v3"/>',
+  bag: '<path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>',
+  phone: '<rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/>',
+  eye: '<path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="2.6"/>',
+  briefcase: '<rect x="3.5" y="8" width="17" height="11" rx="2"/><path d="M8.2 8V6.2a2 2 0 0 1 2-2h3.6a2 2 0 0 1 2 2V8"/><path d="M3.5 13.2h17"/>',
+  home: '<path d="M4 11 12 4l8 7"/><path d="M6 10.2V20h12v-9.8"/><path d="M14 20v-6h-3v6"/>'
+};
+function pastIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${PAST_ICONS[name]}</svg>`;
+}
 
-renderVocabGrid(document.getElementById('vocabGrid'), [
-  {e:"⏰", w:"woke up", x:"I woke up at seven."},
-  {e:"🚶", w:"went", x:"I went to the shops."},
-  {e:"🍳", w:"ate / had", x:"I had breakfast at eight."},
-  {e:"🤝", w:"met", x:"I met my friend for coffee."},
-  {e:"📺", w:"watched", x:"I watched TV in the evening."},
-  {e:"🛍️", w:"bought", x:"I bought some vegetables."},
-  {e:"📞", w:"called", x:"I called my daughter."},
-  {e:"👀", w:"saw", x:"I saw an old friend yesterday."}
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"go", right:"went"},
+  {left:"eat", right:"ate"},
+  {left:"have", right:"had"},
+  {left:"watch", right:"watched"},
+  {left:"meet", right:"met"},
+  {left:"buy", right:"bought"}
 ]);
 
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"Last week she {{}} her sister. They {{}} dinner together. She {{}} a present. Then she {{}} home.",
+  answers:["visited","ate","bought","went"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"I / go / to the shops", a:"I went to the shops."},
+  {q:"She / have / breakfast", a:"She had breakfast."},
+  {q:"They / watch / TV", a:"They watched TV."},
+  {q:"He / buy / a present", a:"He bought a present."},
+  {q:"We / meet / our friends", a:"We met our friends."},
+  {q:"You / see / an old friend", a:"You saw an old friend."}
+]);
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:pastIcon('clock'), w:"woke up", x:"I woke up at seven."},
+  {svg:pastIcon('go'), w:"went", x:"I went to the shops."},
+  {svg:pastIcon('plate'), w:"had / ate", x:"I had breakfast at eight."},
+  {svg:pastIcon('handshake'), w:"met", x:"I met my friend for coffee."},
+  {svg:pastIcon('tv'), w:"watched", x:"I watched TV in the evening."},
+  {svg:pastIcon('bag'), w:"bought", x:"I bought some vegetables."},
+  {svg:pastIcon('phone'), w:"called", x:"I called my daughter."},
+  {svg:pastIcon('eye'), w:"saw", x:"I saw an old friend yesterday."},
+  {svg:pastIcon('briefcase'), w:"worked", x:"I worked in the morning."},
+  {svg:pastIcon('home'), w:"came home", x:"I came home at six."}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"watch<b>-t</b>", word:"watched", note:"-ed sounds like /t/ \u2014 one extra sound, no extra syllable"},
+  {stress:"call<b>-d</b>", word:"called", note:"-ed sounds like /d/ \u2014 one extra sound, no extra syllable"},
+  {stress:"want-<b>id</b>", word:"wanted", note:"-ed sounds like /\u026Ad/ \u2014 a whole extra syllable"},
+  {stress:"work<b>-t</b>", word:"worked", note:"-ed sounds like /t/"},
+  {stress:"visit-<b>id</b>", word:"visited", note:"-ed sounds like /\u026Ad/ \u2014 an extra syllable"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
 renderPromptGrid(document.getElementById('promptGrid'), [
   {q:"What did you do yesterday morning?", a:"Yesterday morning I…"},
   {q:"Who did you meet last week?", a:"Last week I met…"},
@@ -125,17 +295,49 @@ renderPromptGrid(document.getElementById('promptGrid'), [
   {q:"What did you watch on TV?", a:"I watched…"}
 ]);
 
-renderGapfill(document.getElementById('gapfill'), document.getElementById('revealBtn'), {
-  text:"Yesterday I {{}} (wake up) at seven. I {{}} (have) breakfast. Then I {{}} (go) to the shops. In the evening I {{}} (watch) TV.",
+/* ---------- 5. Irregular verb quiz ---------- */
+renderQuiz(document.getElementById('quiz'), [
+  {q:"What is the past form of \u2018go\u2019?", options:["went","goed","gone"], correctIndex:0},
+  {q:"What is the past form of \u2018have\u2019?", options:["had","haved","has"], correctIndex:0},
+  {q:"What is the past form of \u2018buy\u2019?", options:["bought","buyed","buys"], correctIndex:0},
+  {q:"What is the past form of \u2018see\u2019?", options:["saw","seed","seen"], correctIndex:0},
+  {q:"\u2018I watched TV yesterday\u2019 \u2014 when did this happen?", options:["in the past","now","in the future"], correctIndex:0}
+]);
+
+/* ---------- 6. Sentence builder ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"Say what you did yesterday:", words:["I","went","to","the","shops","yesterday"]},
+  {hint:"Say what she did:", words:["She","had","breakfast","at","eight"]},
+  {hint:"Say what you watched:", words:["We","watched","a","film","last","night"]},
+  {hint:"Say what he bought:", words:["He","bought","a","present","for","his","mother"]}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
+  text:"Yesterday I {{}} at seven. I {{}} breakfast. Then I {{}} to the shops. In the evening I {{}} TV.",
   answers:["woke up","had","went","watched"]
 });
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"Last weekend we {{}} my daughter. We {{}} at a nice restaurant. She {{}} me a gift. I {{}} her again the next day.",
+  answers:["visited","ate","bought","called"]
+});
 
-renderDialogue(document.getElementById('dialogue'), [
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
   {s:"a", t:"How was your day?"},
   {s:"b", t:"It was good. I went to the market and bought some vegetables."},
   {s:"a", t:"What did you do in the evening?"},
   {s:"b", t:"I watched a film and called my daughter."}
 ], "Boyfriend");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"a", t:"What did you do this week?"},
+  {s:"b", t:"I visited a friend and we had coffee together."},
+  {s:"a", t:"That sounds nice! Did you do anything else?"},
+  {s:"b", t:"Yes, I bought a new coat and watched a good film."},
+  {s:"a", t:"Sounds like a good week!"},
+  {s:"b", t:"Yes, it was very nice."}
+], "Sister");
 </script>
 </body>
 </html>

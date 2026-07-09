@@ -23,100 +23,269 @@
 
 <header class="lesson-hero">
   <div class="wrap">
-    <span class="eyebrow">Lesson 06 · 60 min</span>
+    <span class="eyebrow">Lesson 06 · 90 min · updated</span>
     <h1>Future Plans — What Are You Doing Tomorrow?</h1>
-    <p>Talk about upcoming plans — including her actual next trip to Ireland, which makes this immediately useful.</p>
+    <p>Talk about upcoming plans — including her actual next trip to Ireland. Grammar focus: <em>going to</em> + verb, used throughout every task below.</p>
   </div>
 </header>
 
 <div class="wrap">
-  <section class="lesson-section" id="tabs">
-    <div class="subtabs">
-      <button class="subtab-btn" data-sub="plan" aria-selected="true">📋 Plan</button>
-      <button class="subtab-btn" data-sub="materials" aria-selected="false">🎒 Materials</button>
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🧠 Future plans quiz</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Sentence builder</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: "going to" + verb</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">This is how she'll talk about her actual next trip — so we drill the contracted forms first, before they show up in every task today.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: full form → contraction</span>
+      <p class="mat-sub">Click a full form on the left, then its contraction on the right (e.g. "I am going to" → "I'm going to").</p>
+      <div id="grammarMatch"></div>
     </div>
 
-    <div class="subpanel active" data-sub-panel="plan">
-      <div class="block">
-        <span class="block-label c-warmup">Warm-up</span>
-        <p class="block-content">"What are you doing this weekend?"</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-vocab">Vocabulary</span>
-        <p class="block-content">Time expressions (tomorrow, next week, next year), travel-planning words.</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-grammar">Grammar</span>
-        <p class="block-content"><em>going to</em> + verb, present continuous for fixed plans ("I'm flying on…").</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-speaking">Speaking practice</span>
-        <div class="block-content"><ul>
-          <li>Calendar on Miro — she fills in a week of plans and talks through it</li>
-          <li>"Plan an Ireland trip" — she describes what she'll do when she visits her daughter</li>
-        </ul></div>
-      </div>
-      <div class="block">
-        <span class="block-label c-roleplay">Roleplay</span>
-        <p class="block-content">Telling the boyfriend about her upcoming visit — dates, what she wants to do there.</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-homework">Homework</span>
-        <p class="block-content">Describe her real plans for her next Ireland trip, spoken.</p>
-      </div>
-      <div class="block backup">
-        <span class="block-label">✦ Backup activities — if time remains</span>
-        <div class="block-content"><ul>
-          <li>Quick round robin: "What are your plans for the weekend?"</li>
-          <li>Packing list — name items she'll bring for the trip</li>
-          <li>Comparing planned vs. wished-for activities: "I'm going to… / I'd like to…"</li>
-          <li>Very light "What will you do if it rains?" — just for exposure</li>
-        </ul></div>
-      </div>
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: 'm going, 's going, or 're going?</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
     </div>
 
-    <div class="subpanel" data-sub-panel="materials">
-      <div class="mat-section">
-        <span class="mat-title">🗂️ Vocabulary cards</span>
-        <p class="mat-sub">Click a card to flip it and see the example sentence. Click "Listen" to hear it.</p>
-        <div class="vocab-grid" id="vocabGrid"></div>
-      </div>
-      <div class="mat-section">
-        <span class="mat-title">🗣️ Speaking prompt cards</span>
-        <p class="mat-sub">She answers out loud first — flip to check a sample answer.</p>
-        <div class="prompt-grid" id="promptGrid"></div>
-      </div>
-      <div class="mat-section">
-        <span class="mat-title">✏️ Fill in the blanks</span>
-        <div class="gapfill-box" id="gapfill"></div>
-        <div class="gapfill-controls"><button class="btn" id="revealBtn">Reveal answers</button></div>
-      </div>
-      <div class="mat-section">
-        <span class="mat-title">🎭 Roleplay script — Telling the boyfriend about the next visit</span>
-        <p class="mat-sub">Read it together first, then act it out from memory.</p>
-        <div class="dialogue" id="dialogue"></div>
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: say the full sentence</span>
+      <p class="mat-sub">Read the cue out loud, then she says the full sentence with the correct "going to" form. Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: subject swap chain</span>
+      <p class="mat-sub">Say the sentence, then say it again with the new person — out loud, back and forth, no pausing.</p>
+      <div class="block-content">
+        <ol>
+          <li>"I'm going to visit Ireland." → (she) → <em>"She's going to visit Ireland."</em></li>
+          <li>"We're going to stay for two weeks." → (they) → <em>"They're going to stay for two weeks."</em></li>
+          <li>"He's going to cook dinner." → (we) → <em>"We're going to cook dinner."</em></li>
+          <li>"She's going to meet us at the airport." → (he) → <em>"He's going to meet us at the airport."</em></li>
+          <li>"They're going to love Dublin." → (you) → <em>"You're going to love Dublin."</em></li>
+        </ol>
       </div>
     </div>
   </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Five travel-planning words that are commonly mispronounced — including how "going to" actually sounds in fast, natural speech. Click the purple button to hear each one, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"She's going to visit in September and stay several weeks."</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Calendar on Miro</span>
+      <p class="block-content">She fills in a week of plans on a simple Miro calendar and talks through it out loud, day by day.</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Plan an Ireland trip</span>
+      <p class="block-content">She describes what she'll actually do when she visits her daughter — using her real dates and ideas where possible.</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. INTERACTIVE TASK 1: FUTURE PLANS QUIZ ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🧠 Interactive task 1: Future plans quiz</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Read each mini-scenario aloud together, then she answers out loud before clicking.</p>
+    <div id="quiz"></div>
+  </section>
+
+  <!-- ============ 6. INTERACTIVE TASK 2: SENTENCE BUILDER ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🔤 Interactive task 2: Sentence builder</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Click the word chips in the correct order to build each sentence, then hit Check. Say the finished sentence out loud before moving to the next one.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — planning the trip</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — arrival day</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — telling the boyfriend about the next visit</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — planning what to pack and do</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">A conversation with her daughter about the details of the trip.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Describe her real travel plans for the next Ireland trip using "going to", then record it out loud.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>Quick round robin: "What are your plans for the weekend?"</li>
+        <li>Packing list — name items she'll bring for the trip</li>
+        <li>Comparing planned vs. wished-for activities: "I'm going to… / I'd like to…"</li>
+        <li>Very light "What will you do if it rains?" — just for exposure</li>
+      </ul></div>
+    </div>
+  </section>
+
 </div>
 
 <footer class="site-footer">Lesson 6 of 9 · <a href="index.html">Back to course home</a></footer>
 
 <script src="script.js"></script>
 <script>
-initSubtabs(document.getElementById('tabs'));
+/* ---------- Custom picture icons for vocabulary ---------- */
+const FUTURE_ICONS = {
+  calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+  plane: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-1 .1-1.3.5l-.7.8c-.4.4-.2 1.1.3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.7 5.9c.2.5.9.7 1.3.3l.8-.7c.4-.3.5-.8.3-1.3Z"/>',
+  suitcase: '<rect x="3" y="8" width="18" height="12" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/>',
+  pin: '<path d="M12 22s7-7.5 7-13a7 7 0 0 0-14 0c0 5.5 7 13 7 13Z"/><circle cx="12" cy="9" r="2.4"/>',
+  bed: '<path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 18v2M21 18v2"/><path d="M3 13V9a2 2 0 0 1 2-2h4v5"/>',
+  checklist: '<rect x="4" y="3" width="16" height="18" rx="2"/><path d="m8 9 1.5 1.5L12 8"/><path d="M8 15h8M8 12h2"/>',
+  car: '<path d="M4 16V11l2-4h12l2 4v5"/><path d="M4 16h16"/><circle cx="8" cy="17.5" r="1.6"/><circle cx="16" cy="17.5" r="1.6"/>',
+  arrow: '<path d="M5 12h13"/><path d="m13 6 6 6-6 6"/>',
+  star: '<path d="m12 3 2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6L12 3Z"/>'
+};
+function futureIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${FUTURE_ICONS[name]}</svg>`;
+}
 
-renderVocabGrid(document.getElementById('vocabGrid'), [
-  {e:"📅", w:"next month", x:"Next month I'm visiting Ireland."},
-  {e:"✈️", w:"flight", x:"My flight is on the third."},
-  {e:"🧳", w:"pack", x:"I need to pack my suitcase."},
-  {e:"🛬", w:"arrive", x:"I arrive at 3 pm."},
-  {e:"🏘️", w:"stay", x:"I'm going to stay for two weeks."},
-  {e:"📝", w:"plan", x:"What's your plan for tomorrow?"},
-  {e:"🧭", w:"visit", x:"I want to visit the city centre."},
-  {e:"🙋‍♀️", w:"going to", x:"I'm going to see my daughter."}
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"I am going to", right:"I'm going to"},
+  {left:"You are going to", right:"You're going to"},
+  {left:"He is going to", right:"He's going to"},
+  {left:"She is going to", right:"She's going to"},
+  {left:"We are going to", right:"We're going to"},
+  {left:"They are going to", right:"They're going to"}
 ]);
 
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"I {{}} to visit my daughter next month. She {{}} to meet us at the airport. We {{}} to stay for two weeks.",
+  answers:["'m going","'s going","'re going"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"I / visit my daughter", a:"I'm going to visit my daughter."},
+  {q:"She / meet us at the airport", a:"She's going to meet us at the airport."},
+  {q:"We / stay for two weeks", a:"We're going to stay for two weeks."},
+  {q:"He / pick us up", a:"He's going to pick us up."},
+  {q:"They / cook dinner", a:"They're going to cook dinner."},
+  {q:"You / love Dublin", a:"You're going to love Dublin."}
+]);
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:futureIcon('calendar'), w:"next month", x:"Next month I'm visiting Ireland."},
+  {svg:futureIcon('plane'), w:"flight", x:"My flight is on the third."},
+  {svg:futureIcon('suitcase'), w:"pack", x:"I need to pack my suitcase."},
+  {svg:futureIcon('pin'), w:"arrive", x:"I arrive at 3 pm."},
+  {svg:futureIcon('bed'), w:"stay", x:"I'm going to stay for two weeks."},
+  {svg:futureIcon('checklist'), w:"plan", x:"What's your plan for tomorrow?"},
+  {svg:futureIcon('pin'), w:"visit", x:"I want to visit the city centre."},
+  {svg:futureIcon('star'), w:"excited", x:"I'm really excited!"},
+  {svg:futureIcon('car'), w:"pick up", x:"He's going to pick us up."},
+  {svg:futureIcon('arrow'), w:"going to", x:"I'm going to see my daughter."}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"going to \u2192 <b>\u2018gonna\u2019</b>", word:"going to", note:"in fast, natural speech this often sounds like \u2018gonna\u2019"},
+  {stress:"ar-<b>RIVE</b>", word:"arrive", note:"stress on the second syllable"},
+  {stress:"<b>SUIT</b>-case", word:"suitcase", note:"stress on the first syllable"},
+  {stress:"<b>AIR</b>-port", word:"airport", note:"stress on the first syllable"},
+  {stress:"ex-<b>CI</b>-ted", word:"excited", note:"stress on the second syllable; the -ed is a full extra syllable here"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
 renderPromptGrid(document.getElementById('promptGrid'), [
   {q:"What are you doing this weekend?", a:"This weekend I'm going to…"},
   {q:"When is your next flight?", a:"My next flight is…"},
@@ -125,17 +294,48 @@ renderPromptGrid(document.getElementById('promptGrid'), [
   {q:"Are you excited?", a:"Yes, I'm very excited because…"}
 ]);
 
-renderGapfill(document.getElementById('gapfill'), document.getElementById('revealBtn'), {
+/* ---------- 5. Future plans quiz ---------- */
+renderQuiz(document.getElementById('quiz'), [
+  {q:"You have a plane ticket for next month. What do you say?", options:["I'm going to fly next month.","I flew next month.","I fly yesterday."], correctIndex:0},
+  {q:"Someone asks \u2018What are your plans?\u2019 You answer with:", options:["going to + verb","went + verb","goes + verb"], correctIndex:0},
+  {q:"\u2018She's going to meet us at the airport\u2019 means the meeting happens…", options:["in the future","in the past","right now"], correctIndex:0},
+  {q:"You want to ask about someone's plans. You say:", options:["What are you going to do?","What did you do?","What do you do?"], correctIndex:0},
+  {q:"\u2018I'd like to see the city\u2019 expresses a…", options:["wish / desire","past action","fact"], correctIndex:0}
+]);
+
+/* ---------- 6. Sentence builder ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"Say your plan:", words:["I'm","going","to","visit","my","daughter"]},
+  {hint:"Say how long you'll stay:", words:["We're","going","to","stay","for","two","weeks"]},
+  {hint:"Say who's meeting you:", words:["She's","going","to","meet","us","at","the","airport"]},
+  {hint:"Say how they'll feel:", words:["They're","going","to","love","Ireland"]}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
   text:"Next month I am {{}} to visit my daughter. I am {{}} on the third of August. I {{}} to stay for two weeks.",
   answers:["going","flying","plan"]
 });
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"We {{}} to arrive in the morning. My daughter {{}} going to pick us up. I'm really {{}} to see her!",
+  answers:["'re going","'s","excited"]
+});
 
-renderDialogue(document.getElementById('dialogue'), [
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
   {s:"b", t:"I'm going to visit you in August."},
   {s:"a", t:"That's great! What are you going to do here?"},
   {s:"b", t:"I want to see the city and visit some shops."},
   {s:"a", t:"I'll pick you up from the airport."}
 ], "Boyfriend");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"a", t:"What are you going to bring?"},
+  {s:"b", t:"I'm going to pack warm clothes, it's cold there!"},
+  {s:"a", t:"Good idea. What do you want to do while you're here?"},
+  {s:"b", t:"I'd like to see the city and relax with you."},
+  {s:"a", t:"That sounds perfect. I can't wait!"}
+], "Daughter");
 </script>
 </body>
 </html>
