@@ -23,100 +23,292 @@
 
 <header class="lesson-hero">
   <div class="wrap">
-    <span class="eyebrow">Lesson 04 · 60 min</span>
+    <span class="eyebrow">Lesson 04 · 90 min · updated</span>
     <h1>Shopping & Supermarket Survival English</h1>
-    <p>The practical, high-frequency phrases she needs for supermarket trips — small phrase set, drilled until automatic.</p>
+    <p>The practical, high-frequency phrases she needs for supermarket trips. Grammar focus: <em>Where is/are…?</em>, <em>Do you have…?</em>, <em>How much is…?</em> — question forms used throughout every task below.</p>
   </div>
 </header>
 
 <div class="wrap">
-  <section class="lesson-section" id="tabs">
-    <div class="subtabs">
-      <button class="subtab-btn" data-sub="plan" aria-selected="true">📋 Plan</button>
-      <button class="subtab-btn" data-sub="materials" aria-selected="false">🎒 Materials</button>
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🧠 Supermarket logic quiz</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Sentence builder</span></a>
+    <a class="agenda-item" href="#task3"><span class="ai-time">8 MIN</span><span class="ai-label">🏷️ Price match</span></a>
+    <a class="agenda-item" href="#task4"><span class="ai-time">8 MIN</span><span class="ai-label">🗺️ Which aisle?</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: the three supermarket questions</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Almost everything she needs to say in a shop is one of three question shapes. We drill the shapes and the answers first, before she has to produce them live.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: question → matching answer</span>
+      <p class="mat-sub">Click a question on the left, then the answer that fits it on the right.</p>
+      <div id="grammarMatch"></div>
     </div>
 
-    <div class="subpanel active" data-sub-panel="plan">
-      <div class="block">
-        <span class="block-label c-warmup">Warm-up</span>
-        <p class="block-content">"Where do you usually buy…?"</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-vocab">Vocabulary</span>
-        <p class="block-content">Shop sections (dairy, bakery, frozen), common items, checkout words (self-checkout, card/cash, receipt, bag).</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-grammar">Grammar</span>
-        <p class="block-content"><em>Where is / are…?</em>, <em>Do you have…?</em>, <em>How much is…?</em></p>
-      </div>
-      <div class="block">
-        <span class="block-label c-speaking">Speaking practice</span>
-        <div class="block-content"><ul>
-          <li>Core phrase drill: "Excuse me, where can I find…?" / "Do you have any…?" / "How much is this?" / "Is this on sale?"</li>
-          <li>Miro supermarket map — she "walks" through it, asking you (playing staff) where things are</li>
-        </ul></div>
-      </div>
-      <div class="block">
-        <span class="block-label c-roleplay">Roleplay</span>
-        <p class="block-content">Full supermarket trip — find 3 items, ask a question, pay.</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-homework">Homework</span>
-        <p class="block-content">Practice the 4 core phrases out loud, 10 times each.</p>
-      </div>
-      <div class="block backup">
-        <span class="block-label">✦ Backup activities — if time remains</span>
-        <div class="block-content"><ul>
-          <li>Prices and totals drill — add up a small shopping list</li>
-          <li>"Is it fresh?" — asking about expiry dates and substitutions</li>
-          <li>Comparing products: "this one is cheaper / bigger"</li>
-          <li>Self-checkout troubleshooting: "It's not scanning", "I need help, please"</li>
-        </ul></div>
-      </div>
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: where, do, how, or can?</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
     </div>
 
-    <div class="subpanel" data-sub-panel="materials">
-      <div class="mat-section">
-        <span class="mat-title">🗂️ Vocabulary cards</span>
-        <p class="mat-sub">Click a card to flip it and see the example sentence. Click "Listen" to hear it.</p>
-        <div class="vocab-grid" id="vocabGrid"></div>
-      </div>
-      <div class="mat-section">
-        <span class="mat-title">🗣️ Speaking prompt cards</span>
-        <p class="mat-sub">She answers out loud first — flip to check a sample answer.</p>
-        <div class="prompt-grid" id="promptGrid"></div>
-      </div>
-      <div class="mat-section">
-        <span class="mat-title">✏️ Fill in the blanks</span>
-        <div class="gapfill-box" id="gapfill"></div>
-        <div class="gapfill-controls"><button class="btn" id="revealBtn">Reveal answers</button></div>
-      </div>
-      <div class="mat-section">
-        <span class="mat-title">🎭 Roleplay script — Finding things in the supermarket</span>
-        <p class="mat-sub">Read it together first, then act it out from memory.</p>
-        <div class="dialogue" id="dialogue"></div>
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: ask the question</span>
+      <p class="mat-sub">Read the cue out loud, then she asks the full question — no writing, flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: swap chain</span>
+      <p class="mat-sub">Say the question, then say it again swapping in the new word — out loud, back and forth, no pausing to think between them.</p>
+      <div class="block-content">
+        <ol>
+          <li>"Where is the milk?" → (bread) → <em>"Where is the bread?"</em></li>
+          <li>"Do you have bananas?" → (apples) → <em>"Do you have apples?"</em></li>
+          <li>"How much is this?" → (that) → <em>"How much is that?"</em></li>
+          <li>"Can I pay by card?" → (cash) → <em>"Can I pay by cash?"</em></li>
+          <li>"Where can I find the cheese?" → (butter) → <em>"Where can I find the butter?"</em></li>
+        </ol>
       </div>
     </div>
   </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Five supermarket words that are commonly mispronounced. Bold = stressed syllable. Click the purple button to hear it, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"The trolley's full of fresh bread, cheap cheese, and frozen peas."</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Core phrase drill</span>
+      <p class="block-content">Repeat until fluent, no hesitation: "Excuse me, where can I find…?" / "Do you have any…?" / "How much is this?" / "Is this on sale?"</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Miro supermarket map</span>
+      <p class="block-content">She "walks" through a simple supermarket map on Miro, asking you (playing staff) where things are, aisle by aisle.</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. INTERACTIVE TASK 1: SUPERMARKET LOGIC QUIZ ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🧠 Interactive task 1: Supermarket logic quiz</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Read each mini-scenario aloud together, then she answers out loud before clicking. This checks she can pick the right phrase in the moment, not just recite vocabulary.</p>
+    <div id="quiz"></div>
+  </section>
+
+  <!-- ============ 6. INTERACTIVE TASK 2: SENTENCE BUILDER ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🔤 Interactive task 2: Sentence builder</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Click the word chips in the correct order to build each sentence, then hit Check. Say the finished sentence out loud before moving to the next one.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ INTERACTIVE TASK 3: PRICE MATCH ============ -->
+  <section class="lesson-section" id="task3">
+    <div class="section-head">
+      <h3>🏷️ Interactive task 3: Price match</h3>
+      <span class="section-time">8 min</span>
+    </div>
+    <p class="section-sub">Click an item on the left, then click its price on the right. Say the full sentence out loud before clicking: "The milk is one twenty."</p>
+    <div id="priceMatch"></div>
+  </section>
+
+  <!-- ============ INTERACTIVE TASK 4: WHICH AISLE? ============ -->
+  <section class="lesson-section" id="task4">
+    <div class="section-head">
+      <h3>🗺️ Interactive task 4: Which aisle?</h3>
+      <span class="section-time">8 min</span>
+    </div>
+    <p class="section-sub">She answers out loud first, then clicks. This checks she knows where things actually are, not just how to ask.</p>
+    <div id="aisleQuiz"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — finding things</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — at the checkout</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — finding things in the supermarket</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — at the checkout</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">The moment she'll face every single supermarket trip — paying and getting a receipt.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Practice the checkout dialogue out loud 5 times, then try it for real on her next supermarket trip.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>Prices and totals drill — add up a small shopping list</li>
+        <li>"Is it fresh?" — asking about expiry dates and substitutions</li>
+        <li>Comparing products: "this one is cheaper / bigger"</li>
+        <li>Self-checkout troubleshooting: "It's not scanning", "I need help, please"</li>
+      </ul></div>
+    </div>
+  </section>
+
 </div>
 
 <footer class="site-footer">Lesson 4 of 9 · <a href="index.html">Back to course home</a></footer>
 
 <script src="script.js"></script>
 <script>
-initSubtabs(document.getElementById('tabs'));
+/* ---------- Custom picture icons for vocabulary ---------- */
+const SHOP_ICONS = {
+  cart: '<circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/><path d="M3 4h2l2.4 11.5a2 2 0 0 0 2 1.6h6.9a2 2 0 0 0 2-1.6L20 8H6"/>',
+  dairy: '<path d="M8 3h8v3l2 3v11a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9l2-3V3Z"/><path d="M8 9h8"/>',
+  bread: '<path d="M4 13c0-4 2.5-7 8-7s8 3 8 7-2 6-8 6-8-2-8-6Z"/><path d="M8 9c1-1 2-1.5 4-1.5s3 .5 4 1.5"/>',
+  frozen: '<path d="M12 2v20M4.5 6l15 12M19.5 6l-15 12"/>',
+  card: '<rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/>',
+  cash: '<rect x="3" y="7" width="18" height="10" rx="1.5"/><circle cx="12" cy="12" r="2.3"/>',
+  receipt: '<path d="M6 3h12v18l-2.5-1.5L13 21l-2.5-1.5L8 21l-2-1.5V3Z"/><path d="M9 8h6M9 12h6M9 16h4"/>',
+  bag: '<path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>',
+  tag: '<path d="M12 3h6a1 1 0 0 1 1 1v6l-9 9-7-7 9-9Z"/><circle cx="16" cy="7" r="1.3"/>',
+  find: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/>'
+};
+function shopIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${SHOP_ICONS[name]}</svg>`;
+}
 
-renderVocabGrid(document.getElementById('vocabGrid'), [
-  {e:"🛒", w:"trolley / cart", x:"I need a trolley."},
-  {e:"🥛", w:"dairy", x:"The dairy section is over there."},
-  {e:"🍞", w:"bakery", x:"The bakery is next to the tills."},
-  {e:"🧊", w:"frozen", x:"Where's the frozen food?"},
-  {e:"💳", w:"card", x:"Can I pay by card?"},
-  {e:"🧾", w:"receipt", x:"Can I have a receipt, please?"},
-  {e:"🏷️", w:"on sale", x:"Is this on sale?"},
-  {e:"🔍", w:"find", x:"Where can I find the milk?"}
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"Where is the milk?", right:"It's in the dairy aisle."},
+  {left:"How much is this?", right:"That's two euros."},
+  {left:"Do you have bananas?", right:"Yes, they're over there."},
+  {left:"Is this on sale?", right:"Yes, it's 20% off."},
+  {left:"Can I pay by card?", right:"Of course, here's the machine."},
+  {left:"Where can I find bread?", right:"Next to the tills."}
 ]);
 
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"Excuse me, {{}} is the milk? {{}} you have bananas? {{}} much is this? {{}} I pay by card?",
+  answers:["where","Do","How","Can"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"the milk / where", a:"Where is the milk?"},
+  {q:"bananas / do you have", a:"Do you have bananas?"},
+  {q:"this / how much", a:"How much is this?"},
+  {q:"pay by card / can I", a:"Can I pay by card?"},
+  {q:"the bread / where can I find", a:"Where can I find the bread?"},
+  {q:"a discount / is there", a:"Is there a discount?"}
+]);
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:shopIcon('cart'), w:"trolley / cart", x:"I need a trolley."},
+  {svg:shopIcon('dairy'), w:"dairy", x:"The dairy section is over there."},
+  {svg:shopIcon('bread'), w:"bakery", x:"The bakery is next to the tills."},
+  {svg:shopIcon('frozen'), w:"frozen", x:"Where's the frozen food?"},
+  {svg:shopIcon('card'), w:"card", x:"Can I pay by card?"},
+  {svg:shopIcon('cash'), w:"cash", x:"I only have cash, sorry."},
+  {svg:shopIcon('receipt'), w:"receipt", x:"Can I have a receipt, please?"},
+  {svg:shopIcon('bag'), w:"bag", x:"Do you need a bag?"},
+  {svg:shopIcon('tag'), w:"on sale", x:"Is this on sale?"},
+  {svg:shopIcon('find'), w:"find", x:"Where can I find the milk?"}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"re-<b>CEIPT</b>", word:"receipt", note:"silent \u2018p\u2019 \u2014 sounds like \u2018ri-SEET\u2019"},
+  {stress:"<b>AISLE</b>", word:"aisle", note:"silent \u2018s\u2019 \u2014 sounds like \u2018eye-l\u2019"},
+  {stress:"<b>QUEUE</b>", word:"queue", note:"sounds just like the letter \u2018Q\u2019"},
+  {stress:"<b>DIS</b>-count", word:"discount", note:"stress on the first syllable"},
+  {stress:"<b>TROL</b>-ley", word:"trolley", note:"stress on the first syllable"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
 renderPromptGrid(document.getElementById('promptGrid'), [
   {q:"Ask where the milk is.", a:"Excuse me, where can I find the milk?"},
   {q:"Ask if they have bananas.", a:"Do you have any bananas?"},
@@ -125,12 +317,54 @@ renderPromptGrid(document.getElementById('promptGrid'), [
   {q:"Ask if something is on sale.", a:"Is this on sale?"}
 ]);
 
-renderGapfill(document.getElementById('gapfill'), document.getElementById('revealBtn'), {
+/* ---------- 5. Supermarket logic quiz ---------- */
+renderQuiz(document.getElementById('quiz'), [
+  {q:"You can't find the milk. What do you say to a staff member?", options:["Excuse me, where can I find the milk?","I have the milk.","Milk is where?"], correctIndex:0},
+  {q:"You want to know the price. You ask:", options:["How much is this?","How is this?","How many this?"], correctIndex:0},
+  {q:"The cashier says \u2018Cash or card?\u2019 You only have cash. You say:", options:["Cash, please.","Card, please.","No, thank you."], correctIndex:0},
+  {q:"You want proof of purchase. You ask:", options:["Can I have a receipt, please?","Can I have a discount?","Where is the receipt?"], correctIndex:0},
+  {q:"\u2018On sale\u2019 means the item is…", options:["cheaper than usual","more expensive","not available"], correctIndex:0}
+]);
+
+/* ---------- 6. Sentence builder ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"Ask where something is:", words:["Excuse","me","where","can","I","find","the","bread"]},
+  {hint:"Ask if they stock something:", words:["Do","you","have","any","bananas"]},
+  {hint:"Ask the price:", words:["How","much","is","this","milk"]},
+  {hint:"Ask about paying:", words:["Can","I","pay","by","card"]}
+]);
+
+/* ---------- Interactive task 3: Price match ---------- */
+renderMatchTask(document.getElementById('priceMatch'), [
+  {left:"Milk", right:"€1.20"},
+  {left:"Bread", right:"€2.50"},
+  {left:"Bananas", right:"€0.90"},
+  {left:"Coffee", right:"€4.00"},
+  {left:"Cheese", right:"€3.30"},
+  {left:"Eggs", right:"€2.10"}
+]);
+
+/* ---------- Interactive task 4: Which aisle? ---------- */
+renderQuiz(document.getElementById('aisleQuiz'), [
+  {q:"Where would you find milk?", options:["Dairy","Bakery","Frozen"], correctIndex:0},
+  {q:"Where would you find bread?", options:["Bakery","Dairy","Frozen"], correctIndex:0},
+  {q:"Where would you find ice cream?", options:["Frozen","Dairy","Bakery"], correctIndex:0},
+  {q:"Where would you find bananas?", options:["Fruit & veg","Dairy","Frozen"], correctIndex:0},
+  {q:"Where do you pay for your shopping?", options:["The checkout / till","The bakery","The frozen section"], correctIndex:0}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
   text:"Excuse me, where can I {{}} the bread? Do you {{}} any brown bread? How {{}} is this milk? Can I pay by {{}}?",
   answers:["find","have","much","card"]
 });
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"The {{}} section is next to the bakery. Is this {{}} on sale? I need a {{}}, please. Where is the nearest {{}}?",
+  answers:["dairy","still","receipt","till"]
+});
 
-renderDialogue(document.getElementById('dialogue'), [
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
   {s:"b", t:"Excuse me, where can I find the bread?"},
   {s:"a", t:"It's next to the dairy section."},
   {s:"b", t:"Thank you. Do you have any brown bread?"},
@@ -138,6 +372,17 @@ renderDialogue(document.getElementById('dialogue'), [
   {s:"b", t:"How much is this milk?"},
   {s:"a", t:"That's one twenty."}
 ], "Staff");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"a", t:"Did you find everything okay?"},
+  {s:"b", t:"Yes, thank you."},
+  {s:"a", t:"That's twelve fifty. Cash or card?"},
+  {s:"b", t:"Card, please."},
+  {s:"a", t:"Would you like a receipt?"},
+  {s:"b", t:"Yes, please."},
+  {s:"a", t:"Here you are. Have a nice day!"},
+  {s:"b", t:"Thank you, you too!"}
+], "Cashier");
 </script>
 </body>
 </html>
