@@ -23,7 +23,7 @@
         <div class="bp-field"><span class="bp-label">Passenger</span><span class="bp-value">Yaroslava</span></div>
         <div class="bp-field"><span class="bp-label">Level</span><span class="bp-value">A1 → A2+</span></div>
         <div class="bp-field"><span class="bp-label">Gate</span><span class="bp-value">Miro Board</span></div>
-        <div class="bp-field"><span class="bp-label">Flight</span><span class="bp-value">9 Lessons</span></div>
+        <div class="bp-field"><span class="bp-label">Flight</span><span class="bp-value">30 Lessons</span></div>
         <div class="bp-field"><span class="bp-label">Boarding</span><span class="bp-value">Speaking First</span></div>
         <div class="bp-field"><span class="bp-label">Seat</span><span class="bp-value">No Translating</span></div>
         <div class="bp-route">
@@ -63,8 +63,7 @@
     </div>
   </section>
 
-  <p style="font-family:var(--font-mono); font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;">The Route — click a lesson to open it</p>
-  <section class="lesson-list" id="lessonList"></section>
+  <div id="unitSections"></div>
 
   <section class="postcard">
     <h3>✎ Keeping her speaking, not translating</h3>
@@ -78,40 +77,101 @@
 
 </div>
 
-<footer class="site-footer">Made for our MAD Education project · 9 lessons · Miro-based</footer>
+<footer class="site-footer">Made for our MAD Education project · 30 lessons · Miro-based</footer>
 
 <script src="script.js"></script>
 <script>
-const LESSONS_INDEX = [
-  {file:"lesson-1.html", title:"Introduction & Getting to Know You", icon:"wave", desc:"First words, first sentences, meeting the boyfriend.", badge:"60 min"},
-  {file:"lesson-2.html", title:"Family & Relationships", icon:"heart", desc:"Talking about her daughter, the boyfriend, and family life.", badge:"90 min · updated"},
-  {file:"lesson-3.html", title:"Food & Eating Out", icon:"fork", desc:"Ordering, preferences, café conversation.", badge:"90 min · updated"},
-  {file:"lesson-4.html", title:"Shopping & Supermarket Survival English", icon:"cart", desc:"Finding things, asking prices, paying.", badge:"90 min · updated"},
-  {file:"lesson-5.html", title:"Past Simple — What Did You Do Yesterday?", icon:"clockback", desc:"Talking about recent events.", badge:"90 min · updated"},
-  {file:"lesson-6.html", title:"Future Plans — What Are You Doing Tomorrow?", icon:"clockfwd", desc:"Planning her next trip to Ireland.", badge:"90 min · updated"},
-  {file:"lesson-7.html", title:"Travel & Getting Around", icon:"plane", desc:"Airports, directions, transport.", badge:"90 min · updated"},
-  {file:"lesson-8.html", title:"Small Talk & Weather", icon:"cloud", desc:"The glue language for casual chat.", badge:"90 min · updated"},
-  {file:"lesson-9.html", title:"Review & Free Conversation", icon:"flag", desc:"A roleplay marathon mixing everything.", badge:"90 min · updated"}
+const UNITS = [
+  {
+    title: "Unit 1 — Everyday Basics & Family",
+    sub: "Survival English for her two real contexts: the boyfriend and the supermarket.",
+    lessons: [
+      {file:"lesson-1.html", title:"Introduction & Getting to Know You", icon:"wave", desc:"First words, first sentences, meeting the boyfriend.", badge:"90 min", built:true},
+      {file:"lesson-2.html", title:"Family & Relationships", icon:"heart", desc:"Talking about her daughter, the boyfriend, and family life.", badge:"90 min", built:true},
+      {file:"lesson-3.html", title:"Food & Eating Out", icon:"fork", desc:"Ordering, preferences, café conversation.", badge:"90 min", built:true},
+      {file:"lesson-4.html", title:"Shopping & Supermarket Survival English", icon:"cart", desc:"Finding things, asking prices, paying.", badge:"90 min", built:true},
+      {file:"lesson-5.html", title:"Past Simple — What Did You Do Yesterday?", icon:"clockback", desc:"Talking about recent events.", badge:"90 min", built:true},
+      {file:"lesson-6.html", title:"Future Plans — What Are You Doing Tomorrow?", icon:"clockfwd", desc:"Planning her next trip to Ireland.", badge:"90 min", built:true},
+      {file:"lesson-7.html", title:"Travel & Getting Around", icon:"plane", desc:"Airports, directions, transport.", badge:"90 min", built:true},
+      {file:"lesson-8.html", title:"Small Talk & Weather", icon:"cloud", desc:"The glue language for casual chat.", badge:"90 min", built:true},
+      {file:"lesson-9.html", title:"Describing People & Things", icon:"scale", desc:"Appearance, personality, comparatives.", badge:"90 min", built:true},
+      {file:"lesson-10.html", title:"Review & Free Conversation — Unit 1", icon:"flag", desc:"A roleplay marathon mixing Lessons 1–9.", badge:"90 min", built:true}
+    ]
+  },
+  {
+    title: "Unit 2 — Daily Life & Real Situations",
+    sub: "Widening out from \u201Csurviving a visit\u201D to handling ordinary daily-life English.",
+    lessons: [
+      {file:"lesson-11.html", title:"Daily Routine — My Typical Day", icon:"dot", desc:"Present simple + frequency adverbs.", badge:"Coming soon", built:false},
+      {file:"lesson-12.html", title:"Health & Feelings", icon:"dot", desc:"\u201CI feel\u2026\u201D, describing symptoms.", badge:"Coming soon", built:false},
+      {file:"lesson-13.html", title:"At the Doctor / Pharmacy", icon:"dot", desc:"Practical health English.", badge:"Coming soon", built:false},
+      {file:"lesson-14.html", title:"Phone Calls & Texting", icon:"dot", desc:"Making a call, leaving a message.", badge:"Coming soon", built:false},
+      {file:"lesson-15.html", title:"Making Arrangements", icon:"dot", desc:"\u201CShall we\u2026?\u201D, accepting/declining invitations.", badge:"Coming soon", built:false},
+      {file:"lesson-16.html", title:"Hobbies & Free Time", icon:"dot", desc:"\u201CI enjoy\u2026\u201D, \u201CI'm interested in\u2026\u201D", badge:"Coming soon", built:false},
+      {file:"lesson-17.html", title:"Giving Opinions", icon:"dot", desc:"\u201CI think\u2026\u201D, agreeing/disagreeing politely.", badge:"Coming soon", built:false},
+      {file:"lesson-18.html", title:"Asking for Help & Giving Advice", icon:"dot", desc:"\u201CYou should\u2026\u201D, \u201CWhy don't you\u2026?\u201D", badge:"Coming soon", built:false},
+      {file:"lesson-19.html", title:"Money & Banking", icon:"dot", desc:"ATM, paying bills, asking prices.", badge:"Coming soon", built:false},
+      {file:"lesson-20.html", title:"Review & Consolidation — Unit 2", icon:"dot", desc:"A roleplay marathon mixing Lessons 11–19.", badge:"Coming soon", built:false}
+    ]
+  },
+  {
+    title: "Unit 3 — Confidence & Real Conversations",
+    sub: "Longer, more natural conversation — less drilled, more free.",
+    lessons: [
+      {file:"lesson-21.html", title:"Life Experiences", icon:"dot", desc:"Present perfect — \u201CHave you ever\u2026?\u201D", badge:"Coming soon", built:false},
+      {file:"lesson-22.html", title:"Comparisons", icon:"dot", desc:"Comparative & superlative adjectives.", badge:"Coming soon", built:false},
+      {file:"lesson-23.html", title:"Describing Your Home", icon:"dot", desc:"There is / there are, rooms & furniture.", badge:"Coming soon", built:false},
+      {file:"lesson-24.html", title:"Celebrations & Holidays", icon:"dot", desc:"Traditions: Ukraine vs. Ireland.", badge:"Coming soon", built:false},
+      {file:"lesson-25.html", title:"At the Airport — Deeper Dive", icon:"dot", desc:"Check-in, delays, lost luggage.", badge:"Coming soon", built:false},
+      {file:"lesson-26.html", title:"Technology & Apps", icon:"dot", desc:"WhatsApp, video calls, phone problems.", badge:"Coming soon", built:false},
+      {file:"lesson-27.html", title:"Emotions & Reactions", icon:"dot", desc:"Expressing surprise, happiness, worry.", badge:"Coming soon", built:false},
+      {file:"lesson-28.html", title:"Being the Helper", icon:"dot", desc:"Giving directions/advice to someone else.", badge:"Coming soon", built:false},
+      {file:"lesson-29.html", title:"Telling a Longer Story", icon:"dot", desc:"Linking past events: then, after that, because.", badge:"Coming soon", built:false},
+      {file:"lesson-30.html", title:"Final Review & Graduation Conversation", icon:"dot", desc:"Full mixed marathon + comparison to Lesson 1.", badge:"Coming soon", built:false}
+    ]
+  }
 ];
 
-const listEl = document.getElementById('lessonList');
-LESSONS_INDEX.forEach((L, i) => {
-  const n = i + 1;
-  const a = document.createElement('a');
-  a.className = 'lesson-card';
-  a.href = L.file;
-  a.innerHTML = `
-    <div class="lc-stub" style="background:${STUB_COLORS[i % STUB_COLORS.length]}">
-      ${topicIcon(L.icon, 'lc-icon')}
-      <span class="lc-num">L${n}</span>
-    </div>
-    <div class="lc-body">
-      <h4>${L.title}<span class="lc-badge">${L.badge}</span></h4>
-      <p>${L.desc}</p>
-    </div>
-    <span class="lc-arrow">→</span>
+const unitContainer = document.getElementById('unitSections');
+let globalIndex = 0;
+
+UNITS.forEach(unit => {
+  const section = document.createElement('section');
+  section.style.padding = "28px 0 8px";
+
+  const heading = document.createElement('div');
+  heading.style.marginBottom = "14px";
+  heading.innerHTML = `
+    <h3 style="font-size:19px; margin-bottom:4px;">${unit.title}</h3>
+    <p style="font-size:13.5px; color:var(--ink-soft); margin:0; font-family:var(--font-body);">${unit.sub}</p>
   `;
-  listEl.appendChild(a);
+  section.appendChild(heading);
+
+  const list = document.createElement('div');
+  list.className = 'lesson-list';
+  list.style.paddingTop = '0';
+
+  unit.lessons.forEach(L => {
+    const n = ++globalIndex;
+    const el = document.createElement(L.built ? 'a' : 'div');
+    el.className = 'lesson-card' + (L.built ? '' : ' disabled');
+    if (L.built) el.href = L.file;
+    el.innerHTML = `
+      <div class="lc-stub" style="background:${STUB_COLORS[(n-1) % STUB_COLORS.length]}">
+        ${topicIcon(L.icon, 'lc-icon')}
+        <span class="lc-num">L${n}</span>
+      </div>
+      <div class="lc-body">
+        <h4>${L.title}<span class="lc-badge">${L.badge}</span></h4>
+        <p>${L.desc}</p>
+      </div>
+      <span class="lc-arrow">${L.built ? '→' : '🔒'}</span>
+    `;
+    list.appendChild(el);
+  });
+
+  section.appendChild(list);
+  unitContainer.appendChild(section);
 });
 </script>
 </body>

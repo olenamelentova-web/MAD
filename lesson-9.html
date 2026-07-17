@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lesson 9 — Review & Free Conversation</title>
+<title>Lesson 9 — Describing People & Things</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
@@ -16,109 +16,133 @@
     <a href="index.html">← Home</a>
     <div class="navgroup">
       <a href="lesson-8.html">← Lesson 8</a>
-      <a class="primary" href="index.html">Course home ✓</a>
+      <a class="primary" href="lesson-10.html">Lesson 10 →</a>
     </div>
   </div>
 </nav>
 
 <header class="lesson-hero">
   <div class="wrap">
-    <span class="eyebrow">Lesson 09 · 90 min · updated</span>
-    <h1>Review & Free Conversation</h1>
-    <p>Pull everything together and see how naturally she can now handle real situations. Grammar focus: a fast mixed sprint through everything covered so far.</p>
+    <span class="eyebrow">Lesson 09 · 90 min · Unit 1</span>
+    <h1>Describing People & Things</h1>
+    <p>Vocabulary and structures for describing appearance, personality, and everyday objects. Grammar focus: adjectives and comparatives (<em>taller than</em>, <em>more beautiful</em>), used throughout every task below.</p>
   </div>
 </header>
 
 <div class="wrap">
 
   <nav class="agenda" aria-label="Lesson agenda">
-    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar sprint</span></a>
-    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary review</span></a>
-    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation review</span></a>
-    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Free conversation</span></a>
-    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🧠 Mixed review quiz</span></a>
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🧠 Comparatives quiz</span></a>
     <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Sentence builder</span></a>
     <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
-    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay marathon</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
     <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
   </nav>
 
-  <!-- ============ 1. GRAMMAR SPRINT ============ -->
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
   <section class="lesson-section" id="grammar">
     <div class="section-head">
-      <h3>🧩 Grammar sprint: everything at once</h3>
+      <h3>🧩 Grammar warm-up: comparatives</h3>
       <span class="section-time">10 min</span>
     </div>
-    <p class="section-sub">One cue from every lesson so far — she has to switch grammar on the fly, which is exactly what real conversation demands.</p>
+    <p class="section-sub">Short adjectives add "-er" (tall → taller). Longer adjectives use "more" instead (beautiful → more beautiful). We drill both patterns before they show up in every task today.</p>
 
     <div class="mat-section">
-      <span class="mat-title">Quick drill: mixed gap-fill</span>
+      <span class="mat-title">Match it: adjective → comparative form</span>
+      <p class="mat-sub">Click an adjective on the left, then its comparative form on the right.</p>
+      <div id="grammarMatch"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: fill the comparative</span>
       <div class="gapfill-box" id="grammarGapfill"></div>
       <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
     </div>
 
     <div class="mat-section" style="margin-top:22px;">
-      <span class="mat-title">🗣️ Oral drill: mixed grammar sprint</span>
-      <p class="mat-sub">Each cue uses a different lesson's grammar. Read it out loud, she answers, flip only to check.</p>
+      <span class="mat-title">🗣️ Oral drill: say the full sentence</span>
+      <p class="mat-sub">Read the cue out loud, then she says the full sentence. Flip only to check.</p>
       <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: comparison swap chain</span>
+      <p class="mat-sub">Say the sentence, then say it again adding the comparison — out loud, back and forth, no pausing.</p>
+      <div class="block-content">
+        <ol>
+          <li>"She is tall." → (taller than me) → <em>"She is taller than me."</em></li>
+          <li>"This is good." → (better than that) → <em>"This is better than that."</em></li>
+          <li>"He is nice." → (nicer than his brother) → <em>"He is nicer than his brother."</em></li>
+          <li>"This bag is big." → (bigger than mine) → <em>"This bag is bigger than mine."</em></li>
+          <li>"Today is bad." → (worse than yesterday) → <em>"Today is worse than yesterday."</em></li>
+        </ol>
+      </div>
     </div>
   </section>
 
-  <!-- ============ 2. VOCABULARY REVIEW ============ -->
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
   <section class="lesson-section" id="vocab">
     <div class="section-head">
-      <h3>🗂️ Vocabulary review — one word per lesson</h3>
+      <h3>🗂️ Vocabulary — with pictures</h3>
       <span class="section-time">15 min</span>
     </div>
-    <p class="section-sub">A "greatest hits" set pulling one key word from every lesson. Say it out loud, flip to see the example, click "Listen" to check pronunciation.</p>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
     <div class="vocab-grid" id="vocabGrid"></div>
   </section>
 
-  <!-- ============ 3. PRONUNCIATION REVIEW ============ -->
+  <!-- ============ 3. PRONUNCIATION ============ -->
   <section class="lesson-section" id="pronunciation">
     <div class="section-head">
-      <h3>🔊 Pronunciation review</h3>
+      <h3>🔊 Pronunciation practice</h3>
       <span class="section-time">10 min</span>
     </div>
-    <p class="section-sub">The five trickiest words from the whole course, back for one more round. Click the purple button to hear each one, then she repeats it three times.</p>
+    <p class="section-sub">Five words and patterns that trip learners up when comparing things. Click the purple button to hear each one, then she repeats it three times.</p>
     <div id="pronWords"></div>
-    <p class="mat-title" style="margin-top:18px;">Tongue twister (a mash-up of the course — read it together, then she tries it alone)</p>
-    <div class="twister-box">"My daughter's kind boyfriend watched the weather at the restaurant."</div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"The tall, thin teacher told terrific stories."</div>
   </section>
 
-  <!-- ============ 4. FREE CONVERSATION ============ -->
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
   <section class="lesson-section" id="speaking">
     <div class="section-head">
-      <h3>🗣️ Free conversation</h3>
+      <h3>🗣️ Speaking practice</h3>
       <span class="section-time">15 min</span>
     </div>
     <div class="block">
-      <span class="block-label c-speaking">Free chat</span>
-      <p class="block-content">No structure — just talk. Let her lead where she can, and only step in to help when she's genuinely stuck.</p>
+      <span class="block-label c-speaking">Compare two objects</span>
+      <p class="block-content">Point to two real things in the room (cups, bags, chairs). She compares them out loud: "The table is bigger than the chair."</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Guess who — comparison edition</span>
+      <p class="block-content">Ask her to compare family members: who's taller, who's older, who's funnier. Push for full comparative sentences, not just names.</p>
     </div>
     <div class="mat-section" style="margin-top:6px;">
-      <span class="mat-title">Prompt cards — mixed review, flip to check a sample</span>
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
       <div class="prompt-grid" id="promptGrid"></div>
     </div>
   </section>
 
-  <!-- ============ 5. MIXED REVIEW QUIZ ============ -->
+  <!-- ============ 5. INTERACTIVE TASK 1: COMPARATIVES QUIZ ============ -->
   <section class="lesson-section" id="task1">
     <div class="section-head">
-      <h3>🧠 Interactive task 1: Mixed review quiz</h3>
+      <h3>🧠 Interactive task 1: Comparatives quiz</h3>
       <span class="section-time">10 min</span>
     </div>
-    <p class="section-sub">One question from each lesson's grammar point. She answers out loud first, then clicks.</p>
+    <p class="section-sub">She answers out loud first, then clicks. This checks she can choose "-er" vs. "more" correctly, not just recognize the words.</p>
     <div id="quiz"></div>
   </section>
 
-  <!-- ============ 6. SENTENCE BUILDER ============ -->
+  <!-- ============ 6. INTERACTIVE TASK 2: SENTENCE BUILDER ============ -->
   <section class="lesson-section" id="task2">
     <div class="section-head">
       <h3>🔤 Interactive task 2: Sentence builder</h3>
       <span class="section-time">10 min</span>
     </div>
-    <p class="section-sub">Four sentences, four different grammar points. Click the chips in order, then hit Check.</p>
+    <p class="section-sub">Click the word chips in the correct order to build each sentence, then hit Check. Say the finished sentence out loud before moving to the next one.</p>
     <div id="builder"></div>
   </section>
 
@@ -129,21 +153,21 @@
       <span class="section-time">10 min</span>
     </div>
     <div class="mat-section">
-      <span class="mat-title">Part A — introducing herself</span>
+      <span class="mat-title">Part A — comparing family and things</span>
       <div class="gapfill-box" id="gapfillA"></div>
       <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
     </div>
     <div class="mat-section" style="margin-top:18px;">
-      <span class="mat-title">Part B — about the boyfriend</span>
+      <span class="mat-title">Part B — longer adjectives ("more")</span>
       <div class="gapfill-box" id="gapfillB"></div>
       <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
     </div>
   </section>
 
-  <!-- ============ 8. ROLEPLAY MARATHON ============ -->
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
   <section class="lesson-section" id="roleplay">
     <div class="section-head">
-      <h3>🎭 Roleplay script 1 — full marathon (mix of everything)</h3>
+      <h3>🎭 Roleplay script 1 — describing her sister</h3>
       <span class="section-time">5 min</span>
     </div>
     <div class="dialogue" id="dialogue1"></div>
@@ -151,10 +175,10 @@
 
   <section class="lesson-section">
     <div class="section-head">
-      <h3>🎭 Roleplay script 2 — the final check-in</h3>
+      <h3>🎭 Roleplay script 2 — Ireland vs. Ukraine</h3>
       <span class="section-time">5 min</span>
     </div>
-    <p class="section-sub">A reflective conversation to close out the course — and a nice moment for her to hear how far she's come.</p>
+    <p class="section-sub">A natural comparison conversation — the kind of thing that comes up constantly during her visits.</p>
     <div class="dialogue" id="dialogue2"></div>
   </section>
 
@@ -166,78 +190,87 @@
     </div>
     <div class="block">
       <span class="block-label c-homework">Homework</span>
-      <p class="block-content">Record a 2-minute video introducing herself, her family, and her plans — using as much course vocabulary as possible. Compare it to her Lesson 1 recording.</p>
+      <p class="block-content">Describe 3 people in her family (looks + personality), then compare two of them, and record it out loud.</p>
     </div>
     <div class="block backup">
       <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
       <div class="block-content"><ul>
-        <li>"Random topic spinner" — 1-minute talks on earlier topics</li>
-        <li>Mixed "interview" pulling questions from across the course</li>
-        <li>She "teaches" you a phrase in Ukrainian</li>
-        <li>Her choice: repeat any scenario, this time with no notes</li>
+        <li>Compare two photos side by side</li>
+        <li>Describe a well-known person from Ukraine using today's adjectives</li>
+        <li>"My country vs. Ireland" quick comparison chat</li>
+        <li>Draw a simple picture and describe it using size adjectives</li>
       </ul></div>
     </div>
   </section>
 
 </div>
 
-<footer class="site-footer">Lesson 9 of 9 · <a href="index.html">Back to course home</a></footer>
+<footer class="site-footer">Lesson 9 of 30 · <a href="index.html">Back to course home</a></footer>
 
 <script src="script.js"></script>
 <script>
-/* ---------- Custom picture icons for vocabulary (one per lesson) ---------- */
-const REVIEW_ICONS = {
-  wave: '<path d="M8 12c0-3 1.5-5 3-5s2 2 2 4-1 3-2 3 1-1 1-3-1-3-2.5-3S7 9.5 7 12s1.5 4 3.5 4c3 0 5-2 5-2"/><path d="M4 20c1-2 3-3 5-2"/>',
-  people: '<circle cx="7" cy="9" r="2.1"/><path d="M3.2 19.5c0-2.7 1.7-4.6 3.8-4.6s3.8 1.9 3.8 4.6"/><circle cx="17" cy="9" r="2.1"/><path d="M13.2 19.5c0-2.7 1.7-4.6 3.8-4.6s3.8 1.9 3.8 4.6"/><circle cx="12" cy="6.2" r="2.4"/><path d="M7.8 20c0-2.9 1.9-5 4.2-5s4.2 2.1 4.2 5"/>',
-  star: '<path d="m12 3 2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6L12 3Z"/>',
-  find: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/>',
-  go: '<path d="M5 12h13"/><path d="m13 6 6 6-6 6"/>',
-  calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
-  door: '<path d="M4 11 12 4l8 7"/><path d="M6 10.2V20h12v-9.8"/><path d="M14 20v-6h-3v6"/>',
-  sun: '<circle cx="12" cy="12" r="5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2 2M17.5 17.5l2 2M4.5 19.5l2-2M17.5 6.5l2-2"/>',
-  heart: '<path d="M12 20.5s-6.8-4.2-8.9-8.4C1.9 8.7 3 5.3 6.1 4.7c2.1-.4 3.9.8 5.9 3.2 2-2.4 3.8-3.6 5.9-3.2 3.1.6 4.2 4 2.9 7.4-2.1 4.2-8.8 8.4-8.8 8.4Z"/>',
-  handshake: '<path d="M2.5 13h5l2.2-2.2 2.2 2.2h5"/><path d="M8 10.6 5.7 13l2.3 2.4M16 10.6 18.3 13 16 15.4"/>'
+/* ---------- Custom picture icons for vocabulary ---------- */
+const DESC_ICONS = {
+  tall: '<circle cx="12" cy="8.6" r="2.3"/><path d="M7.3 21c0-3.7 1.9-6.3 4.7-6.3s4.7 2.6 4.7 6.3"/><path d="M12 2v3.4M9.6 4.6 12 2l2.4 2.6"/>',
+  short: '<circle cx="12" cy="10" r="2.3"/><path d="M7.3 21c0-2.8 1.9-4.7 4.7-4.7s4.7 1.9 4.7 4.7"/><path d="M12 2v3M9.6 3.5 12 6l2.4-2.5"/>',
+  big: '<path d="M4 4h6M4 4v6M4 4l6 6"/><path d="M20 20h-6M20 20v-6M20 20l-6-6"/>',
+  small: '<path d="M9 4 4 9M4 4v5h5"/><path d="M15 20l5-5M20 20v-5h-5"/>',
+  young: '<path d="m12 3 2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6L12 3Z"/>',
+  old: '<circle cx="10" cy="6" r="2.2"/><path d="M6 20c0-3.5 1.8-6 4-6s4 1.5 4 4"/><path d="M15 12v8M15 12l3-2"/>',
+  sparkle: '<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/>',
+  heavy: '<rect x="2" y="10" width="4" height="4" rx="1"/><rect x="18" y="10" width="4" height="4" rx="1"/><path d="M6 12h12"/>',
+  light: '<path d="M18 4C10 4 5 10 5 17c3 0 6-1 8-3M18 4c0 6-3 10-7 12"/>',
+  equal: '<path d="M5 9h14M5 15h14"/>'
 };
-function reviewIcon(name){
-  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${REVIEW_ICONS[name]}</svg>`;
+function descIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${DESC_ICONS[name]}</svg>`;
 }
 
-/* ---------- 1. Grammar sprint ---------- */
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"tall", right:"taller"},
+  {left:"short", right:"shorter"},
+  {left:"big", right:"bigger"},
+  {left:"good", right:"better"},
+  {left:"bad", right:"worse"},
+  {left:"nice", right:"nicer"}
+]);
+
 renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
-  text:"Hello, my {{}} is Yaroslava. Yesterday I {{}} to the shops. Tomorrow I am {{}} to visit my daughter. She {{}} a kind boyfriend. Excuse me, where can I {{}} the milk?",
-  answers:["name","went","going","has","find"]
+  text:"My daughter is {{}} than me. This bag is {{}} than that one. Today is {{}} than yesterday.",
+  answers:["taller","bigger","better"]
 });
 
 renderPromptGrid(document.getElementById('oralDrill1'), [
-  {q:"(possessive) She / boyfriend", a:"She has a boyfriend."},
-  {q:"(would like) I / a coffee", a:"I'd like a coffee."},
-  {q:"(question) the milk / where", a:"Where is the milk?"},
-  {q:"(past) I / go / to the shops", a:"I went to the shops."},
-  {q:"(future) I / visit my daughter", a:"I'm going to visit my daughter."},
-  {q:"(directions) the gate / how do I get to", a:"How do I get to the gate?"}
+  {q:"tall / my brother", a:"My brother is tall."},
+  {q:"taller than / my brother / me", a:"My brother is taller than me."},
+  {q:"the tallest / in my family / who is", a:"Who is the tallest in my family?"},
+  {q:"good / this coffee", a:"This coffee is good."},
+  {q:"better than / this coffee / that one", a:"This coffee is better than that one."},
+  {q:"nice / your boyfriend", a:"Your boyfriend is nice."}
 ]);
 
-/* ---------- 2. Vocabulary review ---------- */
+/* ---------- 2. Vocabulary with pictures ---------- */
 renderVocabGrid(document.getElementById('vocabGrid'), [
-  {svg:reviewIcon('wave'), w:"Hello", x:"Hello! Nice to meet you. (Lesson 1)"},
-  {svg:reviewIcon('people'), w:"family", x:"I have a big family. (Lesson 2)"},
-  {svg:reviewIcon('star'), w:"delicious", x:"This is delicious! (Lesson 3)"},
-  {svg:reviewIcon('find'), w:"find", x:"Where can I find the milk? (Lesson 4)"},
-  {svg:reviewIcon('go'), w:"went", x:"I went to the shops. (Lesson 5)"},
-  {svg:reviewIcon('calendar'), w:"going to", x:"I'm going to visit Ireland. (Lesson 6)"},
-  {svg:reviewIcon('door'), w:"gate", x:"The gate is number twelve. (Lesson 7)"},
-  {svg:reviewIcon('sun'), w:"sunny", x:"It's sunny today! (Lesson 8)"},
-  {svg:reviewIcon('heart'), w:"thank you", x:"Thank you very much!"},
-  {svg:reviewIcon('handshake'), w:"nice to meet you", x:"Nice to meet you too!"}
+  {svg:descIcon('tall'), w:"tall", x:"My brother is very tall."},
+  {svg:descIcon('short'), w:"short", x:"She is quite short."},
+  {svg:descIcon('big'), w:"big", x:"This is a big house."},
+  {svg:descIcon('small'), w:"small", x:"I have a small bag."},
+  {svg:descIcon('young'), w:"young", x:"Her son is very young."},
+  {svg:descIcon('old'), w:"old", x:"My grandmother is old."},
+  {svg:descIcon('sparkle'), w:"beautiful", x:"Ireland is beautiful."},
+  {svg:descIcon('heavy'), w:"heavy", x:"This suitcase is heavy."},
+  {svg:descIcon('light'), w:"light", x:"This bag is light."},
+  {svg:descIcon('equal'), w:"the same as", x:"My coat is the same as hers."}
 ]);
 
-/* ---------- 3. Pronunciation review ---------- */
+/* ---------- 3. Pronunciation ---------- */
 const pronWords = [
-  {stress:"<b>DAUGH</b>-ter", word:"daughter", note:"silent \u2018gh\u2019 \u2014 sounds like \u2018DAW-ter\u2019 (Lesson 2)"},
-  {stress:"<b>RES</b>-tau-rant", word:"restaurant", note:"sounds like \u2018RES-tr\u0259nt\u2019 (Lesson 3)"},
-  {stress:"re-<b>CEIPT</b>", word:"receipt", note:"silent \u2018p\u2019 \u2014 sounds like \u2018ri-SEET\u2019 (Lesson 4)"},
-  {stress:"<b>LUG</b>-gage", word:"luggage", note:"stress on the first syllable (Lesson 7)"},
-  {stress:"<b>WEA</b>-ther", word:"weather", note:"sounds exactly like \u2018whether\u2019 (Lesson 8)"}
+  {stress:"th\u0259n", word:"than", note:"almost always weak and unstressed \u2014 sounds like \u2018th\u2019n\u2019"},
+  {stress:"<b>TALL</b>-er", word:"taller", note:"stress on the first syllable"},
+  {stress:"<b>GOR</b>-geous", word:"gorgeous", note:"the \u2018ge\u2019 sounds like \u2018j\u2019 \u2014 GOR-jus"},
+  {stress:"<b>HEAV</b>-i-er", word:"heavier", note:"three syllables"},
+  {stress:"the same \u2018\u0259z\u2019", word:"as", note:"unstressed in \u2018the same as\u2019, sounds like a quick \u2018\u0259z\u2019"}
 ];
 const pronWrap = document.getElementById('pronWords');
 pronWords.forEach(p => {
@@ -253,59 +286,59 @@ pronWords.forEach(p => {
   pronWrap.appendChild(el);
 });
 
-/* ---------- 4. Prompt cards (mixed review) ---------- */
+/* ---------- 4. Speaking prompt cards ---------- */
 renderPromptGrid(document.getElementById('promptGrid'), [
-  {q:"What's your name and where are you from?", a:"My name is… I'm from…"},
-  {q:"What did you do yesterday?", a:"Yesterday I…"},
-  {q:"What are your plans for tomorrow?", a:"Tomorrow I'm going to…"},
-  {q:"Where can I find the bread?", a:"Excuse me, where can I find…?"},
-  {q:"What's the weather like today?", a:"It's…"}
+  {q:"Who is taller, you or your daughter?", a:"My daughter is taller than me."},
+  {q:"Describe your boyfriend's height.", a:"He is quite tall."},
+  {q:"Is Ireland beautiful?", a:"Yes, it's very beautiful."},
+  {q:"Compare your suitcase and your handbag.", a:"My suitcase is heavier than my handbag."},
+  {q:"Describe yourself in three words.", a:"I am… and…"}
 ]);
 
-/* ---------- 5. Mixed review quiz ---------- */
+/* ---------- 5. Comparatives quiz ---------- */
 renderQuiz(document.getElementById('quiz'), [
-  {q:"What is the past form of \u2018go\u2019?", options:["went","goed","gone"], correctIndex:0},
-  {q:"Which phrase means a polite request right now?", options:["I'd like…","I like…","I liked…"], correctIndex:0},
-  {q:"\u2018She has a boyfriend\u2019 \u2014 we use \u2018has\u2019 because the subject is:", options:["she (singular)","I","they"], correctIndex:0},
-  {q:"\u2018I'm going to visit Ireland\u2019 talks about…", options:["a future plan","a past event","a general fact"], correctIndex:0},
-  {q:"\u2018How do I get to the gate?\u2019 is used to ask for:", options:["directions","the price","the weather"], correctIndex:0}
+  {q:"What is the comparative form of \u2018big\u2019?", options:["bigger","biger","more big"], correctIndex:0},
+  {q:"What is the comparative form of \u2018good\u2019?", options:["better","gooder","more good"], correctIndex:0},
+  {q:"\u2018My daughter is taller than me\u2019 \u2014 who is taller?", options:["the daughter","me","we're the same"], correctIndex:0},
+  {q:"What is the comparative form of \u2018beautiful\u2019?", options:["more beautiful","beautifuller","beautiful-er"], correctIndex:0},
+  {q:"\u2018This bag is the same as that one\u2019 means…", options:["they look the same","they are different","one is bigger"], correctIndex:0}
 ]);
 
 /* ---------- 6. Sentence builder ---------- */
 renderSentenceBuilder(document.getElementById('builder'), [
-  {hint:"(Lesson 2 grammar) Describe the boyfriend:", words:["She","has","a","kind","boyfriend"]},
-  {hint:"(Lesson 3 grammar) Order politely:", words:["I'd","like","a","coffee","please"]},
-  {hint:"(Lesson 5 grammar) Say what you did:", words:["I","went","to","the","shops","yesterday"]},
-  {hint:"(Lesson 6 grammar) Say your plan:", words:["I'm","going","to","visit","my","daughter"]}
+  {hint:"Compare her daughter's height:", words:["My","daughter","is","taller","than","me"]},
+  {hint:"Compare two coffees:", words:["This","coffee","is","better","than","that","one"]},
+  {hint:"Describe Ireland:", words:["Ireland","is","very","beautiful"]},
+  {hint:"Compare her bags:", words:["My","suitcase","is","heavier","than","my","bag"]}
 ]);
 
 /* ---------- 7. Gap-fill ---------- */
 renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
-  text:"Hello, my {{}} is Yaroslava. Yesterday I {{}} to the shops. Tomorrow I am {{}} to visit my daughter. Excuse me, where can I {{}} the milk?",
-  answers:["name","went","going","find"]
+  text:"My daughter is {{}} than me. This bag is {{}} than that one. Today is {{}} than yesterday.",
+  answers:["taller","bigger","better"]
 });
 renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
-  text:"She {{}} a kind and funny boyfriend. He {{}} as an engineer. Last year they {{}} to Ukraine to visit. It {{}} very sunny that week!",
-  answers:["has","works","went","was"]
+  text:"My boyfriend is {{}} than I expected. Ireland is {{}} in the summer. This suitcase is {{}} than I thought!",
+  answers:["nicer","more beautiful","heavier"]
 });
 
 /* ---------- 8. Roleplay scripts ---------- */
 renderDialogue(document.getElementById('dialogue1'), [
-  {s:"a", t:"Hi Yaroslava! How was your flight?"},
-  {s:"b", t:"It was good, thank you. A bit tiring."},
-  {s:"a", t:"What are your plans while you're here?"},
-  {s:"b", t:"I'm going to visit the city and do some shopping."},
-  {s:"a", t:"Sounds great — see you later!"},
-  {s:"b", t:"See you later! Nice talking to you."}
-], "Boyfriend / Staff");
+  {s:"a", t:"What does your sister look like?"},
+  {s:"b", t:"She's tall and has dark hair."},
+  {s:"a", t:"Is she older than you?"},
+  {s:"b", t:"No, she's younger than me."},
+  {s:"a", t:"What's she like?"},
+  {s:"b", t:"She's kind and very funny."}
+], "Boyfriend");
 
 renderDialogue(document.getElementById('dialogue2'), [
-  {s:"a", t:"How do you feel about your English now?"},
-  {s:"b", t:"Much better! I can talk about my family, order food, and ask for directions."},
-  {s:"a", t:"That's brilliant! What was the hardest part?"},
-  {s:"b", t:"Pronunciation, but I'm practising every day."},
-  {s:"a", t:"You're doing great. I'm proud of you."},
-  {s:"b", t:"Thank you! I'm excited to use English more."}
+  {s:"a", t:"What do you think of Ireland?"},
+  {s:"b", t:"It's beautiful! The countryside is greener than in Ukraine."},
+  {s:"a", t:"Is the weather different?"},
+  {s:"b", t:"Yes, it's warmer here in winter, but rainier too."},
+  {s:"a", t:"What about the food?"},
+  {s:"b", t:"I think Ukrainian food is more filling!"}
 ], "Boyfriend");
 </script>
 </body>

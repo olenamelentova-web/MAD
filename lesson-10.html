@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 10 — Review & Free Conversation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-9.html">← Lesson 9</a>
+      <a class="primary" href="index.html">Unit 1 complete ✓</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 10 · 90 min · Unit 1 Review</span>
+    <h1>Review & Free Conversation — Unit 1</h1>
+    <p>Pull together everything from Lessons 1–9 and see how naturally she can now handle real situations. Grammar focus: a fast mixed sprint through everything covered in Unit 1.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar sprint</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary review</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation review</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Free conversation</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🧠 Mixed review quiz</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Sentence builder</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay marathon</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR SPRINT ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar sprint: everything at once</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">One cue from every lesson so far — she has to switch grammar on the fly, which is exactly what real conversation demands.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Quick drill: mixed gap-fill</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: mixed grammar sprint</span>
+      <p class="mat-sub">Each cue uses a different lesson's grammar. Read it out loud, she answers, flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+  </section>
+
+  <!-- ============ 2. VOCABULARY REVIEW ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary review — one word per lesson</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">A "greatest hits" set pulling one key word from every lesson. Say it out loud, flip to see the example, click "Listen" to check pronunciation.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION REVIEW ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation review</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">The five trickiest words from the whole course, back for one more round. Click the purple button to hear each one, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (a mash-up of the course — read it together, then she tries it alone)</p>
+    <div class="twister-box">"My daughter's kind boyfriend watched the weather at the restaurant."</div>
+  </section>
+
+  <!-- ============ 4. FREE CONVERSATION ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Free conversation</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Free chat</span>
+      <p class="block-content">No structure — just talk. Let her lead where she can, and only step in to help when she's genuinely stuck.</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — mixed review, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. MIXED REVIEW QUIZ ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🧠 Interactive task 1: Mixed review quiz</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">One question from each lesson's grammar point. She answers out loud first, then clicks.</p>
+    <div id="quiz"></div>
+  </section>
+
+  <!-- ============ 6. SENTENCE BUILDER ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🔤 Interactive task 2: Sentence builder</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Four sentences, four different grammar points. Click the chips in order, then hit Check.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — introducing herself</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — about the boyfriend</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY MARATHON ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — full marathon (mix of everything)</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — the final check-in</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">A reflective conversation to close out the course — and a nice moment for her to hear how far she's come.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Record a 2-minute video introducing herself, her family, and her plans — using as much course vocabulary as possible. Compare it to her Lesson 1 recording.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>"Random topic spinner" — 1-minute talks on earlier topics</li>
+        <li>Mixed "interview" pulling questions from across the course</li>
+        <li>She "teaches" you a phrase in Ukrainian</li>
+        <li>Her choice: repeat any scenario, this time with no notes</li>
+      </ul></div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">Lesson 10 of 30 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+/* ---------- Custom picture icons for vocabulary (one per lesson) ---------- */
+const REVIEW_ICONS = {
+  wave: '<path d="M8 12c0-3 1.5-5 3-5s2 2 2 4-1 3-2 3 1-1 1-3-1-3-2.5-3S7 9.5 7 12s1.5 4 3.5 4c3 0 5-2 5-2"/><path d="M4 20c1-2 3-3 5-2"/>',
+  people: '<circle cx="7" cy="9" r="2.1"/><path d="M3.2 19.5c0-2.7 1.7-4.6 3.8-4.6s3.8 1.9 3.8 4.6"/><circle cx="17" cy="9" r="2.1"/><path d="M13.2 19.5c0-2.7 1.7-4.6 3.8-4.6s3.8 1.9 3.8 4.6"/><circle cx="12" cy="6.2" r="2.4"/><path d="M7.8 20c0-2.9 1.9-5 4.2-5s4.2 2.1 4.2 5"/>',
+  star: '<path d="m12 3 2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6L12 3Z"/>',
+  find: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/>',
+  go: '<path d="M5 12h13"/><path d="m13 6 6 6-6 6"/>',
+  calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+  door: '<path d="M4 11 12 4l8 7"/><path d="M6 10.2V20h12v-9.8"/><path d="M14 20v-6h-3v6"/>',
+  sun: '<circle cx="12" cy="12" r="5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2 2M17.5 17.5l2 2M4.5 19.5l2-2M17.5 6.5l2-2"/>',
+  heart: '<path d="M12 20.5s-6.8-4.2-8.9-8.4C1.9 8.7 3 5.3 6.1 4.7c2.1-.4 3.9.8 5.9 3.2 2-2.4 3.8-3.6 5.9-3.2 3.1.6 4.2 4 2.9 7.4-2.1 4.2-8.8 8.4-8.8 8.4Z"/>',
+  handshake: '<path d="M2.5 13h5l2.2-2.2 2.2 2.2h5"/><path d="M8 10.6 5.7 13l2.3 2.4M16 10.6 18.3 13 16 15.4"/>'
+};
+function reviewIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${REVIEW_ICONS[name]}</svg>`;
+}
+
+/* ---------- 1. Grammar sprint ---------- */
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"Hello, my {{}} is Yaroslava. Yesterday I {{}} to the shops. Tomorrow I am {{}} to visit my daughter. She {{}} a kind boyfriend. Excuse me, where can I {{}} the milk?",
+  answers:["name","went","going","has","find"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"(possessive) She / boyfriend", a:"She has a boyfriend."},
+  {q:"(would like) I / a coffee", a:"I'd like a coffee."},
+  {q:"(question) the milk / where", a:"Where is the milk?"},
+  {q:"(past) I / go / to the shops", a:"I went to the shops."},
+  {q:"(future) I / visit my daughter", a:"I'm going to visit my daughter."},
+  {q:"(directions) the gate / how do I get to", a:"How do I get to the gate?"}
+]);
+
+/* ---------- 2. Vocabulary review ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:reviewIcon('wave'), w:"Hello", x:"Hello! Nice to meet you. (Lesson 1)"},
+  {svg:reviewIcon('people'), w:"family", x:"I have a big family. (Lesson 2)"},
+  {svg:reviewIcon('star'), w:"delicious", x:"This is delicious! (Lesson 3)"},
+  {svg:reviewIcon('find'), w:"find", x:"Where can I find the milk? (Lesson 4)"},
+  {svg:reviewIcon('go'), w:"went", x:"I went to the shops. (Lesson 5)"},
+  {svg:reviewIcon('calendar'), w:"going to", x:"I'm going to visit Ireland. (Lesson 6)"},
+  {svg:reviewIcon('door'), w:"gate", x:"The gate is number twelve. (Lesson 7)"},
+  {svg:reviewIcon('sun'), w:"sunny", x:"It's sunny today! (Lesson 8)"},
+  {svg:reviewIcon('heart'), w:"thank you", x:"Thank you very much!"},
+  {svg:reviewIcon('handshake'), w:"nice to meet you", x:"Nice to meet you too!"}
+]);
+
+/* ---------- 3. Pronunciation review ---------- */
+const pronWords = [
+  {stress:"<b>DAUGH</b>-ter", word:"daughter", note:"silent \u2018gh\u2019 \u2014 sounds like \u2018DAW-ter\u2019 (Lesson 2)"},
+  {stress:"<b>RES</b>-tau-rant", word:"restaurant", note:"sounds like \u2018RES-tr\u0259nt\u2019 (Lesson 3)"},
+  {stress:"re-<b>CEIPT</b>", word:"receipt", note:"silent \u2018p\u2019 \u2014 sounds like \u2018ri-SEET\u2019 (Lesson 4)"},
+  {stress:"<b>LUG</b>-gage", word:"luggage", note:"stress on the first syllable (Lesson 7)"},
+  {stress:"<b>WEA</b>-ther", word:"weather", note:"sounds exactly like \u2018whether\u2019 (Lesson 8)"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Prompt cards (mixed review) ---------- */
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"What's your name and where are you from?", a:"My name is… I'm from…"},
+  {q:"What did you do yesterday?", a:"Yesterday I…"},
+  {q:"What are your plans for tomorrow?", a:"Tomorrow I'm going to…"},
+  {q:"Where can I find the bread?", a:"Excuse me, where can I find…?"},
+  {q:"What's the weather like today?", a:"It's…"}
+]);
+
+/* ---------- 5. Mixed review quiz ---------- */
+renderQuiz(document.getElementById('quiz'), [
+  {q:"What is the past form of \u2018go\u2019?", options:["went","goed","gone"], correctIndex:0},
+  {q:"Which phrase means a polite request right now?", options:["I'd like…","I like…","I liked…"], correctIndex:0},
+  {q:"\u2018She has a boyfriend\u2019 \u2014 we use \u2018has\u2019 because the subject is:", options:["she (singular)","I","they"], correctIndex:0},
+  {q:"\u2018I'm going to visit Ireland\u2019 talks about…", options:["a future plan","a past event","a general fact"], correctIndex:0},
+  {q:"\u2018How do I get to the gate?\u2019 is used to ask for:", options:["directions","the price","the weather"], correctIndex:0}
+]);
+
+/* ---------- 6. Sentence builder ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"(Lesson 2 grammar) Describe the boyfriend:", words:["She","has","a","kind","boyfriend"]},
+  {hint:"(Lesson 3 grammar) Order politely:", words:["I'd","like","a","coffee","please"]},
+  {hint:"(Lesson 5 grammar) Say what you did:", words:["I","went","to","the","shops","yesterday"]},
+  {hint:"(Lesson 6 grammar) Say your plan:", words:["I'm","going","to","visit","my","daughter"]}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
+  text:"Hello, my {{}} is Yaroslava. Yesterday I {{}} to the shops. Tomorrow I am {{}} to visit my daughter. Excuse me, where can I {{}} the milk?",
+  answers:["name","went","going","find"]
+});
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"She {{}} a kind and funny boyfriend. He {{}} as an engineer. Last year they {{}} to Ukraine to visit. It {{}} very sunny that week!",
+  answers:["has","works","went","was"]
+});
+
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
+  {s:"a", t:"Hi Yaroslava! How was your flight?"},
+  {s:"b", t:"It was good, thank you. A bit tiring."},
+  {s:"a", t:"What are your plans while you're here?"},
+  {s:"b", t:"I'm going to visit the city and do some shopping."},
+  {s:"a", t:"Sounds great — see you later!"},
+  {s:"b", t:"See you later! Nice talking to you."}
+], "Boyfriend / Staff");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"a", t:"How do you feel about your English now?"},
+  {s:"b", t:"Much better! I can talk about my family, order food, and ask for directions."},
+  {s:"a", t:"That's brilliant! What was the hardest part?"},
+  {s:"b", t:"Pronunciation, but I'm practising every day."},
+  {s:"a", t:"You're doing great. I'm proud of you."},
+  {s:"b", t:"Thank you! I'm excited to use English more."}
+], "Boyfriend");
+</script>
+</body>
+</html>

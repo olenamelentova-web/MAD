@@ -103,7 +103,9 @@ const TOPIC_ICONS = {
   clockfwd: '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M18 5l2-2m0 0v3m0-3h-3"/>',
   plane: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-1 .1-1.3.5l-.7.8c-.4.4-.2 1.1.3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.7 5.9c.2.5.9.7 1.3.3l.8-.7c.4-.3.5-.8.3-1.3Z"/>',
   cloud: '<path d="M7 18a4 4 0 1 1 .6-8 5 5 0 0 1 9.7 1.7A3.5 3.5 0 0 1 17 18H7Z"/><path d="M9 21h.01M13 21h.01M11 23h.01"/>',
-  flag: '<path d="M5 21V4"/><path d="M5 4h13l-3 4 3 4H5"/>'
+  flag: '<path d="M5 21V4"/><path d="M5 4h13l-3 4 3 4H5"/>',
+  scale: '<path d="M12 3v18M6 8l-3 6a3 3 0 0 0 6 0Z"/><path d="M18 8l-3 6a3 3 0 0 0 6 0Z"/><path d="M6 8h12"/>',
+  dot: '<circle cx="12" cy="12" r="3"/>'
 };
 function topicIcon(name, cls){
   return `<svg class="${cls||''}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${TOPIC_ICONS[name]}</svg>`;
