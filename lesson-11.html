@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 11 — Daily Routine: My Typical Day</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-10.html">← Lesson 10</a>
+      <a class="primary" href="lesson-12.html">Lesson 12 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 11 · 90 min · Unit 2</span>
+    <h1>Daily Routine — My Typical Day</h1>
+    <p>Talking about ordinary daily life, not just special occasions. Grammar focus: present simple + frequency adverbs (always, usually, sometimes, never), used throughout every task below.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🧠 Routine logic quiz</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Sentence builder</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: frequency adverbs</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Always, usually, sometimes, never — four words that let her describe her whole life, not just single events. We drill them first.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: adverb → meaning</span>
+      <p class="mat-sub">Click an adverb on the left, then its meaning on the right.</p>
+      <div id="grammarMatch"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: fill the adverb</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: say the full sentence</span>
+      <p class="mat-sub">Read the cue out loud, then she says the full sentence with the adverb in the right place. Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: subject swap chain</span>
+      <p class="mat-sub">Say the sentence, then say it again with the new person — out loud, back and forth, no pausing.</p>
+      <div class="block-content">
+        <ol>
+          <li>"I always wake up early." → (she) → <em>"She always wakes up early."</em></li>
+          <li>"He usually has tea." → (they) → <em>"They usually have tea."</em></li>
+          <li>"We sometimes go out." → (I) → <em>"I sometimes go out."</em></li>
+          <li>"She never eats meat." → (we) → <em>"We never eat meat."</em></li>
+          <li>"They often visit." → (he) → <em>"He often visits."</em></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Five everyday words that are commonly mispronounced. Click the purple button to hear each one, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"She usually wakes early and often walks to work."</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">My typical day</span>
+      <p class="block-content">She narrates her full daily routine from waking up to going to bed, using frequency adverbs throughout.</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Compare routines</span>
+      <p class="block-content">Compare a weekday routine to a weekend routine — what's the same, what's different?</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. INTERACTIVE TASK 1: ROUTINE LOGIC QUIZ ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🧠 Interactive task 1: Routine logic quiz</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">She answers out loud first, then clicks.</p>
+    <div id="quiz"></div>
+  </section>
+
+  <!-- ============ 6. INTERACTIVE TASK 2: SENTENCE BUILDER ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🔤 Interactive task 2: Sentence builder</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Click the word chips in the correct order to build each sentence, then hit Check. Say the finished sentence out loud before moving to the next one.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — a typical morning</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — calls with Ann</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — describing her day to the boyfriend</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — weekday vs. weekend with Ann</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">A natural comparison chat with her daughter.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Describe her typical weekday and weekend routine using frequency adverbs, then record it out loud.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>Draw her daily routine as a simple clock or timeline</li>
+        <li>"Guess my routine" — you guess parts of her day, she confirms/corrects</li>
+        <li>Compare her routine to an imagined routine for the boyfriend</li>
+        <li>Frequency adverb chain drill with random verbs</li>
+      </ul></div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">Lesson 11 of 30 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+/* ---------- Custom picture icons for vocabulary ---------- */
+const ROUTINE_ICONS = {
+  alarm: '<circle cx="12" cy="13" r="7"/><path d="M12 9v4l3 2"/><path d="M5 5l2 2M19 5l-2 2"/>',
+  toothbrush: '<path d="M4 20 16 8"/><rect x="14" y="4" width="7" height="4" rx="1" transform="rotate(45 17.5 6)"/>',
+  shirt: '<path d="M8 4 4 7l2 3 2-1v11h8V9l2 1 2-3-4-3-2 2h-4L8 4Z"/>',
+  plate: '<circle cx="12" cy="13" r="7.5"/><path d="M9 8.5v9M15 8v4.5c0 1-1 1.7-2 1.7"/>',
+  go: '<path d="M5 12h13"/><path d="m13 6 6 6-6 6"/>',
+  bowl: '<path d="M3 12h18a8 8 0 0 1-8 8h-2a8 8 0 0 1-8-8Z"/>',
+  sofa: '<path d="M4 12v5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/><path d="M4 12a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2"/><path d="M6 10V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/>',
+  pot: '<path d="M4 10h16v3a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6v-3Z"/><path d="M2 10h20"/><path d="M7 10V7M17 10V7"/>',
+  bed: '<path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 18v2M21 18v2"/><path d="M3 13V9a2 2 0 0 1 2-2h4v5"/>',
+  cycle: '<path d="M4 12a8 8 0 0 1 14-5"/><path d="M20 12a8 8 0 0 1-14 5"/><path d="m18 3 0 4-4 0"/><path d="m6 21 0-4 4 0"/>'
+};
+function routineIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${ROUTINE_ICONS[name]}</svg>`;
+}
+
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"always", right:"100% of the time"},
+  {left:"usually", right:"most of the time"},
+  {left:"sometimes", right:"occasionally"},
+  {left:"never", right:"0% of the time"},
+  {left:"often", right:"frequently"},
+  {left:"rarely", right:"almost never"}
+]);
+
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"I {{}} wake up at seven. I {{}} have coffee. I {{}} go for a walk. I {{}} skip breakfast.",
+  answers:["always","usually","sometimes","never"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"always / wake up at seven / I", a:"I always wake up at seven."},
+  {q:"usually / have coffee / I", a:"I usually have coffee."},
+  {q:"sometimes / go for a walk / I", a:"I sometimes go for a walk."},
+  {q:"never / skip breakfast / I", a:"I never skip breakfast."},
+  {q:"often / call my daughter / I", a:"I often call my daughter."},
+  {q:"rarely / stay up late / I", a:"I rarely stay up late."}
+]);
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:routineIcon('alarm'), w:"wake up", x:"I always wake up at seven."},
+  {svg:routineIcon('toothbrush'), w:"brush my teeth", x:"I brush my teeth every morning."},
+  {svg:routineIcon('shirt'), w:"get dressed", x:"I get dressed quickly."},
+  {svg:routineIcon('plate'), w:"have breakfast", x:"I usually have breakfast at eight."},
+  {svg:routineIcon('go'), w:"go to the shops", x:"I sometimes go to the shops."},
+  {svg:routineIcon('bowl'), w:"have lunch", x:"I have lunch at one."},
+  {svg:routineIcon('sofa'), w:"relax", x:"I relax in the afternoon."},
+  {svg:routineIcon('pot'), w:"cook dinner", x:"I cook dinner every evening."},
+  {svg:routineIcon('bed'), w:"go to bed", x:"I go to bed at eleven."},
+  {svg:routineIcon('cycle'), w:"routine", x:"This is my daily routine."}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"<b>YOO</b>-zhoo-uh-lee", word:"usually", note:"often shortened in fast speech to \u2018YOOZH-lee\u2019"},
+  {stress:"roo-<b>TEEN</b>", word:"routine", note:"stress on the second syllable"},
+  {stress:"<b>BREK</b>-fast", word:"breakfast", note:"not \u2018break\u2019 + \u2018fast\u2019 \u2014 sounds like \u2018BREK-fast\u2019"},
+  {stress:"<b>klohz</b>", word:"clothes", note:"one syllable, sounds like \u2018klohz\u2019"},
+  {stress:"<b>OFF</b>-en", word:"often", note:"the \u2018t\u2019 is usually silent"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"What time do you usually wake up?", a:"I usually wake up at…"},
+  {q:"Do you always have breakfast?", a:"Yes, I always…"},
+  {q:"What do you do in the evening?", a:"I usually…"},
+  {q:"Do you ever skip lunch?", a:"No, I never… / Sometimes I…"},
+  {q:"What's different about your weekend routine?", a:"On weekends I…"}
+]);
+
+/* ---------- 5. Routine logic quiz ---------- */
+renderQuiz(document.getElementById('quiz'), [
+  {q:"\u2018I always wake up at 7\u2019 means…", options:["every day, no exceptions","most days","rarely"], correctIndex:0},
+  {q:"Where does the frequency adverb usually go?", options:["before the main verb","after the main verb","only at the very end"], correctIndex:0},
+  {q:"\u2018I never eat meat\u2019 means…", options:["0% of the time","50% of the time","100% of the time"], correctIndex:0},
+  {q:"Which is the correct order?", options:["I usually have breakfast","I have usually breakfast","Usually always I have breakfast"], correctIndex:0},
+  {q:"\u2018Sometimes\u2019 means…", options:["occasionally, not always","always","never"], correctIndex:0}
+]);
+
+/* ---------- 6. Sentence builder ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"Say when you wake up:", words:["I","always","wake","up","at","seven"]},
+  {hint:"Say what she usually drinks:", words:["She","usually","has","coffee"]},
+  {hint:"Say what we sometimes do:", words:["We","sometimes","go","for","a","walk"]},
+  {hint:"Say what he never does:", words:["He","never","skips","breakfast"]}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
+  text:"I {{}} wake up at seven. I {{}} have coffee. I {{}} go for a walk. I {{}} skip breakfast.",
+  answers:["always","usually","sometimes","never"]
+});
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"My daughter {{}} calls me on Sundays. She {{}} works late. We {{}} talk about our week. I {{}} miss her call!",
+  answers:["usually","sometimes","always","never"]
+});
+
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
+  {s:"a", t:"What's a typical day like for you?"},
+  {s:"b", t:"I usually wake up early and have coffee."},
+  {s:"a", t:"Do you work?"},
+  {s:"b", t:"I'm retired, so I relax in the mornings."},
+  {s:"a", t:"That sounds nice!"},
+  {s:"b", t:"Yes, but I'm never bored — I always find something to do."}
+], "Boyfriend");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"a", t:"What do you do on weekends?"},
+  {s:"b", t:"I usually visit friends or cook a big meal."},
+  {s:"a", t:"Different from weekdays?"},
+  {s:"b", t:"Yes, on weekdays I'm busier — I often do housework."},
+  {s:"a", t:"Sounds like a good balance!"}
+], "Ann");
+</script>
+</body>
+</html>

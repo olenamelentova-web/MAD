@@ -6,7 +6,7 @@
 <title>Lesson 2 — Family & Relationships</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -163,7 +163,7 @@
       <span class="section-time">10 min</span>
     </div>
     <div class="mat-section">
-      <span class="mat-title">Part A — Olena and Sean</span>
+      <span class="mat-title">Part A — Ann and Sean</span>
       <div class="gapfill-box" id="gapfillA"></div>
       <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
     </div>
@@ -215,7 +215,7 @@
 
 </div>
 
-<footer class="site-footer">Lesson 2 of 9 · <a href="index.html">Back to course home</a></footer>
+<footer class="site-footer">Lesson 2 of 30 · <a href="index.html">Back to course home</a></footer>
 
 <script src="script.js"></script>
 <script>
@@ -263,7 +263,7 @@ renderPromptGrid(document.getElementById('oralDrill1'), [
 /* ---------- 2. Vocabulary with pictures ---------- */
 renderVocabGrid(document.getElementById('vocabGrid'), [
   {svg:famIcon('family'), w:"family", x:"I have a big family."},
-  {svg:famIcon('person'), w:"daughter", x:"My daughter's name is Olena."},
+  {svg:famIcon('person'), w:"daughter", x:"My daughter's name is Ann."},
   {svg:famIcon('couple'), w:"boyfriend", x:"My daughter's boyfriend is Irish."},
   {svg:famIcon('rings'), w:"married", x:"They aren't married yet."},
   {svg:famIcon('house'), w:"live together", x:"They live together in Dublin."},
@@ -307,9 +307,9 @@ renderPromptGrid(document.getElementById('promptGrid'), [
 
 /* ---------- 5. Family logic quiz ---------- */
 renderQuiz(document.getElementById('quiz'), [
-  {q:"Olena is Yaroslava's daughter. So Yaroslava is Olena's…?", options:["mother","sister","daughter"], correctIndex:0},
-  {q:"Sean is Olena's boyfriend. So Olena is Sean's…?", options:["girlfriend","mother","sister"], correctIndex:0},
-  {q:"If Sean and Olena get married, Yaroslava will become Sean's…?", options:["mother-in-law","aunt","sister"], correctIndex:0},
+  {q:"Ann is Yaroslava's daughter. So Yaroslava is Ann's…?", options:["mother","sister","daughter"], correctIndex:0},
+  {q:"Sean is Ann's boyfriend. So Ann is Sean's…?", options:["girlfriend","mother","sister"], correctIndex:0},
+  {q:"If Sean and Ann get married, Yaroslava will become Sean's…?", options:["mother-in-law","aunt","sister"], correctIndex:0},
   {q:"Yaroslava has one daughter and no sons. How many children does she have?", options:["one","two","none"], correctIndex:0},
   {q:"\u201CHe's very funny\u201D means he…", options:["makes people laugh","is often angry","doesn't talk much"], correctIndex:0}
 ]);
@@ -325,7 +325,7 @@ renderSentenceBuilder(document.getElementById('builder'), [
 /* ---------- 7. Gap-fill ---------- */
 renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
   text:"My daughter's name is {{}}. Her boyfriend is {{}}. He is very {{}} and {{}}. They {{}} together in Dublin.",
-  answers:["Olena","Sean","kind","funny","live"]
+  answers:["Ann","Sean","kind","funny","live"]
 });
 renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
   text:"Sean {{}} blue eyes and he is quite {{}}. He {{}} as an engineer. Yaroslava's family is very {{}}.",
