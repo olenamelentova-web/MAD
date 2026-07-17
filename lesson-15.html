@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 15 — Making Arrangements</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-14.html">← Lesson 14</a>
+      <a class="primary" href="lesson-16.html">Lesson 16 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 15 · 90 min · Unit 2</span>
+    <h1>Making Arrangements</h1>
+    <p>Suggesting plans, and accepting or declining invitations politely. Grammar focus: <em>Shall we…?</em> and <em>Would you like to…?</em>, used throughout every task below.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🧠 Arrangements quiz</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Sentence builder</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: suggesting & responding</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Making plans is really just a handful of question shapes plus a polite way to say yes or no — we drill those first.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: invitation → matching response</span>
+      <p class="mat-sub">Click an invitation on the left, then the response that fits it on the right.</p>
+      <div id="grammarMatch"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: fill the gap</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: say the full sentence</span>
+      <p class="mat-sub">Read the cue out loud, then she says the full sentence. Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: swap chain</span>
+      <p class="mat-sub">Say the line, then say it again swapping in the new word — out loud, back and forth, no pausing.</p>
+      <div class="block-content">
+        <ol>
+          <li>"Shall we meet on Saturday?" → (Sunday) → <em>"Shall we meet on Sunday?"</em></li>
+          <li>"Are you free on Sunday?" → (Monday) → <em>"Are you free on Monday?"</em></li>
+          <li>"Can you make it at 6pm?" → (7pm) → <em>"Can you make it at 7pm?"</em></li>
+          <li>"Would you like to come for dinner?" → (lunch) → <em>"Would you like to come for lunch?"</em></li>
+          <li>"Let's find another time." → (place) → <em>"Let's find another place."</em></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Five scheduling words that are commonly mispronounced. Click the purple button to hear each one, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"Shall we schedule Tuesday, or reschedule for Wednesday?"</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Making plans chain</span>
+      <p class="block-content">Propose several meet-up options back and forth until you land on one — practicing negotiation, not just single-line exchanges.</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Accept or decline</span>
+      <p class="block-content">Rapid-fire invitations — she responds naturally, including at least one polite decline with a reason.</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. INTERACTIVE TASK 1: ARRANGEMENTS QUIZ ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🧠 Interactive task 1: Arrangements quiz</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">She answers out loud first, then clicks.</p>
+    <div id="quiz"></div>
+  </section>
+
+  <!-- ============ 6. INTERACTIVE TASK 2: SENTENCE BUILDER ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🔤 Interactive task 2: Sentence builder</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Click the word chips in the correct order to build each sentence, then hit Check. Say the finished sentence out loud before moving to the next one.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — suggesting a plan</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — accepting and rescheduling</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — making plans with the boyfriend</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — declining and rescheduling with Ann</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">A realistic, low-stakes negotiation — the kind of thing that happens constantly in daily life.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Practice making and responding to 3 different invitations out loud, including at least one polite decline.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>Quick review of days of the week and times</li>
+        <li>"Double booking" — practice politely rescheduling</li>
+        <li>Plan a full week's calendar out loud</li>
+        <li>Compare formal vs. casual invitation language</li>
+      </ul></div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">Lesson 15 of 30 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+/* ---------- Custom picture icons for vocabulary ---------- */
+const ARR_ICONS = {
+  envelope: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/>',
+  check: '<path d="M5 13l4 4L19 7"/>',
+  xmark: '<path d="M6 6l12 12M18 6 6 18"/>',
+  reschedule: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4M16 3v4"/><path d="M9 15h6" stroke-dasharray="1.5 2"/>',
+  free: '<circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/>',
+  busy: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/>',
+  calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+  handshake: '<path d="M2.5 13h5l2.2-2.2 2.2 2.2h5"/><path d="M8 10.6 5.7 13l2.3 2.4M16 10.6 18.3 13 16 15.4"/>',
+  stamp: '<path d="m12 2 2.5 5 5.5.7-4 3.9.9 5.4L12 14l-4.9 3-.9-5.4-4-3.9L7.7 7 12 2Z"/><path d="m9.5 12 2 2 3-3.5"/>',
+  cancel: '<circle cx="12" cy="12" r="9"/><path d="m8 8 8 8M16 8l-8 8"/>'
+};
+function arrIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${ARR_ICONS[name]}</svg>`;
+}
+
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"Shall we meet on Saturday?", right:"Yes, that sounds great!"},
+  {left:"Would you like to come for dinner?", right:"I'd love to, thank you!"},
+  {left:"Are you free on Sunday?", right:"Sorry, I'm busy that day."},
+  {left:"How about next week instead?", right:"That works for me."},
+  {left:"Can you make it at 6pm?", right:"6pm is perfect."},
+  {left:"Do you want to reschedule?", right:"Yes, let's find another time."}
+]);
+
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"{{}} we meet on Saturday? Would you {{}} to come for dinner? Are you {{}} on Sunday? How about next {{}} instead?",
+  answers:["Shall","like","free","week"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"Saturday / meet / shall we", a:"Shall we meet on Saturday?"},
+  {q:"dinner / come for / would you like to", a:"Would you like to come for dinner?"},
+  {q:"Sunday / free / are you", a:"Are you free on Sunday?"},
+  {q:"6pm / make it / can you", a:"Can you make it at 6pm?"},
+  {q:"reschedule / do you want to", a:"Do you want to reschedule?"},
+  {q:"next week / how about", a:"How about next week?"}
+]);
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:arrIcon('envelope'), w:"invite", x:"I'd like to invite you for dinner."},
+  {svg:arrIcon('check'), w:"accept", x:"I happily accept!"},
+  {svg:arrIcon('xmark'), w:"decline", x:"I'm sorry, I have to decline."},
+  {svg:arrIcon('reschedule'), w:"reschedule", x:"Can we reschedule for next week?"},
+  {svg:arrIcon('free'), w:"free", x:"I'm free on Saturday."},
+  {svg:arrIcon('busy'), w:"busy", x:"I'm busy on Sunday, sorry."},
+  {svg:arrIcon('calendar'), w:"plan", x:"What's the plan for Saturday?"},
+  {svg:arrIcon('handshake'), w:"meet up", x:"Let's meet up soon!"},
+  {svg:arrIcon('stamp'), w:"confirm", x:"Can you confirm the time?"},
+  {svg:arrIcon('cancel'), w:"cancel", x:"I'm sorry, I have to cancel."}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"<b>SHED</b>-yool", word:"schedule", note:"in Ireland/UK, usually pronounced \u2018SHED-yool\u2019"},
+  {stress:"<b>WENZ</b>-day", word:"Wednesday", note:"silent \u2018d\u2019 \u2014 sounds like \u2018WENZ-day\u2019"},
+  {stress:"uh-<b>VAY</b>-luh-bul", word:"available", note:"stress on the second syllable"},
+  {stress:"ree-<b>SHED</b>-yool", word:"reschedule", note:"stress on the second part"},
+  {stress:"<b>TOOZ</b>-day", word:"Tuesday", note:"the \u2018es\u2019 is barely pronounced"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"Invite someone for coffee.", a:"Would you like to get coffee sometime?"},
+  {q:"You're busy on the suggested day. What do you say?", a:"Sorry, I'm busy that day. How about…?"},
+  {q:"Confirm a plan.", a:"Great, see you then!"},
+  {q:"Suggest rescheduling.", a:"Can we reschedule for another day?"},
+  {q:"Accept an invitation happily.", a:"I'd love to, thank you!"}
+]);
+
+/* ---------- 5. Arrangements quiz ---------- */
+renderQuiz(document.getElementById('quiz'), [
+  {q:"\u2018Shall we meet on Saturday?\u2019 is…", options:["a suggestion","an order","a complaint"], correctIndex:0},
+  {q:"If you're \u2018free\u2019 on a day, it means…", options:["you have no plans","you have to work","you are ill"], correctIndex:0},
+  {q:"\u2018I have to decline\u2019 means…", options:["I can't come","I will come","I don't understand"], correctIndex:0},
+  {q:"To \u2018reschedule\u2019 means to…", options:["change the time or date","cancel forever","arrive early"], correctIndex:0},
+  {q:"A polite way to refuse an invitation:", options:["I'm sorry, I can't make it","No.","I don't want to."], correctIndex:0}
+]);
+
+/* ---------- 6. Sentence builder ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"Suggest a day:", words:["Shall","we","meet","on","Saturday"]},
+  {hint:"Invite to dinner:", words:["Would","you","like","to","come","for","dinner"]},
+  {hint:"Politely decline:", words:["I'm","sorry","I","have","to","decline"]},
+  {hint:"Suggest a new time:", words:["Can","we","reschedule","for","next","week"]}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
+  text:"{{}} we meet on Saturday? Would you {{}} to come for dinner? Are you {{}} on Sunday? How about next {{}} instead?",
+  answers:["Shall","like","free","week"]
+});
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"I'd love to {{}} your invitation! Unfortunately I'm {{}} on Friday. Can we {{}} for Saturday instead? I'll {{}} the time tomorrow.",
+  answers:["accept","busy","reschedule","confirm"]
+});
+
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
+  {s:"a", t:"Shall we meet on Saturday?"},
+  {s:"b", t:"I'd love to! What time?"},
+  {s:"a", t:"How about 6pm?"},
+  {s:"b", t:"6pm is perfect. Where shall we go?"},
+  {s:"a", t:"I know a nice restaurant near the river."},
+  {s:"b", t:"Sounds wonderful, see you then!"}
+], "Boyfriend");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"a", t:"Would you like to come over on Sunday?"},
+  {s:"b", t:"I'm sorry, I'm busy on Sunday."},
+  {s:"a", t:"No problem, how about Monday instead?"},
+  {s:"b", t:"Monday works much better for me."},
+  {s:"a", t:"Great, let's confirm — Monday at 5?"},
+  {s:"b", t:"Perfect, see you then!"}
+], "Ann");
+</script>
+</body>
+</html>

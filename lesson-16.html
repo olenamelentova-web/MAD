@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 16 — Hobbies & Free Time</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-15.html">← Lesson 15</a>
+      <a class="primary" href="index.html">More lessons soon →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 16 · 90 min · Unit 2</span>
+    <h1>Hobbies & Free Time</h1>
+    <p>Talking about what she enjoys — a topic that opens up real, personal conversation. Grammar focus: <em>I enjoy…</em> and <em>I'm interested in…</em> + the -ing form, used throughout every task below.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🧠 Hobbies quiz</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Sentence builder</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: -ing forms (gerunds)</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">After "enjoy," "interested in," and "love," the verb takes an -ing ending. We drill the forms before they show up in every task today.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: verb → -ing form</span>
+      <p class="mat-sub">Click a verb on the left, then its -ing form on the right.</p>
+      <div id="grammarMatch"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: fill the -ing form</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: say the full sentence</span>
+      <p class="mat-sub">Read the cue out loud, then she says the full sentence. Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: swap chain</span>
+      <p class="mat-sub">Say the sentence, then say it again swapping in the new word — out loud, back and forth, no pausing.</p>
+      <div class="block-content">
+        <ol>
+          <li>"I enjoy reading." → (cooking) → <em>"I enjoy cooking."</em></li>
+          <li>"She likes gardening." → (he) → <em>"He likes gardening."</em></li>
+          <li>"We love walking." → (swimming) → <em>"We love swimming."</em></li>
+          <li>"I'm interested in dancing." → (painting) → <em>"I'm interested in painting."</em></li>
+          <li>"They enjoy cycling." → (I) → <em>"I enjoy cycling."</em></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Five hobby-related words and patterns that are commonly mispronounced. Click the purple button to hear each one, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"She enjoys swimming, walking, and cooking on sunny Sunday mornings."</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">My hobbies</span>
+      <p class="block-content">She talks freely about what she enjoys doing, with as much detail as she can add — when, where, with whom.</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">"Would you like to try…?"</span>
+      <p class="block-content">Suggest activities to each other and react naturally — enthusiasm, hesitation, polite interest.</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. INTERACTIVE TASK 1: HOBBIES QUIZ ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🧠 Interactive task 1: Hobbies quiz</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">She answers out loud first, then clicks.</p>
+    <div id="quiz"></div>
+  </section>
+
+  <!-- ============ 6. INTERACTIVE TASK 2: SENTENCE BUILDER ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🔤 Interactive task 2: Sentence builder</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Click the word chips in the correct order to build each sentence, then hit Check. Say the finished sentence out loud before moving to the next one.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — what she enjoys</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — Ann's hobbies</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — talking hobbies with the boyfriend</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — discovering a shared hobby with Ann</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">A warm, low-pressure conversation about trying something new together.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Talk about 3 hobbies she enjoys and 1 she'd like to try, using "enjoy" and "interested in," then record it.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>"Guess the hobby" mime game</li>
+        <li>Compare hobbies now vs. as a child ("I used to enjoy…")</li>
+        <li>Quick vocabulary review of -ing forms</li>
+        <li>Plan a hobby-based day out with the boyfriend</li>
+      </ul></div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">Lesson 16 of 30 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+/* ---------- Custom picture icons for vocabulary ---------- */
+const HOBBY_ICONS = {
+  book: '<path d="M4 4h9a3 3 0 0 1 3 3v13a3 3 0 0 0-3-3H4V4Z"/><path d="M20 4h-4a3 3 0 0 0-3 3v13a3 3 0 0 1 3-3h4V4Z"/>',
+  pot: '<path d="M4 10h16v3a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6v-3Z"/><path d="M2 10h20"/><path d="M7 10V7M17 10V7"/>',
+  walk: '<circle cx="13" cy="4.5" r="1.8"/><path d="M11 8l-3 3 1 5-2 5M11 8l4 2 1 5 3 3"/>',
+  swim: '<path d="M2 14c2-2 4-2 6 0s4 2 6 0 4-2 6 0 4-2 6 0"/><path d="M2 19c2-2 4-2 6 0s4 2 6 0 4-2 6 0 4-2 6 0"/><circle cx="18" cy="6" r="2"/>',
+  garden: '<path d="M12 21V11"/><path d="M12 11c-4 0-6-2-6-6 4 0 6 2 6 6Z"/><path d="M12 11c4 0 6-2 6-6-4 0-6 2-6 6Z"/>',
+  dance: '<circle cx="12" cy="4" r="2"/><path d="M12 6v6M12 12l-5 6M12 12l5 6M8 9l4 3 4-3"/>',
+  palette: '<path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2s-1-1.5-1-2.5S14 15 15 15h3a4 4 0 0 0 4-4c0-4.5-4.5-8-10-8Z"/><circle cx="8" cy="11" r="1"/><circle cx="8" cy="15" r="1"/><circle cx="12" cy="17" r="1"/>',
+  bicycle: '<circle cx="6" cy="17" r="3.2"/><circle cx="18" cy="17" r="3.2"/><path d="M6 17l4-9h4l4 9M10 8h3M9 17h9"/>',
+  knit: '<path d="M4 5v14M20 5v14"/><path d="M4 8c4 2 4-2 8 0s4-2 8 0M4 14c4 2 4-2 8 0s4-2 8 0"/>',
+  camera: '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l2-3h4l2 3"/><circle cx="12" cy="13.5" r="3.5"/>'
+};
+function hobbyIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${HOBBY_ICONS[name]}</svg>`;
+}
+
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"read", right:"reading"},
+  {left:"cook", right:"cooking"},
+  {left:"walk", right:"walking"},
+  {left:"swim", right:"swimming"},
+  {left:"garden", right:"gardening"},
+  {left:"dance", right:"dancing"}
+]);
+
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"I enjoy {{}} in the evening. I'm interested in {{}} new recipes. She loves {{}}.",
+  answers:["reading","cooking","dancing"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"reading / enjoy / I", a:"I enjoy reading."},
+  {q:"cooking / interested in / I'm", a:"I'm interested in cooking."},
+  {q:"walking / love / I", a:"I love walking."},
+  {q:"gardening / like / she", a:"She likes gardening."},
+  {q:"swimming / enjoy / we", a:"We enjoy swimming."},
+  {q:"dancing / interested in / are you", a:"Are you interested in dancing?"}
+]);
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:hobbyIcon('book'), w:"reading", x:"I enjoy reading in the evening."},
+  {svg:hobbyIcon('pot'), w:"cooking", x:"I'm interested in cooking new recipes."},
+  {svg:hobbyIcon('walk'), w:"walking", x:"I love walking in the park."},
+  {svg:hobbyIcon('swim'), w:"swimming", x:"We enjoy swimming in summer."},
+  {svg:hobbyIcon('garden'), w:"gardening", x:"She really likes gardening."},
+  {svg:hobbyIcon('dance'), w:"dancing", x:"Are you interested in dancing?"},
+  {svg:hobbyIcon('palette'), w:"painting", x:"I'm interested in painting."},
+  {svg:hobbyIcon('bicycle'), w:"cycling", x:"He enjoys cycling on weekends."},
+  {svg:hobbyIcon('knit'), w:"knitting", x:"My grandmother loves knitting."},
+  {svg:hobbyIcon('camera'), w:"photography", x:"I'm interested in photography."}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"walk<b>-in\u2019</b>", word:"walking", note:"in casual speech, -ing often sounds like \u2018-in\u2019\u2019"},
+  {stress:"<b>IN</b>-tres-tid", word:"interested", note:"often just three syllables in natural speech"},
+  {stress:"<b>FAY</b>-vrit", word:"favourite", note:"often just two syllables: FAY-vrit"},
+  {stress:"<b>HOB</b>-ee", word:"hobby", note:"stress on the first syllable"},
+  {stress:"en-<b>JOY</b>", word:"enjoy", note:"stress on the second syllable"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"What do you enjoy doing in your free time?", a:"I enjoy…"},
+  {q:"Are you interested in cooking?", a:"Yes, I'm interested in…"},
+  {q:"What's your favourite hobby?", a:"My favourite hobby is…"},
+  {q:"Would you like to try painting?", a:"Yes, I'd love to! / Not really, but…"},
+  {q:"What did you use to enjoy as a child?", a:"I used to enjoy…"}
+]);
+
+/* ---------- 5. Hobbies quiz ---------- */
+renderQuiz(document.getElementById('quiz'), [
+  {q:"\u2018I enjoy reading\u2019 \u2014 what form follows \u2018enjoy\u2019?", options:["the -ing form","the base form","the past form"], correctIndex:0},
+  {q:"What is the -ing form of \u2018swim\u2019?", options:["swimming","swiming","swimmning"], correctIndex:0},
+  {q:"\u2018I'm interested in cooking\u2019 means…", options:["cooking is something I like","I hate cooking","I never cook"], correctIndex:0},
+  {q:"What is the -ing form of \u2018dance\u2019?", options:["dancing","danceing","dancin"], correctIndex:0},
+  {q:"A \u2018hobby\u2019 is…", options:["something you enjoy doing in free time","a type of food","a place to visit"], correctIndex:0}
+]);
+
+/* ---------- 6. Sentence builder ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"Say what you enjoy:", words:["I","enjoy","reading","in","the","evening"]},
+  {hint:"Say what she's interested in:", words:["She","is","interested","in","cooking"]},
+  {hint:"Say what we love:", words:["We","love","swimming","in","summer"]},
+  {hint:"Say what he enjoys:", words:["He","enjoys","cycling","on","weekends"]}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
+  text:"I enjoy {{}} in the evening. I'm interested in {{}} new recipes. She loves {{}}.",
+  answers:["reading","cooking","dancing"]
+});
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"My daughter is interested in {{}}. She enjoys {{}} every weekend. I prefer {{}} at home.",
+  answers:["photography","cycling","gardening"]
+});
+
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
+  {s:"a", t:"What do you enjoy doing in your free time?"},
+  {s:"b", t:"I love gardening and reading."},
+  {s:"a", t:"That's nice! I enjoy cycling."},
+  {s:"b", t:"Maybe we could go for a bike ride together sometime."},
+  {s:"a", t:"I'd love that!"}
+], "Boyfriend");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"a", t:"Would you like to try photography with me?"},
+  {s:"b", t:"I've never tried it, but I'm interested!"},
+  {s:"a", t:"It's really fun, I'll teach you."},
+  {s:"b", t:"I'd love that. Maybe this weekend?"},
+  {s:"a", t:"Perfect, let's do it!"}
+], "Ann");
+</script>
+</body>
+</html>
