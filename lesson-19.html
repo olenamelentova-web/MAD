@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 19 — Money & Banking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-18.html">← Lesson 18</a>
+      <a class="primary" href="lesson-20.html">Lesson 20 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 19 · 90 min · Unit 2</span>
+    <h1>Money & Banking</h1>
+    <p>ATMs, cards, refunds, and exchange rates — the practical language of handling money in a different country. Grammar focus: money-related questions, used throughout every task below.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">8 MIN</span><span class="ai-label">🗃️ Need or want?</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">8 MIN</span><span class="ai-label">🧠 Money logic quiz</span></a>
+    <a class="agenda-item" href="#task3"><span class="ai-time">8 MIN</span><span class="ai-label">🔤 Sentence builder</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">8 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">8 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: money questions</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">A handful of question shapes cover almost every money situation she'll face — we drill those and their natural answers first.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: question → matching answer</span>
+      <p class="mat-sub">Click a question on the left, then the answer that fits it on the right.</p>
+      <div id="grammarMatch"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: fill the gap</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: ask the question</span>
+      <p class="mat-sub">Read the cue out loud, then she asks the full question. Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: swap chain</span>
+      <p class="mat-sub">Say the question, then say it again swapping in the new word — out loud, back and forth, no pausing.</p>
+      <div class="block-content">
+        <ol>
+          <li>"How much does this cost?" → (that) → <em>"How much does that cost?"</em></li>
+          <li>"Can I pay by card?" → (cash) → <em>"Can I pay by cash?"</em></li>
+          <li>"Where's the nearest ATM?" → (bank) → <em>"Where's the nearest bank?"</em></li>
+          <li>"Do you accept cash?" → (cards) → <em>"Do you accept cards?"</em></li>
+          <li>"Can I get a refund?" → (a receipt) → <em>"Can I get a receipt?"</em></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Five money words that are commonly mispronounced. Click the purple button to hear each one, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"She exchanged three euros for coins at the bank."</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Bank & ATM roleplay</span>
+      <p class="block-content">On Miro, practice asking for locations and exchanging money at a bank counter.</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Need or want?</span>
+      <p class="block-content">A quick warm-up discussion before the sort task below — talk through a few example purchases together first.</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. TASK 1: NEED OR WANT ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🗃️ Interactive task 1: Need or want?</h3>
+      <span class="section-time">8 min</span>
+    </div>
+    <p class="section-sub">A little financial literacy alongside the English — sort each item, saying "This is a need" or "This is a want" before placing it.</p>
+    <div id="needWantSort"></div>
+  </section>
+
+  <!-- ============ 6. TASK 2: MONEY LOGIC QUIZ ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🧠 Interactive task 2: Money logic quiz</h3>
+      <span class="section-time">8 min</span>
+    </div>
+    <p class="section-sub">She answers out loud first, then clicks.</p>
+    <div id="quiz"></div>
+  </section>
+
+  <!-- ============ 7. TASK 3: SENTENCE BUILDER ============ -->
+  <section class="lesson-section" id="task3">
+    <div class="section-head">
+      <h3>🔤 Interactive task 3: Sentence builder</h3>
+      <span class="section-time">8 min</span>
+    </div>
+    <p class="section-sub">Click the word chips in the correct order to build each sentence, then hit Check.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ 8. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">8 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — at the till</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — at the bank</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 9. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — finding a bank with the boyfriend</h3>
+      <span class="section-time">4 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — asking for a refund</h3>
+      <span class="section-time">4 min</span>
+    </div>
+    <p class="section-sub">A practical shop scenario — returning an item politely.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 10. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Practice asking about ATMs, exchange rates, and refunds out loud 5 times each, then plan a simple budget for her next trip.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>Practice reading prices aloud quickly</li>
+        <li>Compare currency vocabulary: euro vs. hryvnia</li>
+        <li>"What would you do with 100 euros?" quick chat</li>
+        <li>Review need vs. want with new examples</li>
+      </ul></div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">Lesson 19 of 30 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+/* ---------- Custom picture icons for vocabulary ---------- */
+const MONEY_ICONS = {
+  atm: '<rect x="4" y="3" width="16" height="18" rx="2"/><rect x="7" y="7" width="10" height="6" rx="1"/><circle cx="9" cy="16" r="1"/><circle cx="15" cy="16" r="1"/>',
+  bank: '<path d="M3 10 12 4l9 6"/><path d="M4 10v9M9 10v9M15 10v9M20 10v9"/><path d="M3 19h18"/>',
+  cash: '<rect x="3" y="7" width="18" height="10" rx="1.5"/><circle cx="12" cy="12" r="2.3"/>',
+  card: '<rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/>',
+  exchange: '<path d="M4 7h13M14 3l3 4-3 4"/><path d="M20 17H7M10 21l-3-4 3-4"/>',
+  refund: '<path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 3v5h5"/>',
+  receipt: '<path d="M6 3h12v18l-2.5-1.5L13 21l-2.5-1.5L8 21l-2-1.5V3Z"/><path d="M9 8h6M9 12h6M9 16h4"/>',
+  banknote: '<rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/>',
+  coin: '<circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 9.5c0-1 1-1.5 3-1.5s3 1 3 2-1 1.5-3 1.5-3 .5-3 1.5 1 2 3 2 3-.5 3-1.5"/>',
+  piggy: '<path d="M4 12c0-3.5 3-6 8-6s8 2.5 8 6-3 6-8 6c-1 0-2-.1-3-.4L6 20l-1-3.5C4 15.5 4 14 4 12Z"/><circle cx="16" cy="10" r="1"/>'
+};
+function moneyIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${MONEY_ICONS[name]}</svg>`;
+}
+
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"How much does this cost?", right:"That's fifteen euros."},
+  {left:"Can I pay by card?", right:"Yes, we accept all cards."},
+  {left:"Where's the nearest ATM?", right:"Just around the corner."},
+  {left:"Do you accept cash?", right:"Yes, cash is fine."},
+  {left:"Can I get a refund?", right:"Yes, with your receipt."},
+  {left:"What's the exchange rate?", right:"About forty-three hryvnia to the euro."}
+]);
+
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"How much {{}} this cost? Can I {{}} by card? Where's the {{}} ATM? Do you {{}} cash?",
+  answers:["does","pay","nearest","accept"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"this / cost / how much does", a:"How much does this cost?"},
+  {q:"card / pay by / can I", a:"Can I pay by card?"},
+  {q:"the nearest ATM / where's", a:"Where's the nearest ATM?"},
+  {q:"cash / accept / do you", a:"Do you accept cash?"},
+  {q:"a refund / get / can I", a:"Can I get a refund?"},
+  {q:"the exchange rate / what's", a:"What's the exchange rate?"}
+]);
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:moneyIcon('atm'), w:"ATM", x:"Where's the nearest ATM?"},
+  {svg:moneyIcon('bank'), w:"bank", x:"I need to go to the bank."},
+  {svg:moneyIcon('cash'), w:"cash", x:"I only have cash, sorry."},
+  {svg:moneyIcon('card'), w:"card", x:"Can I pay by card?"},
+  {svg:moneyIcon('exchange'), w:"exchange rate", x:"What's the exchange rate today?"},
+  {svg:moneyIcon('refund'), w:"refund", x:"Can I get a refund, please?"},
+  {svg:moneyIcon('receipt'), w:"receipt", x:"Keep your receipt, just in case."},
+  {svg:moneyIcon('banknote'), w:"banknote", x:"I need to change this banknote."},
+  {svg:moneyIcon('coin'), w:"coin", x:"Do you have any coins?"},
+  {svg:moneyIcon('piggy'), w:"budget", x:"I need to stick to my budget."}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"<b>YOOR</b>-oh", word:"euro", note:"stress on the first syllable"},
+  {stress:"AY-TEE-EM", word:"ATM", note:"said as three separate letters"},
+  {stress:"<b>REE</b>-fund", word:"refund", note:"as a noun, stress the first syllable"},
+  {stress:"<b>BUJ</b>-it", word:"budget", note:"stress on the first syllable"},
+  {stress:"iks-<b>CHAYNJ</b>", word:"exchange", note:"stress on the second syllable"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"Ask where the nearest ATM is.", a:"Where's the nearest ATM?"},
+  {q:"Ask if you can pay by card.", a:"Can I pay by card?"},
+  {q:"Ask about the exchange rate.", a:"What's the exchange rate today?"},
+  {q:"You want your money back. What do you say?", a:"Can I get a refund, please?"},
+  {q:"Ask if cash is accepted.", a:"Do you accept cash?"}
+]);
+
+/* ---------- 5. Need or want sort (task 1) ---------- */
+renderSortTask(document.getElementById('needWantSort'), {
+  bucketA: "Need",
+  bucketB: "Want",
+  items: [
+    {text:"Food", bucket:"a"},
+    {text:"Medicine", bucket:"a"},
+    {text:"A new coat for winter", bucket:"a"},
+    {text:"A designer handbag", bucket:"b"},
+    {text:"Extra chocolate", bucket:"b"},
+    {text:"A holiday souvenir", bucket:"b"}
+  ]
+});
+
+/* ---------- 6. Money logic quiz (task 2) ---------- */
+renderQuiz(document.getElementById('quiz'), [
+  {q:"\u2018Where's the nearest ATM?\u2019 is asking about…", options:["location","price","time"], correctIndex:0},
+  {q:"A \u2018refund\u2019 means…", options:["getting your money back","paying more","losing money"], correctIndex:0},
+  {q:"\u2018Exchange rate\u2019 refers to…", options:["how much one currency is worth in another","the bank's opening hours","a type of card"], correctIndex:0},
+  {q:"If a shop doesn't \u2018accept cash\u2019, it means…", options:["you must pay another way","cash is free","you get a discount"], correctIndex:0},
+  {q:"A \u2018budget\u2019 helps you…", options:["plan your spending","spend more money","avoid banks"], correctIndex:0}
+]);
+
+/* ---------- 7. Sentence builder (task 3) ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"Ask the price:", words:["How","much","does","this","cost"]},
+  {hint:"Ask about paying:", words:["Can","I","pay","by","card"]},
+  {hint:"Ask for a location:", words:["Where's","the","nearest","ATM"]},
+  {hint:"Ask for money back:", words:["Can","I","get","a","refund","please"]}
+]);
+
+/* ---------- 8. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
+  text:"How much {{}} this cost? Can I {{}} by card? Where's the {{}} ATM? Do you {{}} cash?",
+  answers:["does","pay","nearest","accept"]
+});
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"I need to {{}} some money at the bank. The exchange {{}} today is good. Can I get a {{}} for this? I only have {{}}, sorry.",
+  answers:["exchange","rate","refund","cash"]
+});
+
+/* ---------- 9. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
+  {s:"a", t:"Do you need to find a bank?"},
+  {s:"b", t:"Yes, I need to exchange some money."},
+  {s:"a", t:"There's an ATM just around the corner."},
+  {s:"b", t:"Perfect, and what's the exchange rate today?"},
+  {s:"a", t:"I think it's quite good right now."}
+], "Boyfriend");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"b", t:"Excuse me, can I get a refund for this, please?"},
+  {s:"a", t:"Do you have your receipt?"},
+  {s:"b", t:"Yes, here it is."},
+  {s:"a", t:"No problem, here's your refund."},
+  {s:"b", t:"Thank you very much!"}
+], "Shop assistant");
+</script>
+</body>
+</html>
