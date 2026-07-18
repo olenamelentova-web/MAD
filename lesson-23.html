@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 23 — Describing Your Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-22.html">← Lesson 22</a>
+      <a class="primary" href="lesson-24.html">Lesson 24 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 23 · 90 min · Unit 3</span>
+    <h1>Describing Your Home</h1>
+    <p>Talking about her house, and understanding Ann's home in Dublin. Grammar focus: <em>There is / There are</em>, used throughout every task below.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🗃️ Room or furniture?</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Sentence builder</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: there is / there are</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Singular takes "is," plural takes "are" — a small rule that appears constantly when describing any space.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: item → correct form</span>
+      <p class="mat-sub">Click an item on the left, then whether it needs "There is" or "There are" on the right.</p>
+      <div id="grammarMatch"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: is or are?</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: say the full sentence</span>
+      <p class="mat-sub">Read the cue out loud, then she says the full sentence with "there is" or "there are." Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: swap chain</span>
+      <p class="mat-sub">Say the sentence, then say it again swapping in the new word — out loud, back and forth, no pausing.</p>
+      <div class="block-content">
+        <ol>
+          <li>"There's a sofa in the living room." → (a table) → <em>"There's a table in the living room."</em></li>
+          <li>"There are three bedrooms." → (two bathrooms) → <em>"There are two bathrooms."</em></li>
+          <li>"There isn't a garden." → (a balcony) → <em>"There isn't a balcony."</em></li>
+          <li>"There's a window near the bed." → (a lamp) → <em>"There's a lamp near the bed."</em></li>
+          <li>"There are stairs to the second floor." → (a lift) → <em>"There's a lift to the second floor."</em></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Five home-related words that are commonly mispronounced. Click the purple button to hear each one, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"There's a cosy kitchen, a comfortable couch, and a cluttered cupboard."</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Describe your home</span>
+      <p class="block-content">She describes her own house room by room, using "there is / there are" throughout.</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Imagine Ann's apartment</span>
+      <p class="block-content">She describes what she imagines Ann's Dublin apartment looks like, then compares it to her own home.</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. INTERACTIVE TASK 1: SORT ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🗃️ Interactive task 1: Room or furniture?</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Sort each word — is it a room, or something you'd find inside one?</p>
+    <div id="homeSort"></div>
+  </section>
+
+  <!-- ============ 6. INTERACTIVE TASK 2: SENTENCE BUILDER ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🔤 Interactive task 2: Sentence builder</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Click the word chips in the correct order to build each sentence, then hit Check. Say the finished sentence out loud before moving to the next one.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — describing a home</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — Ann's apartment</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — describing her house to the boyfriend</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — a video tour with Ann</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">Ann shows Yaroslava around her new apartment over a video call.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Describe every room in her house using "there is / there are," then record it out loud.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>Draw a simple floor plan and describe it</li>
+        <li>Compare her home now to her childhood home</li>
+        <li>Describe her dream home</li>
+        <li>Practice prepositions of place: on, under, next to, near</li>
+      </ul></div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">Lesson 23 of 30 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+/* ---------- Custom picture icons for vocabulary ---------- */
+const HOME_ICONS = {
+  kitchen: '<rect x="3" y="10" width="18" height="10" rx="1"/><path d="M3 10V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4"/><path d="M8 14v3M12 14v3M16 14v3"/>',
+  bed: '<path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 18v2M21 18v2"/><path d="M3 13V9a2 2 0 0 1 2-2h4v5"/>',
+  bath: '<path d="M4 12h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-2Z"/><path d="M4 12V6a2 2 0 0 1 3-1.7"/><path d="M4 19v2M18 19v2"/>',
+  sofa: '<path d="M4 12v5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/><path d="M4 12a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2"/><path d="M6 10V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/>',
+  garden: '<path d="M12 21V11"/><path d="M12 11c-4 0-6-2-6-6 4 0 6 2 6 6Z"/><path d="M12 11c4 0 6-2 6-6-4 0-6 2-6 6Z"/>',
+  table: '<path d="M3 8h18v2H3zM5 10v9M19 10v9"/>',
+  window: '<rect x="4" y="4" width="16" height="16" rx="1"/><path d="M12 4v16M4 12h16"/>',
+  stairs: '<path d="M4 20v-4h4v-4h4v-4h4V4h4"/>',
+  cosy: '<path d="M12 20.5s-6.8-4.2-8.9-8.4C1.9 8.7 3 5.3 6.1 4.7c2.1-.4 3.9.8 5.9 3.2 2-2.4 3.8-3.6 5.9-3.2 3.1.6 4.2 4 2.9 7.4-2.1 4.2-8.8 8.4-8.8 8.4Z"/>',
+  lamp: '<path d="M9 3h6l3 6H6l3-6Z"/><path d="M12 9v9"/><path d="M8 21h8"/>'
+};
+function homeIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${HOME_ICONS[name]}</svg>`;
+}
+
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"a sofa", right:"There is"},
+  {left:"three bedrooms", right:"There are"},
+  {left:"a garden", right:"There is"},
+  {left:"two bathrooms", right:"There are"},
+  {left:"a lamp", right:"There is"},
+  {left:"some windows", right:"There are"}
+]);
+
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"There {{}} a sofa in the living room. There {{}} three bedrooms. There {{}}n't a garden. There {{}} two bathrooms.",
+  answers:["is","are","is","are"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"a sofa / living room / there's", a:"There's a sofa in the living room."},
+  {q:"three bedrooms / there are", a:"There are three bedrooms."},
+  {q:"a garden / there isn't", a:"There isn't a garden."},
+  {q:"two bathrooms / there are", a:"There are two bathrooms."},
+  {q:"a window / near the bed / there's", a:"There's a window near the bed."},
+  {q:"stairs / to the second floor / there are", a:"There are stairs to the second floor."}
+]);
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:homeIcon('kitchen'), w:"kitchen", x:"There's a small kitchen."},
+  {svg:homeIcon('bed'), w:"bedroom", x:"There are two bedrooms."},
+  {svg:homeIcon('bath'), w:"bathroom", x:"There's a bathroom upstairs."},
+  {svg:homeIcon('sofa'), w:"living room", x:"There's a sofa in the living room."},
+  {svg:homeIcon('garden'), w:"garden", x:"There's a small garden."},
+  {svg:homeIcon('table'), w:"table", x:"There's a table by the window."},
+  {svg:homeIcon('window'), w:"window", x:"There's a big window."},
+  {svg:homeIcon('stairs'), w:"stairs", x:"There are stairs to the bedrooms."},
+  {svg:homeIcon('cosy'), w:"cosy", x:"The living room is very cosy."},
+  {svg:homeIcon('lamp'), w:"lamp", x:"There's a lamp next to the bed."}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"<b>KOH</b>-zee", word:"cosy", note:"stress on the first syllable"},
+  {stress:"<b>KITCH</b>-en", word:"kitchen", note:"stress on the first syllable"},
+  {stress:"<b>GAR</b>-dn", word:"garden", note:"the second syllable is very short"},
+  {stress:"<b>FUR</b>-ni-cher", word:"furniture", note:"the middle syllable is often barely heard"},
+  {stress:"there's / <b>THAIRZ</b>", word:"there's", note:"contracted, said as one quick sound"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"How many bedrooms are there in your house?", a:"There are…"},
+  {q:"Is there a garden?", a:"Yes, there's… / No, there isn't."},
+  {q:"Describe your living room.", a:"There's a…"},
+  {q:"What's in your kitchen?", a:"There's a… and a…"},
+  {q:"Is your home cosy?", a:"Yes, it's very cosy because…"}
+]);
+
+/* ---------- 5. Room or furniture sort (task 1) ---------- */
+renderSortTask(document.getElementById('homeSort'), {
+  bucketA: "Room",
+  bucketB: "Furniture / object",
+  items: [
+    {text:"kitchen", bucket:"a"},
+    {text:"bedroom", bucket:"a"},
+    {text:"bathroom", bucket:"a"},
+    {text:"sofa", bucket:"b"},
+    {text:"table", bucket:"b"},
+    {text:"lamp", bucket:"b"}
+  ]
+});
+
+/* ---------- 6. Sentence builder ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"Describe the living room:", words:["There's","a","sofa","in","the","living","room"]},
+  {hint:"Say how many bedrooms:", words:["There","are","three","bedrooms"]},
+  {hint:"Say what's missing:", words:["There","isn't","a","garden"]},
+  {hint:"Describe near the bed:", words:["There's","a","lamp","next","to","the","bed"]}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
+  text:"There {{}} a small kitchen and a cosy living room. There {{}} two bedrooms upstairs. There {{}}n't a garden, but there {{}} a nice balcony.",
+  answers:["is","are","is","is"]
+});
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"There {{}} a lovely kitchen in Ann's flat. There {{}} big windows with lots of light. There {{}} only one bedroom, but it's very {{}}.",
+  answers:["is","are","is","cosy"]
+});
+
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
+  {s:"a", t:"Tell me about your house."},
+  {s:"b", t:"There's a small kitchen, a living room, and two bedrooms."},
+  {s:"a", t:"Is there a garden?"},
+  {s:"b", t:"Yes, there's a small garden with flowers."},
+  {s:"a", t:"That sounds lovely!"}
+], "Boyfriend");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"a", t:"Look, this is my new kitchen!"},
+  {s:"b", t:"It's lovely! Is there a lot of space?"},
+  {s:"a", t:"Not huge, but there's enough for a small table."},
+  {s:"b", t:"And is there a bedroom I haven't seen yet?"},
+  {s:"a", t:"Yes, come on, I'll show you — there's a big window with a great view!"}
+], "Ann");
+</script>
+</body>
+</html>

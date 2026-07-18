@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 26 — Technology & Apps</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-25.html">← Lesson 25</a>
+      <a class="primary" href="lesson-27.html">Lesson 27 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 26 · 90 min · Unit 3</span>
+    <h1>Technology & Apps</h1>
+    <p>The English she needs to use WhatsApp, video calls, and everyday apps — and to describe it when something goes wrong. Grammar focus: imperatives for instructions + <em>How do I…?</em>, used throughout every task below.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Instruction builder</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">✅ True or false?</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: instructions</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Tech instructions use the base form of the verb with no subject ("Open the app," not "You open the app") — a small but important pattern.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: instruction → what it's for</span>
+      <p class="mat-sub">Click an instruction on the left, then what it's used for on the right.</p>
+      <div id="grammarMatch"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: fill the instruction</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: give the instruction</span>
+      <p class="mat-sub">Read the cue out loud, then she gives the full instruction. Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: swap chain</span>
+      <p class="mat-sub">Say the instruction, then say it again swapping in the new word — out loud, back and forth, no pausing.</p>
+      <div class="block-content">
+        <ol>
+          <li>"Open the app." → (close) → <em>"Close the app."</em></li>
+          <li>"Click here." → (tap) → <em>"Tap here."</em></li>
+          <li>"Don't forget to save it." → (send) → <em>"Don't forget to send it."</em></li>
+          <li>"How do I download this?" → (update) → <em>"How do I update this?"</em></li>
+          <li>"Enter your password." → (email) → <em>"Enter your email."</em></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Five tech words that are commonly mispronounced. Click the purple button to hear each one, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"Download the app, update the password, and don't forget the wifi."</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Teach me the app</span>
+      <p class="block-content">One of you "teaches" the other how to use a simple app, step by step, using instruction language throughout.</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">What's wrong with my phone?</span>
+      <p class="block-content">She describes a tech problem (real or invented); you troubleshoot together using "Have you tried…?" from Lesson 18.</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. INTERACTIVE TASK 1: INSTRUCTION BUILDER ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🔤 Interactive task 1: Instruction builder</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Click the word chips in the correct order to build each instruction, then hit Check. Say it out loud before moving to the next one.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ 6. INTERACTIVE TASK 2: TRUE/FALSE ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>✅ Interactive task 2: True or false?</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Quick statements about tech grammar and vocabulary.</p>
+    <div id="tf"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — setting up a video call</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — a tech problem</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — Ann teaches her a new app</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — troubleshooting with the boyfriend</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">A common real-life mini-frustration, handled calmly.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Write out step-by-step instructions (in English) for one app she uses regularly, then say them out loud and record it.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>Practice spelling a password or email out loud</li>
+        <li>Compare apps she uses in Ukraine vs. Ireland</li>
+        <li>Roleplay a slow wifi connection during a call</li>
+        <li>Quick review of imperative verb forms</li>
+      </ul></div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">Lesson 26 of 30 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+/* ---------- Custom picture icons for vocabulary ---------- */
+const TECH_ICONS = {
+  app: '<rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3"/>',
+  download: '<path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/>',
+  whatsapp: '<path d="M4 20l1.5-4A8 8 0 1 1 9 19l-5 1Z"/><path d="M9 11c0 2 2 4 4 4"/>',
+  video: '<rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/>',
+  password: '<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+  wifi: '<path d="M2 8.5a16 16 0 0 1 20 0"/><path d="M5.5 12a11 11 0 0 1 13 0"/><path d="M9 15.5a6 6 0 0 1 6 0"/><circle cx="12" cy="19" r="1"/>',
+  update: '<path d="M4 12a8 8 0 0 1 14-5"/><path d="M20 12a8 8 0 0 1-14 5"/><path d="m18 3 0 4-4 0"/><path d="m6 21 0-4 4 0"/>',
+  screen: '<rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/>',
+  notification: '<path d="M9 18a3 3 0 0 0 6 0"/><path d="M6 10a6 6 0 1 1 12 0c0 4 1.5 5 1.5 5H4.5S6 14 6 10Z"/>',
+  charger: '<rect x="9" y="2" width="6" height="20" rx="2"/><path d="M9 8h6M9 14h6"/>'
+};
+function techIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${TECH_ICONS[name]}</svg>`;
+}
+
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"Open the app.", right:"starting something"},
+  {left:"Click here.", right:"pointing to an action"},
+  {left:"Don't forget to save it.", right:"a friendly reminder"},
+  {left:"How do I download this?", right:"asking for instructions"},
+  {left:"Enter your password.", right:"asking for input"},
+  {left:"Restart your phone.", right:"a troubleshooting step"}
+]);
+
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"{{}} the app. {{}} here. Don't forget to {{}} it. How do I {{}} this?",
+  answers:["Open","Click","save","download"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"the app / open", a:"Open the app."},
+  {q:"here / click", a:"Click here."},
+  {q:"to save it / don't forget", a:"Don't forget to save it."},
+  {q:"this / download / how do I", a:"How do I download this?"},
+  {q:"your password / enter", a:"Enter your password."},
+  {q:"your phone / restart", a:"Restart your phone."}
+]);
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:techIcon('app'), w:"app", x:"Open the app first."},
+  {svg:techIcon('download'), w:"download", x:"How do I download this?"},
+  {svg:techIcon('whatsapp'), w:"message", x:"Send me a message on WhatsApp."},
+  {svg:techIcon('video'), w:"video call", x:"Let's do a video call tonight."},
+  {svg:techIcon('password'), w:"password", x:"I forgot my password."},
+  {svg:techIcon('wifi'), w:"wifi", x:"The wifi isn't working."},
+  {svg:techIcon('update'), w:"update", x:"Don't forget to update the app."},
+  {svg:techIcon('screen'), w:"screen", x:"My screen is frozen."},
+  {svg:techIcon('notification'), w:"notification", x:"I missed a notification."},
+  {svg:techIcon('charger'), w:"charger", x:"Have you seen my charger?"}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"<b>AP</b>", word:"app", note:"just one short syllable"},
+  {stress:"<b>WI</b>-fy", word:"wifi", note:"stress on the first syllable"},
+  {stress:"<b>PASS</b>-word", word:"password", note:"stress on the first syllable"},
+  {stress:"noh-ti-fi-<b>KAY</b>-shun", word:"notification", note:"stress on the fourth syllable"},
+  {stress:"<b>UP</b>-dayt", word:"update", note:"as a noun/verb, stress the first syllable"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"Explain how to open an app.", a:"First, open the…"},
+  {q:"Your wifi isn't working. What do you say?", a:"The wifi isn't working."},
+  {q:"Ask how to download something.", a:"How do I download this?"},
+  {q:"Tell someone to restart their phone.", a:"Try restarting your phone."},
+  {q:"Say you forgot your password.", a:"I've forgotten my password."}
+]);
+
+/* ---------- 5. Instruction builder (task 1) ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"Give a first step:", words:["Open","the","app","first"]},
+  {hint:"Ask how to do something:", words:["How","do","I","download","this"]},
+  {hint:"Give a reminder:", words:["Don't","forget","to","save","it"]},
+  {hint:"Report a problem:", words:["The","wifi","isn't","working"]}
+]);
+
+/* ---------- 6. Mixed true/false (task 2) ---------- */
+renderTrueFalse(document.getElementById('tf'), [
+  {statement:"Instructions usually use the base verb with no subject, like \u2018Open the app.\u2019", isTrue:true},
+  {statement:"\u2018How do I download this?\u2019 is asking for instructions.", isTrue:true},
+  {statement:"\u2018Password\u2019 and \u2018wifi\u2019 are stressed on the second syllable.", isTrue:false},
+  {statement:"\u2018Restart your phone\u2019 is a common troubleshooting instruction.", isTrue:true}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
+  text:"First, {{}} the app. Then {{}} on video call. Don't forget to {{}} your camera. How do I {{}} the volume?",
+  answers:["open","click","turn on","adjust"]
+});
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"My {{}} is frozen. The {{}} isn't working properly. I think I need to {{}} my phone. Have you seen my {{}}?",
+  answers:["screen","wifi","restart","charger"]
+});
+
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
+  {s:"a", t:"Let me show you this new app!"},
+  {s:"b", t:"Okay, how do I open it?"},
+  {s:"a", t:"Just tap the icon. Then click \u2018sign in\u2019."},
+  {s:"b", t:"Got it. What do I do next?"},
+  {s:"a", t:"Enter your email, and don't forget to save your password!"}
+], "Ann");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"b", t:"I can't hear you — I think there's a problem."},
+  {s:"a", t:"Have you tried restarting the app?"},
+  {s:"b", t:"Not yet, let me try that."},
+  {s:"a", t:"Also check your wifi, it might be the connection."},
+  {s:"b", t:"That fixed it, thank you!"}
+], "Boyfriend");
+</script>
+</body>
+</html>

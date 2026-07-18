@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 29 — Telling a Longer Story</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-28.html">← Lesson 28</a>
+      <a class="primary" href="lesson-30.html">Lesson 30 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 29 · 90 min · Unit 3</span>
+    <h1>Telling a Longer Story</h1>
+    <p>Turning a list of events into an actual story — the last real skill gap before the final review. Grammar focus: linking words (<em>first, then, after that, because, so</em>), used throughout every task below.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🗃️ Sequence or reason?</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Story order builder</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: linking words</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">A handful of small connecting words — first, then, after that, because, so — turn separate sentences into one flowing story.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: linking word → what it does</span>
+      <p class="mat-sub">Click a linking word on the left, then what it's used for on the right.</p>
+      <div id="grammarMatch"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: fill the linking word</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: link the sentences</span>
+      <p class="mat-sub">Read the two cue sentences out loud, then she joins them with the right linking word. Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: swap chain</span>
+      <p class="mat-sub">Say the sentence, then say it again swapping in the new linking word — out loud, back and forth, no pausing.</p>
+      <div class="block-content">
+        <ol>
+          <li>"First, I woke up. Then, I had breakfast." → (after that) → <em>"First, I woke up. After that, I had breakfast."</em></li>
+          <li>"I was tired, so I went to bed early." → (because) → <em>"I went to bed early because I was tired."</em></li>
+          <li>"Suddenly, it started raining." → (finally) → <em>"Finally, it started raining."</em></li>
+          <li>"Meanwhile, my sister was cooking." → (then) → <em>"Then, my sister was cooking."</em></li>
+          <li>"Eventually, we found the hotel." → (finally) → <em>"Finally, we found the hotel."</em></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Five linking words that are commonly mispronounced. Click the purple button to hear each one, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"First we finished, then we feasted, and finally we felt fantastic."</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">A longer travel story</span>
+      <p class="block-content">She tells the full story of one trip — beginning, middle, end — using linking words to connect it into one flowing account, not a list.</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">A funny story from home</span>
+      <p class="block-content">She tells a short, funny story from her life in Ukraine, focused on making it sound like a story, not a report.</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. INTERACTIVE TASK 1: SORT ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🗃️ Interactive task 1: Sequence word or reason word?</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Sort each linking word — does it show order, or does it explain why?</p>
+    <div id="storySort"></div>
+  </section>
+
+  <!-- ============ 6. INTERACTIVE TASK 2: STORY ORDER BUILDER ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🔤 Interactive task 2: Story order builder</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Click the word chips in the correct order to build each linked sentence, then hit Check.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — a day out</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — a small mishap</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — telling the boyfriend about her day</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — a funny story for Ann</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">A light, well-connected anecdote — good practice for natural storytelling.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Tell one full story (real or invented) with a clear beginning, middle, and end, using at least 5 linking words, then record it.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>Retell a familiar fairy tale using linking words</li>
+        <li>Chain story: build a story together, one linked sentence at a time</li>
+        <li>Practice turning a shopping list into a mini-story</li>
+        <li>Quick review of sequence vs. reason words</li>
+      </ul></div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">Lesson 29 of 30 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+/* ---------- Custom picture icons for vocabulary ---------- */
+const STORY_ICONS = {
+  first: '<circle cx="12" cy="12" r="9"/><text x="12" y="16" font-size="10" text-anchor="middle" fill="currentColor" stroke="none">1</text>',
+  then: '<path d="M5 12h13"/><path d="m13 6 6 6-6 6"/>',
+  after: '<path d="M4 12h6"/><path d="M14 12h6"/><path d="m17 8 4 4-4 4"/>',
+  next: '<rect x="3" y="8" width="7" height="8" rx="1"/><rect x="14" y="8" width="7" height="8" rx="1"/>',
+  finally: '<path d="M5 21V4"/><path d="M5 4h13l-3 4 3 4H5"/>',
+  suddenly: '<path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/>',
+  because: '<circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-2.5 2-2.5 4"/><circle cx="12" cy="17" r="0.6" fill="currentColor" stroke="none"/>',
+  so: '<path d="M5 12h9"/><path d="m11 8 3 4-3 4"/><circle cx="19" cy="12" r="2"/>',
+  meanwhile: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/>',
+  eventually: '<path d="M4 12a8 8 0 1 1 4 6.9"/><path d="m5 16-1 3 3-1"/>'
+};
+function storyIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${STORY_ICONS[name]}</svg>`;
+}
+
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"First", right:"starts the story"},
+  {left:"Then", right:"shows what happened next"},
+  {left:"After that", right:"another way to say \u2018then\u2019"},
+  {left:"Because", right:"gives a reason"},
+  {left:"So", right:"gives a result"},
+  {left:"Finally", right:"ends the story"}
+]);
+
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"{{}}, I woke up early. {{}}, I had breakfast. {{}} that, I went for a walk. {{}}, I came home tired.",
+  answers:["First","Then","After","Finally"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"I woke up. / I had breakfast. (then)", a:"First I woke up, then I had breakfast."},
+  {q:"I was tired. / I went to bed early. (because)", a:"I went to bed early because I was tired."},
+  {q:"It rained. / We stayed inside. (so)", a:"It rained, so we stayed inside."},
+  {q:"We waited a long time. / the bus arrived. (eventually)", a:"We waited a long time, and eventually the bus arrived."},
+  {q:"I cooked dinner. / she cleaned the kitchen. (meanwhile)", a:"I cooked dinner; meanwhile, she cleaned the kitchen."},
+  {q:"we walked for hours. / we found the hotel. (finally)", a:"We walked for hours, and finally we found the hotel."}
+]);
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:storyIcon('first'), w:"first", x:"First, I woke up early."},
+  {svg:storyIcon('then'), w:"then", x:"Then, I had breakfast."},
+  {svg:storyIcon('after'), w:"after that", x:"After that, I went for a walk."},
+  {svg:storyIcon('next'), w:"next", x:"Next, we visited the market."},
+  {svg:storyIcon('finally'), w:"finally", x:"Finally, we arrived home."},
+  {svg:storyIcon('suddenly'), w:"suddenly", x:"Suddenly, it started to rain."},
+  {svg:storyIcon('because'), w:"because", x:"I was late because of the traffic."},
+  {svg:storyIcon('so'), w:"so", x:"It was cold, so I wore a coat."},
+  {svg:storyIcon('meanwhile'), w:"meanwhile", x:"Meanwhile, my sister was cooking."},
+  {svg:storyIcon('eventually'), w:"eventually", x:"Eventually, we found the way."}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"<b>FUR</b>-st", word:"first", note:"one syllable, the \u2018r\u2019 is soft"},
+  {stress:"<b>FI</b>-nuh-lee", word:"finally", note:"stress on the first syllable"},
+  {stress:"bi-<b>KUZ</b>", word:"because", note:"stress on the second syllable"},
+  {stress:"<b>MEEN</b>-wile", word:"meanwhile", note:"stress on the first syllable"},
+  {stress:"i-<b>VEN</b>-choo-uh-lee", word:"eventually", note:"stress on the second syllable"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"Tell the first part of a recent story.", a:"First, I…"},
+  {q:"Continue the story.", a:"Then, I… After that,…"},
+  {q:"Explain why something happened.", a:"…because…"},
+  {q:"Describe a surprising moment.", a:"Suddenly,…"},
+  {q:"Finish a story.", a:"Finally,…"}
+]);
+
+/* ---------- 5. Sequence or reason sort (task 1) ---------- */
+renderSortTask(document.getElementById('storySort'), {
+  bucketA: "Shows order",
+  bucketB: "Shows reason",
+  items: [
+    {text:"first", bucket:"a"},
+    {text:"then", bucket:"a"},
+    {text:"finally", bucket:"a"},
+    {text:"because", bucket:"b"},
+    {text:"so", bucket:"b"},
+    {text:"that's why", bucket:"b"}
+  ]
+});
+
+/* ---------- 6. Story order builder (task 2) ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"Start a story:", words:["First","I","woke","up","early"]},
+  {hint:"Give a reason:", words:["I","was","late","because","of","the","traffic"]},
+  {hint:"Give a result:", words:["It","was","cold","so","I","wore","a","coat"]},
+  {hint:"End a story:", words:["Finally","we","arrived","home"]}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
+  text:"{{}}, we had breakfast together. {{}}, we walked to the market. {{}} that, we had lunch by the river. {{}}, we went home, tired but happy.",
+  answers:["First","Then","After","Finally"]
+});
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"I missed the bus {{}} I woke up late. {{}}, I decided to walk instead. It started raining, {{}} I got completely wet! {{}}, I made it just in time.",
+  answers:["because","So","so","Eventually"]
+});
+
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
+  {s:"a", t:"How was your day?"},
+  {s:"b", t:"Good, actually! First I went shopping, then I met a friend for coffee."},
+  {s:"a", t:"Nice! What happened after that?"},
+  {s:"b", t:"After that, it started raining, so we stayed inside and talked for hours."},
+  {s:"a", t:"That sounds like a lovely afternoon."}
+], "Boyfriend");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"a", t:"Tell me a funny story from when you were young!"},
+  {s:"b", t:"Okay — first, I decided to bake a cake for my mother's birthday."},
+  {s:"a", t:"Uh oh, I have a feeling this doesn't end well."},
+  {s:"b", t:"Exactly! Suddenly, I forgot the sugar, so the cake was terrible — but finally, we all laughed about it together."},
+  {s:"a", t:"That's a great story, Mum!"}
+], "Ann");
+</script>
+</body>
+</html>
