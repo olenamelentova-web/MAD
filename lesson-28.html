@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 28 — Being the Helper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-27.html">← Lesson 27</a>
+      <a class="primary" href="lesson-29.html">Lesson 29 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 28 · 90 min · Unit 3</span>
+    <h1>Being the Helper</h1>
+    <p>A nice reversal — instead of asking for directions like in Lesson 7, she's the one giving them. Imagine the boyfriend visiting her in Ukraine. Grammar focus: imperative directions, used throughout every task below.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Directions builder</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🧠 Helper logic quiz</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: giving directions</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Same core phrases from Lesson 7, but now she's producing them, not just recognizing them — a genuinely different skill.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: instruction → landmark reference</span>
+      <p class="mat-sub">Click an instruction on the left, then a natural landmark reference to pair with it on the right.</p>
+      <div id="grammarMatch"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: fill the direction</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: give the direction</span>
+      <p class="mat-sub">Read the cue out loud, then she gives the full direction. Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: swap chain</span>
+      <p class="mat-sub">Say the direction, then say it again swapping in the new word — out loud, back and forth, no pausing.</p>
+      <div class="block-content">
+        <ol>
+          <li>"Turn left at the corner." → (right) → <em>"Turn right at the corner."</em></li>
+          <li>"It's opposite the church." → (near) → <em>"It's near the church."</em></li>
+          <li>"Go straight for two minutes." → (five) → <em>"Go straight for five minutes."</em></li>
+          <li>"It's next to the market." → (behind) → <em>"It's behind the market."</em></li>
+          <li>"You can't miss it." → (won't) → <em>"You won't miss it."</em></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Five direction words that are commonly mispronounced. Click the purple button to hear each one, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"Turn right at the corner, opposite the local landmark."</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Guide the tourist</span>
+      <p class="block-content">On Miro, use a simple map of her hometown — she gives you directions from the station to somewhere she loves.</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Show him around</span>
+      <p class="block-content">Imagine the boyfriend visiting her town for the first time — she plays local guide, recommending places and explaining how to get there.</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. INTERACTIVE TASK 1: DIRECTIONS BUILDER ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🔤 Interactive task 1: Directions builder</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Click the word chips in the correct order to build each direction, then hit Check. Say it out loud before moving to the next one.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ 6. INTERACTIVE TASK 2: HELPER LOGIC QUIZ ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🧠 Interactive task 2: Helper logic quiz</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">She answers out loud first, then clicks.</p>
+    <div id="quiz"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — showing him the town</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — a recommendation</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — showing him around her hometown</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — helping a stranger who's lost</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">Being helpful to someone she doesn't know — a slightly more formal register.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Give directions to 3 different real places from her home, out loud, as if guiding someone who has never been there.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>Draw a simple map of her neighbourhood and label it in English</li>
+        <li>Practice recommending a favourite local place with reasons why</li>
+        <li>Reverse roles: you give directions, she follows on the map</li>
+        <li>Review direction vocabulary from Lesson 7</li>
+      </ul></div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">Lesson 28 of 30 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+/* ---------- Custom picture icons for vocabulary ---------- */
+const HELP_ICONS = {
+  turn: '<path d="M4 12h9a4 4 0 0 0 4-4V6"/><path d="m13 3 4 3-4 3"/>',
+  corner: '<path d="M4 20V8a2 2 0 0 1 2-2h12"/><path d="M20 20V10"/>',
+  opposite: '<circle cx="6" cy="12" r="3"/><circle cx="18" cy="12" r="3"/><path d="M9 12h6"/>',
+  next: '<rect x="3" y="8" width="7" height="8" rx="1"/><rect x="14" y="8" width="7" height="8" rx="1"/>',
+  near: '<path d="M12 22s7-7.5 7-13a7 7 0 0 0-14 0c0 5.5 7 13 7 13Z"/><circle cx="12" cy="9" r="2.4"/>',
+  landmark: '<path d="M6 21V9l6-6 6 6v12"/><path d="M9 21v-6h6v6"/>',
+  map: '<path d="m9 4-6 2v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/>',
+  guide: '<circle cx="12" cy="8" r="3"/><path d="M6 21c0-4 2.7-6.5 6-6.5s6 2.5 6 6.5"/><path d="M12 4v1"/>',
+  local: '<path d="M4 11 12 4l8 7"/><path d="M6 10.2V20h12v-9.8"/>',
+  behind: '<rect x="4" y="6" width="12" height="12" rx="1"/><rect x="9" y="3" width="12" height="12" rx="1" opacity="0.5"/>'
+};
+function helpIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${HELP_ICONS[name]}</svg>`;
+}
+
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"Turn left at the corner.", right:"by the old church"},
+  {left:"It's opposite the market.", right:"across from the market"},
+  {left:"Go straight for two minutes.", right:"past the bakery"},
+  {left:"It's next to the station.", right:"right beside it"},
+  {left:"It's behind the park.", right:"just past the trees"},
+  {left:"You can't miss it.", right:"it's very easy to find"}
+]);
+
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"{{}} left at the corner. It's {{}} the church. {{}} straight for two minutes. It's {{}} the market.",
+  answers:["Turn","opposite","Go","next to"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"left / turn / at the corner", a:"Turn left at the corner."},
+  {q:"opposite the church / it's", a:"It's opposite the church."},
+  {q:"straight / go / for two minutes", a:"Go straight for two minutes."},
+  {q:"next to the market / it's", a:"It's next to the market."},
+  {q:"behind the park / it's", a:"It's behind the park."},
+  {q:"miss it / you can't", a:"You can't miss it."}
+]);
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:helpIcon('turn'), w:"turn", x:"Turn left at the corner."},
+  {svg:helpIcon('corner'), w:"corner", x:"It's just around the corner."},
+  {svg:helpIcon('opposite'), w:"opposite", x:"It's opposite the church."},
+  {svg:helpIcon('next'), w:"next to", x:"It's next to the market."},
+  {svg:helpIcon('behind'), w:"behind", x:"It's behind the park."},
+  {svg:helpIcon('near'), w:"near", x:"It's near the station."},
+  {svg:helpIcon('landmark'), w:"landmark", x:"Use the church as a landmark."},
+  {svg:helpIcon('map'), w:"map", x:"Let me show you on the map."},
+  {svg:helpIcon('guide'), w:"guide", x:"I'll be your guide today!"},
+  {svg:helpIcon('local'), w:"local", x:"I know all the local spots."}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"<b>OP</b>-uh-zit", word:"opposite", note:"stress on the first syllable"},
+  {stress:"<b>LAND</b>-mark", word:"landmark", note:"stress on the first syllable"},
+  {stress:"<b>COR</b>-ner", word:"corner", note:"stress on the first syllable"},
+  {stress:"gide", word:"guide", note:"one syllable, rhymes with \u2018wide\u2019"},
+  {stress:"<b>LOH</b>-kl", word:"local", note:"stress on the first syllable"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"Give directions from the station to your house.", a:"Turn left, then go straight…"},
+  {q:"Recommend your favourite local café.", a:"You should try…, it's near…"},
+  {q:"Someone asks where the market is.", a:"It's opposite the…"},
+  {q:"Say a place is easy to find.", a:"You can't miss it, it's right next to…"},
+  {q:"Explain how far something is on foot.", a:"It's about… minutes from here."}
+]);
+
+/* ---------- 5. Directions builder (task 1) ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"Give a turn instruction:", words:["Turn","left","at","the","corner"]},
+  {hint:"Locate something:", words:["It's","opposite","the","church"]},
+  {hint:"Give a distance instruction:", words:["Go","straight","for","two","minutes"]},
+  {hint:"Reassure them:", words:["You","can't","miss","it"]}
+]);
+
+/* ---------- 6. Helper logic quiz (task 2) ---------- */
+renderQuiz(document.getElementById('quiz'), [
+  {q:"Someone is lost. A good first thing to say is:", options:["Can I help you find something?","You're lost.","Go away."], correctIndex:0},
+  {q:"\u2018It's opposite the church\u2019 means…", options:["directly across from it","next to it","far away from it"], correctIndex:0},
+  {q:"\u2018You can't miss it\u2019 reassures someone that…", options:["it's easy to find","it's very far","it doesn't exist"], correctIndex:0},
+  {q:"When giving directions, it helps to use…", options:["landmarks people can recognize","only compass directions","very long sentences"], correctIndex:0},
+  {q:"\u2018Turn left at the corner\u2019 is an example of…", options:["an imperative instruction","a question","a past event"], correctIndex:0}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
+  text:"{{}} straight from the station. {{}} right at the old church — that's a good {{}}. My house is {{}} to the small bakery.",
+  answers:["Go","Turn","landmark","next"]
+});
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"You should try the café {{}} the park. It's a very {{}} spot. Ask for me — everyone knows me, you {{}} miss it!",
+  answers:["near","local","can't"]
+});
+
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
+  {s:"b", t:"Okay, I'm at the station — where do I go?"},
+  {s:"a", t:"Go straight for two minutes, then turn left at the church."},
+  {s:"b", t:"Got it, straight then left. What's next?"},
+  {s:"a", t:"My house is next to the bakery — you can't miss it, it smells amazing!"},
+  {s:"b", t:"I'm already excited just hearing that."}
+], "Boyfriend");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"b", t:"Excuse me, do you know where the market is?"},
+  {s:"a", t:"Yes, of course — it's opposite the church, just around the corner."},
+  {s:"b", t:"Thank you! Is it far?"},
+  {s:"a", t:"Not at all, about five minutes on foot. You can't miss it."},
+  {s:"b", t:"Thank you so much for your help!"}
+], "Stranger");
+</script>
+</body>
+</html>

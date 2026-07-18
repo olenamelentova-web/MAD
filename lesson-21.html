@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 21 — Life Experiences</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-20.html">← Lesson 20</a>
+      <a class="primary" href="lesson-22.html">Lesson 22 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 21 · 90 min · Unit 3</span>
+    <h1>Life Experiences</h1>
+    <p>Talking about things she has (or hasn't) done in her life — a step beyond simple past events. Grammar focus: present perfect with <em>Have you ever…?</em>, used throughout every task below.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🧠 Experience quiz</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Sentence builder</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: present perfect</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Past participles look irregular and scary, but a handful cover almost every "Have you ever…?" question she'd realistically ask or answer.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: verb → past participle</span>
+      <p class="mat-sub">Click a verb on the left, then its past participle on the right.</p>
+      <div id="grammarMatch"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: fill the participle</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: say the full question</span>
+      <p class="mat-sub">Read the cue out loud, then she asks the full "Have you ever…?" question. Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: swap chain</span>
+      <p class="mat-sub">Say the sentence, then say it again swapping in the new word — out loud, back and forth, no pausing.</p>
+      <div class="block-content">
+        <ol>
+          <li>"Have you ever been to Ireland?" → (Spain) → <em>"Have you ever been to Spain?"</em></li>
+          <li>"I have seen that film." → (read that book) → <em>"I have read that book."</em></li>
+          <li>"She has never tried sushi." → (he) → <em>"He has never tried sushi."</em></li>
+          <li>"We have visited Dublin twice." → (three times) → <em>"We have visited Dublin three times."</em></li>
+          <li>"I have never flown before." → (driven) → <em>"I have never driven before."</em></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Five words that are commonly mispronounced when talking about experiences. Click the purple button to hear each one, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"Have you ever had such an exciting adventure?"</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">"Have you ever…?" chain</span>
+      <p class="block-content">Take turns asking "Have you ever…?" questions — travel, food, sport, anything — and answering honestly.</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">My biggest adventure</span>
+      <p class="block-content">She tells the story of one memorable experience, using present perfect to introduce it, then past simple for the details.</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. INTERACTIVE TASK 1: EXPERIENCE QUIZ ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🧠 Interactive task 1: Experience quiz</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">She answers out loud first, then clicks.</p>
+    <div id="quiz"></div>
+  </section>
+
+  <!-- ============ 6. INTERACTIVE TASK 2: SENTENCE BUILDER ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🔤 Interactive task 2: Sentence builder</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Click the word chips in the correct order to build each sentence, then hit Check. Say the finished sentence out loud before moving to the next one.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — asking about experiences</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — a memory from home</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — the boyfriend asks about her travels</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — Ann asks about memories from Ukraine</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">A warm conversation connecting past and present, Ukraine and Ireland.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">List 5 things she has or hasn't done in her life using "Have you ever…?" as the pattern, then record it out loud.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>"Two truths and a lie" using present perfect experiences</li>
+        <li>Compare experiences: who in the family has travelled the most?</li>
+        <li>Quick review of irregular past participles</li>
+        <li>Bucket list — things she'd like to experience one day</li>
+      </ul></div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">Lesson 21 of 30 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+/* ---------- Custom picture icons for vocabulary ---------- */
+const EXP_ICONS = {
+  passport: '<rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M8 17h8"/>',
+  footprint: '<path d="M9 3c-2 0-3 2-3 4s1 3 1 5-1 3-1 5c0 2 1 3 3 3s3-1 3-3V6c0-2-1-3-3-3Z"/>',
+  eye: '<path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="2.6"/>',
+  fork: '<path d="M7 3v6a2 2 0 0 0 4 0V3"/><path d="M9 9v12"/><path d="M15 3c-1.2 0-2 1.5-2 4s.8 4 2 4 2-1.5 2-4-.8-4-2-4Z"/><path d="M15 11v10"/>',
+  pin: '<path d="M12 22s7-7.5 7-13a7 7 0 0 0-14 0c0 5.5 7 13 7 13Z"/><circle cx="12" cy="9" r="2.4"/>',
+  clockx: '<circle cx="12" cy="12" r="9"/><path d="M12 8v4l2.5 1.5"/><path d="M9 9l-2-2M9 9l2-2"/>',
+  question: '<circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-2.5 2-2.5 4"/><circle cx="12" cy="17" r="0.6" fill="currentColor" stroke="none"/>',
+  trophy: '<path d="M8 4h8v5a4 4 0 0 1-8 0V4Z"/><path d="M6 5H4a1 1 0 0 0-1 1v1a4 4 0 0 0 4 4M18 5h2a1 1 0 0 1 1 1v1a4 4 0 0 1-4 4"/><path d="M12 13v4M9 21h6M10 17h4v4h-4z"/>',
+  camera: '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l2-3h4l2 3"/><circle cx="12" cy="13.5" r="3.5"/>',
+  compass: '<circle cx="12" cy="12" r="9"/><path d="m14.5 9.5-1.5 5-5 1.5 1.5-5Z"/>'
+};
+function expIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${EXP_ICONS[name]}</svg>`;
+}
+
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"be", right:"been"},
+  {left:"see", right:"seen"},
+  {left:"try", right:"tried"},
+  {left:"eat", right:"eaten"},
+  {left:"go", right:"gone"},
+  {left:"visit", right:"visited"}
+]);
+
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"Have you ever {{}} to Ireland? I have {{}} that film. She has never {{}} sushi. We have {{}} Dublin twice.",
+  answers:["been","seen","tried","visited"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"Ireland / been / have you ever", a:"Have you ever been to Ireland?"},
+  {q:"sushi / tried / have you ever", a:"Have you ever tried sushi?"},
+  {q:"a horror film / seen / have you ever", a:"Have you ever seen a horror film?"},
+  {q:"abroad / lived / have you ever", a:"Have you ever lived abroad?"},
+  {q:"skiing / been / have you ever", a:"Have you ever been skiing?"},
+  {q:"a plane / flown on / have you ever", a:"Have you ever flown on a plane?"}
+]);
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:expIcon('passport'), w:"experience", x:"That was a wonderful experience."},
+  {svg:expIcon('footprint'), w:"been", x:"I have been to Ireland twice."},
+  {svg:expIcon('eye'), w:"seen", x:"I have seen that film before."},
+  {svg:expIcon('fork'), w:"tried", x:"I've never tried sushi."},
+  {svg:expIcon('pin'), w:"visited", x:"We have visited Dublin twice."},
+  {svg:expIcon('clockx'), w:"never", x:"I have never flown before."},
+  {svg:expIcon('question'), w:"ever", x:"Have you ever been abroad?"},
+  {svg:expIcon('trophy'), w:"achievement", x:"Learning English is a big achievement."},
+  {svg:expIcon('camera'), w:"memory", x:"That's one of my favourite memories."},
+  {svg:expIcon('compass'), w:"adventure", x:"It was a real adventure!"}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"<b>bin</b>", word:"been", note:"in Irish/UK English, usually pronounced \u2018bin\u2019, not \u2018bean\u2019"},
+  {stress:"<b>EV</b>-er", word:"ever", note:"stress on the first syllable"},
+  {stress:"ik-<b>SPEER</b>-ee-uns", word:"experience", note:"stress on the second syllable"},
+  {stress:"uh-<b>CHEEV</b>-ment", word:"achievement", note:"stress on the second syllable"},
+  {stress:"ad-<b>VEN</b>-cher", word:"adventure", note:"stress on the second syllable"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"Have you ever been abroad?", a:"Yes, I've been to…"},
+  {q:"Have you ever tried a strange food?", a:"Yes, I've tried…"},
+  {q:"Have you ever lost something important?", a:"Yes, I once lost…"},
+  {q:"What's your favourite memory?", a:"My favourite memory is…"},
+  {q:"Have you ever been really scared?", a:"Yes, once when…"}
+]);
+
+/* ---------- 5. Experience quiz ---------- */
+renderQuiz(document.getElementById('quiz'), [
+  {q:"\u2018Have you ever been to Ireland?\u2019 asks about…", options:["any time in your life","yesterday only","tomorrow"], correctIndex:0},
+  {q:"The past participle of \u2018see\u2019 is…", options:["seen","saw","seed"], correctIndex:0},
+  {q:"\u2018I have never tried sushi\u2019 means…", options:["not once, in my whole life","I tried it yesterday","I will try it soon"], correctIndex:0},
+  {q:"The past participle of \u2018go\u2019 is…", options:["gone","went","goed"], correctIndex:0},
+  {q:"\u2018We have visited Dublin twice\u2019 tells you…", options:["how many times, not when exactly","the exact date","that it happened yesterday"], correctIndex:0}
+]);
+
+/* ---------- 6. Sentence builder ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"Ask about travel:", words:["Have","you","ever","been","to","Ireland"]},
+  {hint:"Say what you've seen:", words:["I","have","seen","that","film","before"]},
+  {hint:"Say what she's never tried:", words:["She","has","never","tried","sushi"]},
+  {hint:"Say how many times:", words:["We","have","visited","Dublin","twice"]}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
+  text:"Have you ever {{}} to Ireland? I have {{}} that film. She has never {{}} sushi. We have {{}} Dublin twice.",
+  answers:["been","seen","tried","visited"]
+});
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"I have never {{}} such a beautiful place. My favourite {{}} is from my childhood. It was a real {{}}. I've {{}} many things in my life.",
+  answers:["seen","memory","adventure","experienced"]
+});
+
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
+  {s:"a", t:"Have you ever travelled outside Ukraine before?"},
+  {s:"b", t:"Yes, I've been to Poland a few times."},
+  {s:"a", t:"Have you ever flown before Ireland?"},
+  {s:"b", t:"No, this was actually my first flight!"},
+  {s:"a", t:"Really? How was it?"},
+  {s:"b", t:"It was a wonderful experience, honestly."}
+], "Boyfriend");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"a", t:"What's your favourite memory from when you were young?"},
+  {s:"b", t:"I've always loved remembering our summers by the river."},
+  {s:"a", t:"That sounds lovely! Have you ever been back there?"},
+  {s:"b", t:"Yes, I've visited a few times, but it's changed a lot."},
+  {s:"a", t:"I'd love to see it one day."}
+], "Ann");
+</script>
+</body>
+</html>

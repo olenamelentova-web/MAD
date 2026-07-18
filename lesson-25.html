@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 25 — At the Airport: Deeper Dive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <a href="lesson-24.html">← Lesson 24</a>
+      <a class="primary" href="lesson-26.html">Lesson 26 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lesson 25 · 90 min · Unit 3</span>
+    <h1>At the Airport — Deeper Dive</h1>
+    <p>Building on Lesson 7 for the moments that actually cause stress: delays, gate changes, and lost luggage. Grammar focus: reporting problems (<em>I've lost…</em>, <em>My flight is delayed</em>), used throughout every task below.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🗃️ Problem or normal?</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🧠 Airport logic quiz</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: reporting a problem</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">"I've lost…" and "My flight is…" are the two sentence shapes that cover almost every airport problem she might need to report.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: problem → matching response</span>
+      <p class="mat-sub">Click a problem on the left, then the staff response that fits it on the right.</p>
+      <div id="grammarMatch"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: fill the gap</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: report the problem</span>
+      <p class="mat-sub">Read the cue out loud, then she reports the full problem. Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: swap chain</span>
+      <p class="mat-sub">Say the sentence, then say it again swapping in the new word — out loud, back and forth, no pausing.</p>
+      <div class="block-content">
+        <ol>
+          <li>"I've lost my luggage." → (passport) → <em>"I've lost my passport."</em></li>
+          <li>"My flight is delayed." → (cancelled) → <em>"My flight is cancelled."</em></li>
+          <li>"The gate has changed." → (time) → <em>"The time has changed."</em></li>
+          <li>"I've missed my connection." → (flight) → <em>"I've missed my flight."</em></li>
+          <li>"Where's the lost property desk?" → (customs) → <em>"Where's customs?"</em></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Five airport words that are commonly mispronounced. Click the purple button to hear each one, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"The delayed departure meant a different destination for the connecting flight."</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Airport problem roleplay</span>
+      <p class="block-content">On Miro, act out reporting a problem at the help desk — delayed flight, lost luggage, or a gate change — then swap roles.</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Staying calm chain</span>
+      <p class="block-content">Practice staying polite and clear even when stressed — a big part of handling real airport problems well.</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. INTERACTIVE TASK 1: SORT ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🗃️ Interactive task 1: Problem or normal procedure?</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Sort each situation — is it something going wrong, or just a normal part of flying?</p>
+    <div id="airportSort"></div>
+  </section>
+
+  <!-- ============ 6. INTERACTIVE TASK 2: QUIZ ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🧠 Interactive task 2: Airport logic quiz</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">She answers out loud first, then clicks.</p>
+    <div id="quiz"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — reporting a delay</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — lost luggage</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — a delayed flight</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — reporting lost luggage</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">A stressful moment made manageable with the right phrases.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Practice reporting 3 different airport problems out loud (delay, lost luggage, gate change), staying calm and polite throughout.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>Practice reading a departures board aloud</li>
+        <li>Roleplay a gate change announcement</li>
+        <li>Discuss what to pack in hand luggage vs. checked luggage</li>
+        <li>Review Lesson 7 vocabulary alongside today's</li>
+      </ul></div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">Lesson 25 of 30 · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+/* ---------- Custom picture icons for vocabulary ---------- */
+const AIR2_ICONS = {
+  checkin: '<rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 11h18"/><path d="M7 15h4"/>',
+  delay: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/><path d="M18 5l2 2"/>',
+  gate: '<path d="M4 11 12 4l8 7"/><path d="M6 10.2V20h12v-9.8"/><path d="M14 20v-6h-3v6"/>',
+  luggage: '<rect x="3" y="8" width="18" height="12" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/>',
+  security: '<path d="M12 3 4 6v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6l-8-3Z"/>',
+  dutyfree: '<path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>',
+  customs: '<path d="M6 3h12v18l-2.5-1.5L13 21l-2.5-1.5L8 21l-2-1.5V3Z"/><path d="M9 8h6M9 12h6"/>',
+  connecting: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-1 .1-1.3.5l-.7.8c-.4.4-.2 1.1.3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.7 5.9c.2.5.9.7 1.3.3l.8-.7c.4-.3.5-.8.3-1.3Z"/>',
+  departure: '<path d="M5 12h13"/><path d="m13 6 6 6-6 6"/>',
+  lost: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/><path d="M9 9l3 3M12 9l-3 3"/>'
+};
+function air2Icon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${AIR2_ICONS[name]}</svg>`;
+}
+
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"I've lost my luggage.", right:"Let's fill out a report."},
+  {left:"My flight is delayed.", right:"I'm sorry, please wait at the gate."},
+  {left:"The gate has changed.", right:"It's now gate 22, not 12."},
+  {left:"I've missed my connection.", right:"We'll book you on the next flight."},
+  {left:"Where's the lost property desk?", right:"It's next to arrivals."},
+  {left:"Is my flight cancelled?", right:"Let me check that for you."}
+]);
+
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"I've {{}} my luggage. My flight is {{}}. The gate has {{}}. I've {{}} my connection.",
+  answers:["lost","delayed","changed","missed"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"my luggage / lost / I've", a:"I've lost my luggage."},
+  {q:"my flight / delayed / is", a:"My flight is delayed."},
+  {q:"the gate / changed / has", a:"The gate has changed."},
+  {q:"my connection / missed / I've", a:"I've missed my connection."},
+  {q:"the lost property desk / where's", a:"Where's the lost property desk?"},
+  {q:"cancelled / is / my flight", a:"Is my flight cancelled?"}
+]);
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:air2Icon('checkin'), w:"check-in", x:"Check-in closes 40 minutes before departure."},
+  {svg:air2Icon('delay'), w:"delay", x:"There's a two-hour delay."},
+  {svg:air2Icon('gate'), w:"gate change", x:"There's been a gate change."},
+  {svg:air2Icon('luggage'), w:"lost luggage", x:"I need to report lost luggage."},
+  {svg:air2Icon('security'), w:"security", x:"Security took a long time today."},
+  {svg:air2Icon('dutyfree'), w:"duty-free", x:"I bought perfume in duty-free."},
+  {svg:air2Icon('customs'), w:"customs", x:"We went through customs quickly."},
+  {svg:air2Icon('connecting'), w:"connecting flight", x:"I have a connecting flight in Amsterdam."},
+  {svg:air2Icon('departure'), w:"departure", x:"Check the departure board."},
+  {svg:air2Icon('lost'), w:"lost property", x:"Where's the lost property desk?"}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"dee-<b>LAY</b>", word:"delay", note:"stress on the second syllable"},
+  {stress:"<b>LUG</b>-gage", word:"luggage", note:"stress on the first syllable"},
+  {stress:"<b>KUS</b>-tumz", word:"customs", note:"stress on the first syllable"},
+  {stress:"kuh-<b>NEK</b>-ting", word:"connecting", note:"stress on the second syllable"},
+  {stress:"dee-<b>PAR</b>-cher", word:"departure", note:"stress on the second syllable"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
+renderPromptGrid(document.getElementById('promptGrid'), [
+  {q:"Your flight is delayed. What do you say?", a:"Excuse me, is my flight delayed?"},
+  {q:"You can't find your bag. What do you say?", a:"I've lost my luggage."},
+  {q:"You missed your connecting flight. What do you say?", a:"I've missed my connection."},
+  {q:"You want to know if the gate changed.", a:"Has the gate changed?"},
+  {q:"You need help finding something. What do you ask?", a:"Where's the… desk, please?"}
+]);
+
+/* ---------- 5. Problem or normal sort (task 1) ---------- */
+renderSortTask(document.getElementById('airportSort'), {
+  bucketA: "A problem",
+  bucketB: "Normal procedure",
+  items: [
+    {text:"My flight is delayed.", bucket:"a"},
+    {text:"I've lost my luggage.", bucket:"a"},
+    {text:"The gate has changed.", bucket:"a"},
+    {text:"Check-in closes 40 minutes before departure.", bucket:"b"},
+    {text:"You go through security before the gate.", bucket:"b"},
+    {text:"You collect luggage after landing.", bucket:"b"}
+  ]
+});
+
+/* ---------- 6. Airport logic quiz (task 2) ---------- */
+renderQuiz(document.getElementById('quiz'), [
+  {q:"You can't find your suitcase. You say:", options:["I've lost my luggage.","Where luggage?","My bag is gone away."], correctIndex:0},
+  {q:"\u2018My flight is delayed\u2019 means…", options:["it will leave later than planned","it left already","it's cancelled"], correctIndex:0},
+  {q:"You missed a connecting flight. You say:", options:["I've missed my connection.","I lost my plane.","My flight ran away."], correctIndex:0},
+  {q:"\u2018Duty-free\u2019 shops are usually found…", options:["after security, before the gate","before check-in","outside the airport"], correctIndex:0},
+  {q:"If the gate changes, you should…", options:["check the departure board","ignore it","go to the old gate anyway"], correctIndex:0}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
+  text:"Excuse me, is my {{}} delayed? How long is the {{}}? Has the {{}} changed? Where's the {{}} board?",
+  answers:["flight","delay","gate","departure"]
+});
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"I've {{}} my luggage. Where's the {{}} property desk? Can you help me fill out a {{}}? I hope it's not {{}}.",
+  answers:["lost","lost","report","lost"]
+});
+
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
+  {s:"b", t:"Excuse me, is my flight delayed?"},
+  {s:"a", t:"Yes, I'm sorry, there's a two-hour delay."},
+  {s:"b", t:"Oh no. Has the gate changed too?"},
+  {s:"a", t:"Not yet, but please check the departure board."},
+  {s:"b", t:"Thank you for letting me know."}
+], "Staff");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"b", t:"Excuse me, I think I've lost my luggage."},
+  {s:"a", t:"I'm sorry to hear that. Let's fill out a report."},
+  {s:"b", t:"Thank you. How long will it take to find it?"},
+  {s:"a", t:"Usually a day or two. We'll call you as soon as we find it."},
+  {s:"b", t:"Okay, thank you for your help."}
+], "Staff");
+</script>
+</body>
+</html>
