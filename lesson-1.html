@@ -22,114 +22,307 @@
 
 <header class="lesson-hero">
   <div class="wrap">
-    <span class="eyebrow">Lesson 01 · 60 min</span>
+    <span class="eyebrow">Lesson 01 · 90 min · Unit 1</span>
     <h1>Introduction & Getting to Know You</h1>
-    <p>Build confidence speaking about herself; establish "always answer in a full sentence" from day one.</p>
+    <p>Build confidence speaking about herself; establish "always answer in a full sentence" from day one. Grammar focus: <em>to be</em> + simple present, used throughout every task below.</p>
   </div>
 </header>
 
 <div class="wrap">
-  <section class="lesson-section" id="tabs">
-    <div class="subtabs">
-      <button class="subtab-btn" data-sub="plan" aria-selected="true">📋 Plan</button>
-      <button class="subtab-btn" data-sub="materials" aria-selected="false">🎒 Materials</button>
+
+  <nav class="agenda" aria-label="Lesson agenda">
+    <a class="agenda-item" href="#grammar"><span class="ai-time">10 MIN</span><span class="ai-label">🧩 Grammar warm-up</span></a>
+    <a class="agenda-item" href="#vocab"><span class="ai-time">15 MIN</span><span class="ai-label">🗂️ Vocabulary + pictures</span></a>
+    <a class="agenda-item" href="#pronunciation"><span class="ai-time">10 MIN</span><span class="ai-label">🔊 Pronunciation</span></a>
+    <a class="agenda-item" href="#speaking"><span class="ai-time">15 MIN</span><span class="ai-label">🗣️ Speaking practice</span></a>
+    <a class="agenda-item" href="#task1"><span class="ai-time">10 MIN</span><span class="ai-label">🧠 Introduction quiz</span></a>
+    <a class="agenda-item" href="#task2"><span class="ai-time">10 MIN</span><span class="ai-label">🔤 Sentence builder</span></a>
+    <a class="agenda-item" href="#gapfill"><span class="ai-time">10 MIN</span><span class="ai-label">✏️ Fill in the blanks</span></a>
+    <a class="agenda-item" href="#roleplay"><span class="ai-time">10 MIN</span><span class="ai-label">🎭 Roleplay scripts</span></a>
+    <a class="agenda-item" href="#homework"><span class="ai-time">5 MIN</span><span class="ai-label">🏠 Wrap-up</span></a>
+  </nav>
+
+  <!-- ============ 1. GRAMMAR WARM-UP ============ -->
+  <section class="lesson-section" id="grammar">
+    <div class="section-head">
+      <h3>🧩 Grammar warm-up: "to be"</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Am, is, are — three tiny words that carry almost every sentence she'll say about herself today. We drill them first.</p>
+
+    <div class="mat-section">
+      <span class="mat-title">Match it: pronoun → correct form</span>
+      <p class="mat-sub">Click a pronoun on the left, then the form of "to be" that matches it on the right.</p>
+      <div id="grammarMatch"></div>
     </div>
 
-    <div class="subpanel active" data-sub-panel="plan">
-      <div class="block">
-        <span class="block-label c-warmup">Warm-up</span>
-        <p class="block-content">Name, where she's from, one thing about her day — modeled by you first.</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-vocab">Vocabulary</span>
-        <p class="block-content">Personal info words: name, age, from, live, work / retired, family.</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-grammar">Grammar</span>
-        <p class="block-content"><em>to be</em> + simple present — "I am…", "I live in…", "I have…"</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-speaking">Speaking practice</span>
-        <div class="block-content"><ul>
-          <li>Question drill: you ask, she answers, then she asks you back</li>
-          <li>"Interview" cards on Miro — she picks a card, answers, no translating pauses (gentle timer)</li>
-        </ul></div>
-      </div>
-      <div class="block">
-        <span class="block-label c-roleplay">Roleplay</span>
-        <p class="block-content">Meeting her daughter's boyfriend for the first time — introducing herself, small polite exchange.</p>
-      </div>
-      <div class="block">
-        <span class="block-label c-homework">Homework</span>
-        <p class="block-content">Record a 30-second voice note introducing herself.</p>
-      </div>
-      <div class="block backup">
-        <span class="block-label">✦ Backup activities — if time remains</span>
-        <div class="block-content"><ul>
-          <li>Spell her name, email and phone number out loud</li>
-          <li>"Two truths and a lie" about herself</li>
-          <li>Numbers drill: age, address, phone number — said fast</li>
-          <li>Simple "20 questions" — she asks yes/no questions to guess a job or place</li>
-        </ul></div>
-      </div>
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">Quick drill: am, is, or are?</span>
+      <div class="gapfill-box" id="grammarGapfill"></div>
+      <div class="gapfill-controls"><button class="btn" id="grammarRevealBtn">Reveal answers</button></div>
     </div>
 
-    <div class="subpanel" data-sub-panel="materials">
-      <div class="mat-section">
-        <span class="mat-title">🗂️ Vocabulary cards</span>
-        <p class="mat-sub">Click a card to flip it and see the example sentence. Click "Listen" to hear it.</p>
-        <div class="vocab-grid" id="vocabGrid"></div>
-      </div>
-      <div class="mat-section">
-        <span class="mat-title">🗣️ Speaking prompt cards</span>
-        <p class="mat-sub">She answers out loud first — flip to check a sample answer.</p>
-        <div class="prompt-grid" id="promptGrid"></div>
-      </div>
-      <div class="mat-section">
-        <span class="mat-title">✏️ Fill in the blanks</span>
-        <div class="gapfill-box" id="gapfill"></div>
-        <div class="gapfill-controls"><button class="btn" id="revealBtn">Reveal answers</button></div>
-      </div>
-      <div class="mat-section">
-        <span class="mat-title">🎭 Roleplay script — Meeting the boyfriend for the first time</span>
-        <p class="mat-sub">Read it together first, then act it out from memory.</p>
-        <div class="dialogue" id="dialogue"></div>
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: say the full sentence</span>
+      <p class="mat-sub">Read the cue out loud, then she says the full sentence. Flip only to check.</p>
+      <div class="prompt-grid" id="oralDrill1"></div>
+    </div>
+
+    <div class="mat-section" style="margin-top:22px;">
+      <span class="mat-title">🗣️ Oral drill: subject swap chain</span>
+      <p class="mat-sub">Say the sentence, then say it again with the new subject — out loud, back and forth, no pausing.</p>
+      <div class="block-content">
+        <ol>
+          <li>"I am fifty-four." → (she) → <em>"She is fifty-four."</em></li>
+          <li>"You are kind." → (he) → <em>"He is kind."</em></li>
+          <li>"We are a family." → (they) → <em>"They are a family."</em></li>
+          <li>"I am from Ukraine." → (we) → <em>"We are from Ukraine."</em></li>
+          <li>"He is my boyfriend." → (they) → <em>"They are my friends."</em></li>
+        </ol>
       </div>
     </div>
   </section>
+
+  <!-- ============ 2. VOCABULARY WITH PICTURES ============ -->
+  <section class="lesson-section" id="vocab">
+    <div class="section-head">
+      <h3>🗂️ Vocabulary — with pictures</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <p class="section-sub">Say the word out loud as you flip each card. Click "Listen" to hear it pronounced before she tries it.</p>
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </section>
+
+  <!-- ============ 3. PRONUNCIATION ============ -->
+  <section class="lesson-section" id="pronunciation">
+    <div class="section-head">
+      <h3>🔊 Pronunciation practice</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Five words from today's lesson — including her own details — that are worth getting right from lesson one. Click the purple button to hear each one, then she repeats it three times.</p>
+    <div id="pronWords"></div>
+    <p class="mat-title" style="margin-top:18px;">Tongue twister (read it together, then she tries it alone — three times, a little faster each time)</p>
+    <div class="twister-box">"Nice to meet you — I'm from Ukraine, and I'm retired."</div>
+  </section>
+
+  <!-- ============ 4. SPEAKING PRACTICE ============ -->
+  <section class="lesson-section" id="speaking">
+    <div class="section-head">
+      <h3>🗣️ Speaking practice</h3>
+      <span class="section-time">15 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">Question drill</span>
+      <p class="block-content">You ask, she answers, then she asks you back — mirroring a real first conversation.</p>
+    </div>
+    <div class="block">
+      <span class="block-label c-speaking">"Interview" cards</span>
+      <p class="block-content">On Miro, she picks a card and answers with no translating pauses (use a gentle timer to build automaticity).</p>
+    </div>
+    <div class="mat-section" style="margin-top:6px;">
+      <span class="mat-title">Prompt cards — she answers out loud, flip to check a sample</span>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. INTERACTIVE TASK 1: INTRODUCTION QUIZ ============ -->
+  <section class="lesson-section" id="task1">
+    <div class="section-head">
+      <h3>🧠 Interactive task 1: Introduction quiz</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">She answers out loud first, then clicks.</p>
+    <div id="quiz"></div>
+  </section>
+
+  <!-- ============ 6. INTERACTIVE TASK 2: SENTENCE BUILDER ============ -->
+  <section class="lesson-section" id="task2">
+    <div class="section-head">
+      <h3>🔤 Interactive task 2: Sentence builder</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <p class="section-sub">Click the word chips in the correct order to build each sentence, then hit Check. Say the finished sentence out loud before moving to the next one.</p>
+    <div id="builder"></div>
+  </section>
+
+  <!-- ============ 7. GAP-FILL ============ -->
+  <section class="lesson-section" id="gapfill">
+    <div class="section-head">
+      <h3>✏️ Fill in the blanks</h3>
+      <span class="section-time">10 min</span>
+    </div>
+    <div class="mat-section">
+      <span class="mat-title">Part A — introducing herself</span>
+      <div class="gapfill-box" id="gapfillA"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnA">Reveal answers</button></div>
+    </div>
+    <div class="mat-section" style="margin-top:18px;">
+      <span class="mat-title">Part B — a little more detail</span>
+      <div class="gapfill-box" id="gapfillB"></div>
+      <div class="gapfill-controls"><button class="btn" id="revealBtnB">Reveal answers</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ROLEPLAY SCRIPTS ============ -->
+  <section class="lesson-section" id="roleplay">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 1 — meeting the boyfriend for the first time</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="dialogue" id="dialogue1"></div>
+  </section>
+
+  <section class="lesson-section">
+    <div class="section-head">
+      <h3>🎭 Roleplay script 2 — meeting Ann's friends</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <p class="section-sub">The same introduction skill, applied to someone new — good practice for it not feeling like a memorized script.</p>
+    <div class="dialogue" id="dialogue2"></div>
+  </section>
+
+  <!-- ============ 9. HOMEWORK / WRAP-UP ============ -->
+  <section class="lesson-section" id="homework">
+    <div class="section-head">
+      <h3>🏠 Homework & wrap-up</h3>
+      <span class="section-time">5 min</span>
+    </div>
+    <div class="block">
+      <span class="block-label c-homework">Homework</span>
+      <p class="block-content">Record a 30-second voice note introducing herself: name, age, where she's from, and her family. Keep this recording — Lesson 30 compares a new one to it.</p>
+    </div>
+    <div class="block backup">
+      <span class="block-label">✦ Backup activities — only if the lesson is somehow still running short</span>
+      <div class="block-content"><ul>
+        <li>Spell her name, email and phone number out loud</li>
+        <li>"Two truths and a lie" about herself</li>
+        <li>Numbers drill: age, address, phone number — said fast</li>
+        <li>Simple "20 questions" — she asks yes/no questions to guess a job or place</li>
+      </ul></div>
+    </div>
+  </section>
+
 </div>
 
-<footer class="site-footer">Lesson 1 of 9 · <a href="index.html">Back to course home</a></footer>
+<footer class="site-footer">Lesson 1 of 30 · <a href="index.html">Back to course home</a></footer>
 
 <script src="script.js"></script>
 <script>
-initSubtabs(document.getElementById('tabs'));
+/* ---------- Custom picture icons for vocabulary ---------- */
+const INTRO_ICONS = {
+  wave: '<path d="M8 12c0-3 1.5-5 3-5s2 2 2 4-1 3-2 3 1-1 1-3-1-3-2.5-3S7 9.5 7 12s1.5 4 3.5 4c3 0 5-2 5-2"/><path d="M4 20c1-2 3-3 5-2"/>',
+  tag: '<path d="M12 3h6a1 1 0 0 1 1 1v6l-9 9-7-7 9-9Z"/><circle cx="16" cy="7" r="1.3"/>',
+  cake: '<path d="M4 20v-6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6"/><path d="M4 20h16"/><path d="M8 12V9M12 12V8M16 12V9"/><path d="M8 5c0 1-1 1-1 2M12 4c0 1-1 1-1 2M16 5c0 1-1 1-1 2"/>',
+  pin: '<path d="M12 22s7-7.5 7-13a7 7 0 0 0-14 0c0 5.5 7 13 7 13Z"/><circle cx="12" cy="9" r="2.4"/>',
+  house: '<path d="M4 11 12 4l8 7"/><path d="M6 10.2V20h12v-9.8"/><path d="M14 20v-6h-3v6"/>',
+  sofa: '<path d="M4 12v5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/><path d="M4 12a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2"/><path d="M6 10V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/>',
+  briefcase: '<rect x="3.5" y="8" width="17" height="11" rx="2"/><path d="M8.2 8V6.2a2 2 0 0 1 2-2h3.6a2 2 0 0 1 2 2V8"/><path d="M3.5 13.2h17"/>',
+  family: '<circle cx="7" cy="9" r="2.1"/><path d="M3.2 19.5c0-2.7 1.7-4.6 3.8-4.6s3.8 1.9 3.8 4.6"/><circle cx="17" cy="9" r="2.1"/><path d="M13.2 19.5c0-2.7 1.7-4.6 3.8-4.6s3.8 1.9 3.8 4.6"/><circle cx="12" cy="6.2" r="2.4"/><path d="M7.8 20c0-2.9 1.9-5 4.2-5s4.2 2.1 4.2 5"/>',
+  person: '<circle cx="12" cy="8" r="3.2"/><path d="M5.5 21c0-3.9 2.9-6.7 6.5-6.7s6.5 2.8 6.5 6.7"/>',
+  handshake: '<path d="M2.5 13h5l2.2-2.2 2.2 2.2h5"/><path d="M8 10.6 5.7 13l2.3 2.4M16 10.6 18.3 13 16 15.4"/>'
+};
+function introIcon(name){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${INTRO_ICONS[name]}</svg>`;
+}
 
-renderVocabGrid(document.getElementById('vocabGrid'), [
-  {e:"👋", w:"Hello / Hi", x:"Hello! Nice to meet you."},
-  {e:"🙋‍♀️", w:"My name is…", x:"My name is Yaroslava."},
-  {e:"🎂", w:"…years old", x:"I am fifty-four years old."},
-  {e:"🏡", w:"live", x:"I live in Ukraine."},
-  {e:"🧓", w:"retired", x:"I am retired."},
-  {e:"💼", w:"work as…", x:"I work as a nurse."},
-  {e:"👨‍👩‍👧", w:"family", x:"I have one daughter."},
-  {e:"🤝", w:"Nice to meet you", x:"Nice to meet you too!"}
+/* ---------- 1. Grammar warm-up ---------- */
+renderMatchTask(document.getElementById('grammarMatch'), [
+  {left:"I", right:"am"},
+  {left:"You", right:"are"},
+  {left:"He", right:"is"},
+  {left:"She", right:"is"},
+  {left:"We", right:"are"},
+  {left:"They", right:"are"}
 ]);
 
+renderGapfill(document.getElementById('grammarGapfill'), document.getElementById('grammarRevealBtn'), {
+  text:"I {{}} Yaroslava. I {{}} from Ukraine. My daughter {{}} called Ann. We {{}} a small family.",
+  answers:["am","am","is","are"]
+});
+
+renderPromptGrid(document.getElementById('oralDrill1'), [
+  {q:"Yaroslava / am / I", a:"I am Yaroslava."},
+  {q:"from Ukraine / I'm", a:"I'm from Ukraine."},
+  {q:"retired / I'm", a:"I'm retired."},
+  {q:"Ann / is called / my daughter", a:"My daughter is called Ann."},
+  {q:"a small family / are / we", a:"We are a small family."},
+  {q:"kind / are / you", a:"You are kind."}
+]);
+
+/* ---------- 2. Vocabulary with pictures ---------- */
+renderVocabGrid(document.getElementById('vocabGrid'), [
+  {svg:introIcon('wave'), w:"Hello", x:"Hello! Nice to meet you."},
+  {svg:introIcon('tag'), w:"My name is…", x:"My name is Yaroslava."},
+  {svg:introIcon('cake'), w:"…years old", x:"I am fifty-four years old."},
+  {svg:introIcon('pin'), w:"from", x:"I'm from Ukraine."},
+  {svg:introIcon('house'), w:"live", x:"I live in Ukraine."},
+  {svg:introIcon('sofa'), w:"retired", x:"I am retired."},
+  {svg:introIcon('briefcase'), w:"work as…", x:"I used to work as a nurse."},
+  {svg:introIcon('family'), w:"family", x:"I have a small family."},
+  {svg:introIcon('person'), w:"daughter", x:"My daughter is called Ann."},
+  {svg:introIcon('handshake'), w:"Nice to meet you", x:"Nice to meet you too!"}
+]);
+
+/* ---------- 3. Pronunciation ---------- */
+const pronWords = [
+  {stress:"yoo-<b>KRAYN</b>", word:"Ukraine", note:"stress on the second syllable"},
+  {stress:"ri-<b>TY</b>-erd", word:"retired", note:"stress on the second syllable"},
+  {stress:"<b>FIF</b>-tee <b>FOR</b>", word:"fifty-four", note:"both words get their own stress"},
+  {stress:"<b>DAW</b>-ter", word:"daughter", note:"silent \u2018gh\u2019 \u2014 sounds like \u2018DAW-ter\u2019"},
+  {stress:"nice to <b>MEE</b>-chuh", word:"nice to meet you", note:"in fast, friendly speech, \u2018meet you\u2019 often blends into \u2018meetcha\u2019"}
+];
+const pronWrap = document.getElementById('pronWords');
+pronWords.forEach(p => {
+  const el = document.createElement('span');
+  el.className = 'pron-word';
+  el.innerHTML = `
+    <button type="button" class="listen-round" aria-label="Listen to ${p.word}">${speakerIcon()}</button>
+    <span>
+      <span class="stress">${p.stress}</span><br>
+      <span style="font-size:11px; color:var(--ink-soft);">${p.note}</span>
+    </span>`;
+  el.querySelector('.listen-round').addEventListener('click', () => speak(p.word));
+  pronWrap.appendChild(el);
+});
+
+/* ---------- 4. Speaking prompt cards ---------- */
 renderPromptGrid(document.getElementById('promptGrid'), [
   {q:"What's your name?", a:"My name is…"},
   {q:"Where are you from?", a:"I'm from Ukraine."},
   {q:"How old are you?", a:"I am … years old."},
   {q:"Do you have children?", a:"Yes, I have one daughter."},
-  {q:"What do you do?", a:"I am retired. / I work as…"}
+  {q:"What do you do?", a:"I am retired. / I used to work as…"}
 ]);
 
-renderGapfill(document.getElementById('gapfill'), document.getElementById('revealBtn'), {
+/* ---------- 5. Introduction quiz ---------- */
+renderQuiz(document.getElementById('quiz'), [
+  {q:"\u2018I am Yaroslava\u2019 uses which form of \u2018to be\u2019?", options:["am","is","are"], correctIndex:0},
+  {q:"\u2018She is fifty-four\u2019 \u2014 why \u2018is\u2019?", options:["the subject is she","the subject is I","the subject is plural"], correctIndex:0},
+  {q:"\u2018We are a small family\u2019 uses which form?", options:["are","is","am"], correctIndex:0},
+  {q:"How do you politely give your name?", options:["My name is…","Name me…","I name…"], correctIndex:0},
+  {q:"\u2018Nice to meet you\u2019 is said when…", options:["you meet someone for the first time","you say goodbye","you are angry"], correctIndex:0}
+]);
+
+/* ---------- 6. Sentence builder ---------- */
+renderSentenceBuilder(document.getElementById('builder'), [
+  {hint:"Give your name:", words:["My","name","is","Yaroslava"]},
+  {hint:"Give your age:", words:["I","am","fifty-four","years","old"]},
+  {hint:"Say where you live:", words:["I","live","in","Ukraine"]},
+  {hint:"Introduce your daughter:", words:["My","daughter","is","called","Ann"]}
+]);
+
+/* ---------- 7. Gap-fill ---------- */
+renderGapfill(document.getElementById('gapfillA'), document.getElementById('revealBtnA'), {
   text:"Hello! My {{}} is Yaroslava. I {{}} in Ukraine. I am {{}} years old. I have one {{}}. Her name is {{}}.",
-  answers:["name","live","fifty-four","daughter","Olena"]
+  answers:["name","live","fifty-four","daughter","Ann"]
+});
+renderGapfill(document.getElementById('gapfillB'), document.getElementById('revealBtnB'), {
+  text:"I {{}} retired now. I used to {{}} as a nurse. My daughter {{}} in Dublin. We {{}} a close family.",
+  answers:["am","work","lives","are"]
 });
 
-renderDialogue(document.getElementById('dialogue'), [
+/* ---------- 8. Roleplay scripts ---------- */
+renderDialogue(document.getElementById('dialogue1'), [
   {s:"a", t:"Hi, you must be Yaroslava! Nice to meet you."},
   {s:"b", t:"Nice to meet you too!"},
   {s:"a", t:"How was your flight?"},
@@ -137,6 +330,15 @@ renderDialogue(document.getElementById('dialogue'), [
   {s:"a", t:"Would you like a cup of tea?"},
   {s:"b", t:"Yes, please."}
 ], "Boyfriend");
+
+renderDialogue(document.getElementById('dialogue2'), [
+  {s:"a", t:"Hi, you must be Yaroslava! Ann talks about you all the time."},
+  {s:"b", t:"Nice to meet you! Yes, I'm her mother."},
+  {s:"a", t:"Where are you from?"},
+  {s:"b", t:"I'm from Ukraine."},
+  {s:"a", t:"How long are you staying?"},
+  {s:"b", t:"Just two weeks this time."}
+], "Ann's friend");
 </script>
 </body>
 </html>
