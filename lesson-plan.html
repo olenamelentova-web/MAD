@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson Plan — Kyiv → Fluency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <div class="navgroup">
+      <button class="lessons-toggle" id="lessonsToggle" aria-expanded="false">☰ All Lessons</button>
+    </div>
+  </div>
+  <div class="lessons-panel" id="lessonsPanel"></div>
+</nav>
+
+<header class="lesson-hero">
+  <div class="wrap">
+    <span class="eyebrow">The Full Curriculum</span>
+    <h1>Lesson Plan</h1>
+    <p>All 30 lessons, grouped into 3 units of 10. Click any lesson title to open it directly.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="intro-grid" style="padding-top:24px;">
+    <div class="card">
+      <h3>👤 Learner profile</h3>
+      <ul>
+        <li>Understands more than she can produce — translates in her head before speaking</li>
+        <li>Pronunciation is shaky; grammar basics known but inconsistent</li>
+        <li>Uses English mainly with her daughter's Irish boyfriend, and occasionally in supermarkets</li>
+        <li><strong>Priority: get her talking, even imperfectly. Fluency over accuracy.</strong></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🧭 What's on every lesson page</h3>
+      <ul>
+        <li><strong>Grammar warm-up</strong> — the structure she'll need, practiced first</li>
+        <li><strong>Vocabulary with pictures</strong> — flip cards, click to hear pronunciation</li>
+        <li><strong>Pronunciation task</strong> — stress patterns and listen &amp; repeat</li>
+        <li><strong>Interactive tasks</strong> — matching, quizzes, sorting, sentence building</li>
+        <li><strong>Roleplay scripts</strong> — her real situations, ready to perform</li>
+      </ul>
+    </div>
+  </section>
+
+  <div id="planUnits"></div>
+
+  <section class="postcard">
+    <h3>✎ Structure notes</h3>
+    <ul>
+      <li><strong>Units 1–2 stay tightly practical</strong> — her real, immediate situations (the boyfriend, the supermarket, daily life). <strong>Unit 3 opens up</strong> into general conversational confidence.</li>
+      <li>Every review lesson (10, 20, 30) mixes roleplay from <strong>all</strong> preceding lessons in that unit — a roleplay marathon, not just recent material.</li>
+      <li>Lesson 30 ends by comparing a fresh recording to her Lesson 1 recording — a nice bookend if you've been collecting those voice notes throughout.</li>
+      <li>Each lesson runs about <strong>90 minutes</strong>: grammar warm-up, illustrated vocabulary, pronunciation, speaking practice, 2+ interactive tasks, gap-fills, and two roleplay scripts.</li>
+    </ul>
+  </section>
+
+</div>
+
+<footer class="site-footer">Kyiv → Fluency · 30 lessons · <a href="index.html">Back to course home</a></footer>
+
+<script src="script.js"></script>
+<script>
+const PLAN_UNITS = [
+  {
+    title: "Unit 1 — Everyday Basics & Family",
+    sub: "Survival English for her two real contexts: the boyfriend and the supermarket.",
+    lessons: [
+      {n:1, title:"Introduction & Getting to Know You", grammar:"to be + simple present"},
+      {n:2, title:"Family & Relationships", grammar:"Possessives + have/has"},
+      {n:3, title:"Food & Eating Out", grammar:"like/don't like, would like → I'd like"},
+      {n:4, title:"Shopping & Supermarket Survival English", grammar:"Where is/are…?, Do you have…?, How much…?"},
+      {n:5, title:"Past Simple — What Did You Do Yesterday?", grammar:"Past simple (regular + key irregulars)"},
+      {n:6, title:"Future Plans — What Are You Doing Tomorrow?", grammar:"going to + verb"},
+      {n:7, title:"Travel & Getting Around", grammar:"How do I get to…?, Can you tell me…?"},
+      {n:8, title:"Small Talk & Weather", grammar:"Simple present, It's + adjective"},
+      {n:9, title:"Describing People & Things", grammar:"Adjectives, comparatives"},
+      {n:10, title:"Review & Free Conversation — Unit 1", grammar:"Mixed — roleplay marathon"}
+    ]
+  },
+  {
+    title: "Unit 2 — Daily Life & Real Situations",
+    sub: "Widening out from \u201Csurviving a visit\u201D to handling ordinary daily-life English.",
+    lessons: [
+      {n:11, title:"Daily Routine — My Typical Day", grammar:"Present simple + frequency adverbs"},
+      {n:12, title:"Health & Feelings", grammar:"\u201CI feel…\u201D, describing symptoms"},
+      {n:13, title:"At the Doctor / Pharmacy", grammar:"Polite requests"},
+      {n:14, title:"Phone Calls & Texting", grammar:"Making a call, leaving a message"},
+      {n:15, title:"Making Arrangements", grammar:"\u201CShall we…?\u201D, accepting/declining invitations"},
+      {n:16, title:"Hobbies & Free Time", grammar:"\u201CI enjoy…\u201D, \u201CI'm interested in…\u201D + gerunds"},
+      {n:17, title:"Giving Opinions", grammar:"\u201CI think…\u201D, agreeing/disagreeing politely"},
+      {n:18, title:"Asking for Help & Giving Advice", grammar:"\u201CYou should…\u201D, \u201CWhy don't you…?\u201D"},
+      {n:19, title:"Money & Banking", grammar:"ATM, paying bills, asking prices"},
+      {n:20, title:"Review & Consolidation — Unit 2", grammar:"Mixed — roleplay marathon"}
+    ]
+  },
+  {
+    title: "Unit 3 — Confidence & Real Conversations",
+    sub: "Longer, more natural conversation — less drilled, more free.",
+    lessons: [
+      {n:21, title:"Life Experiences", grammar:"Present perfect — \u201CHave you ever…?\u201D"},
+      {n:22, title:"Comparisons", grammar:"Comparative & superlative adjectives"},
+      {n:23, title:"Describing Your Home", grammar:"There is / There are, rooms & furniture"},
+      {n:24, title:"Celebrations & Holidays", grammar:"Habits vs. specific past events"},
+      {n:25, title:"At the Airport — Deeper Dive", grammar:"Reporting problems (delays, lost luggage)"},
+      {n:26, title:"Technology & Apps", grammar:"Imperatives, \u201CHow do I…?\u201D"},
+      {n:27, title:"Emotions & Reactions", grammar:"Exclamations — \u201CThat's so…!\u201D, \u201CHow…!\u201D"},
+      {n:28, title:"Being the Helper", grammar:"Imperative directions"},
+      {n:29, title:"Telling a Longer Story", grammar:"Linking words: then, after that, because"},
+      {n:30, title:"Final Review & Graduation Conversation", grammar:"Everything — full mixed marathon"}
+    ]
+  }
+];
+
+const container = document.getElementById('planUnits');
+PLAN_UNITS.forEach(unit => {
+  const section = document.createElement('section');
+  section.style.padding = '28px 0 8px';
+
+  const heading = document.createElement('div');
+  heading.style.marginBottom = '14px';
+  heading.innerHTML = `
+    <h3 style="font-size:19px; margin-bottom:4px;">${unit.title}</h3>
+    <p style="font-size:13.5px; color:var(--ink-soft); margin:0; font-family:var(--font-body);">${unit.sub}</p>
+  `;
+  section.appendChild(heading);
+
+  const table = document.createElement('div');
+  table.style.display = 'flex';
+  table.style.flexDirection = 'column';
+  table.style.gap = '8px';
+
+  unit.lessons.forEach(l => {
+    const row = document.createElement('a');
+    row.href = `lesson-${l.n}.html`;
+    row.style.display = 'grid';
+    row.style.gridTemplateColumns = '48px 1fr auto';
+    row.style.alignItems = 'center';
+    row.style.gap = '14px';
+    row.style.padding = '12px 16px';
+    row.style.background = '#fff';
+    row.style.border = '1px solid #F0E7D2';
+    row.style.borderRadius = '14px';
+    row.style.textDecoration = 'none';
+    row.style.color = 'inherit';
+    row.style.transition = 'transform .15s, border-color .15s';
+    row.onmouseenter = () => { row.style.transform = 'translateX(3px)'; row.style.borderColor = 'var(--coral)'; };
+    row.onmouseleave = () => { row.style.transform = 'none'; row.style.borderColor = '#F0E7D2'; };
+    row.innerHTML = `
+      <span style="font-family:var(--font-mono); font-weight:700; font-size:13px; color:var(--sky-deep);">L${l.n}</span>
+      <span>
+        <strong style="font-family:var(--font-display); font-size:14.5px; display:block;">${l.title}</strong>
+        <span style="font-size:12.5px; color:var(--ink-soft);">${l.grammar}</span>
+      </span>
+      <span style="color:var(--ink-soft); font-size:18px;">→</span>
+    `;
+    table.appendChild(row);
+  });
+
+  section.appendChild(table);
+  container.appendChild(section);
+});
+</script>
+</body>
+</html>
