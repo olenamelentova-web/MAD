@@ -12,13 +12,28 @@
 </head>
 <body>
 
+<nav class="top-panel">
+  <div class="wrap top-panel-inner">
+    <a href="#learner-profile" class="top-panel-btn">👤 Learner Profile</a>
+    <a href="lesson-plan.html" class="top-panel-btn">📋 Lesson Plan</a>
+    <a href="#unit-1" class="top-panel-btn">Unit 1</a>
+    <a href="#unit-2" class="top-panel-btn">Unit 2</a>
+    <a href="#unit-3" class="top-panel-btn">Unit 3</a>
+    <a href="recommendations.html" class="top-panel-btn">📚 Further Study</a>
+    <a href="references.html" class="top-panel-btn">📖 References</a>
+  </div>
+</nav>
+
 <header class="hero-band">
   <div class="wrap">
     <span class="eyebrow">✦ MAD Project — Education</span>
     <h1 class="hero-title">A2-B1</h1>
     <p class="hero-sub">A 30-lesson, speaking-first English course built entirely around Yaroslava's real life.</p>
 
-    <a href="lesson-plan.html" class="plan-cta" style="margin-bottom:28px;">📋 View the Full Lesson Plan</a>
+    <div class="hero-ctas">
+      <a href="lesson-1.html" class="start-cta">🚀 Start Learning</a>
+      <a href="lesson-plan.html" class="plan-cta">📋 View the Full Lesson Plan</a>
+    </div>
 
     <div class="boarding-pass">
       <div class="bp-main">
@@ -43,7 +58,7 @@
 
 <div class="wrap">
 
-  <section class="intro-grid">
+  <section class="intro-grid" id="learner-profile">
     <div class="card">
       <h3>👤 Learner profile</h3>
       <ul>
@@ -137,9 +152,10 @@ const UNITS = [
 const unitContainer = document.getElementById('unitSections');
 let globalIndex = 0;
 
-UNITS.forEach(unit => {
+UNITS.forEach((unit, unitIdx) => {
   const section = document.createElement('section');
   section.style.padding = "28px 0 8px";
+  section.id = `unit-${unitIdx + 1}`;
 
   const heading = document.createElement('div');
   heading.style.marginBottom = "14px";
